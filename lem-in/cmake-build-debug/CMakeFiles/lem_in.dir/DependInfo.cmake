@@ -5,11 +5,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_strcmp.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o"
+  "/Users/gstarvin/CLionProjects/lem-in/src/BFS.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/BFS.c.o"
+  "/Users/gstarvin/CLionProjects/lem-in/src/delete_useful_links.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/delete_useful_links.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/find_answers.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/find_answers.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/graph_functions.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/graph_functions.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/main.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o"
-  "/Users/gstarvin/CLionProjects/lem-in/src/parse.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/parse.c.o"
-  "/Users/gstarvin/CLionProjects/lem-in/src/solve_lemin.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/solve_lemin.c.o"
+  "/Users/gstarvin/CLionProjects/lem-in/src/solution_functions.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/solution_functions.c.o"
+  "/Users/gstarvin/CLionProjects/lem-in/src/suurbale.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/suurbale.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

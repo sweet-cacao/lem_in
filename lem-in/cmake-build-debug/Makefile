@@ -150,6 +150,60 @@ libft/ft_str/ft_strcmp.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.s
 .PHONY : libft/ft_str/ft_strcmp.c.s
 
+src/BFS.o: src/BFS.c.o
+
+.PHONY : src/BFS.o
+
+# target to build an object file
+src/BFS.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/BFS.c.o
+.PHONY : src/BFS.c.o
+
+src/BFS.i: src/BFS.c.i
+
+.PHONY : src/BFS.i
+
+# target to preprocess a source file
+src/BFS.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/BFS.c.i
+.PHONY : src/BFS.c.i
+
+src/BFS.s: src/BFS.c.s
+
+.PHONY : src/BFS.s
+
+# target to generate assembly for a file
+src/BFS.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/BFS.c.s
+.PHONY : src/BFS.c.s
+
+src/delete_useful_links.o: src/delete_useful_links.c.o
+
+.PHONY : src/delete_useful_links.o
+
+# target to build an object file
+src/delete_useful_links.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/delete_useful_links.c.o
+.PHONY : src/delete_useful_links.c.o
+
+src/delete_useful_links.i: src/delete_useful_links.c.i
+
+.PHONY : src/delete_useful_links.i
+
+# target to preprocess a source file
+src/delete_useful_links.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/delete_useful_links.c.i
+.PHONY : src/delete_useful_links.c.i
+
+src/delete_useful_links.s: src/delete_useful_links.c.s
+
+.PHONY : src/delete_useful_links.s
+
+# target to generate assembly for a file
+src/delete_useful_links.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/delete_useful_links.c.s
+.PHONY : src/delete_useful_links.c.s
+
 src/find_answers.o: src/find_answers.c.o
 
 .PHONY : src/find_answers.o
@@ -231,59 +285,59 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/main.c.s
 .PHONY : src/main.c.s
 
-src/parse.o: src/parse.c.o
+src/solution_functions.o: src/solution_functions.c.o
 
-.PHONY : src/parse.o
-
-# target to build an object file
-src/parse.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parse.c.o
-.PHONY : src/parse.c.o
-
-src/parse.i: src/parse.c.i
-
-.PHONY : src/parse.i
-
-# target to preprocess a source file
-src/parse.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parse.c.i
-.PHONY : src/parse.c.i
-
-src/parse.s: src/parse.c.s
-
-.PHONY : src/parse.s
-
-# target to generate assembly for a file
-src/parse.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parse.c.s
-.PHONY : src/parse.c.s
-
-src/solve_lemin.o: src/solve_lemin.c.o
-
-.PHONY : src/solve_lemin.o
+.PHONY : src/solution_functions.o
 
 # target to build an object file
-src/solve_lemin.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/solve_lemin.c.o
-.PHONY : src/solve_lemin.c.o
+src/solution_functions.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/solution_functions.c.o
+.PHONY : src/solution_functions.c.o
 
-src/solve_lemin.i: src/solve_lemin.c.i
+src/solution_functions.i: src/solution_functions.c.i
 
-.PHONY : src/solve_lemin.i
+.PHONY : src/solution_functions.i
 
 # target to preprocess a source file
-src/solve_lemin.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/solve_lemin.c.i
-.PHONY : src/solve_lemin.c.i
+src/solution_functions.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/solution_functions.c.i
+.PHONY : src/solution_functions.c.i
 
-src/solve_lemin.s: src/solve_lemin.c.s
+src/solution_functions.s: src/solution_functions.c.s
 
-.PHONY : src/solve_lemin.s
+.PHONY : src/solution_functions.s
 
 # target to generate assembly for a file
-src/solve_lemin.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/solve_lemin.c.s
-.PHONY : src/solve_lemin.c.s
+src/solution_functions.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/solution_functions.c.s
+.PHONY : src/solution_functions.c.s
+
+src/suurbale.o: src/suurbale.c.o
+
+.PHONY : src/suurbale.o
+
+# target to build an object file
+src/suurbale.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/suurbale.c.o
+.PHONY : src/suurbale.c.o
+
+src/suurbale.i: src/suurbale.c.i
+
+.PHONY : src/suurbale.i
+
+# target to preprocess a source file
+src/suurbale.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/suurbale.c.i
+.PHONY : src/suurbale.c.i
+
+src/suurbale.s: src/suurbale.c.s
+
+.PHONY : src/suurbale.s
+
+# target to generate assembly for a file
+src/suurbale.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/suurbale.c.s
+.PHONY : src/suurbale.c.s
 
 # Help Target
 help:
@@ -297,6 +351,12 @@ help:
 	@echo "... libft/ft_str/ft_strcmp.o"
 	@echo "... libft/ft_str/ft_strcmp.i"
 	@echo "... libft/ft_str/ft_strcmp.s"
+	@echo "... src/BFS.o"
+	@echo "... src/BFS.i"
+	@echo "... src/BFS.s"
+	@echo "... src/delete_useful_links.o"
+	@echo "... src/delete_useful_links.i"
+	@echo "... src/delete_useful_links.s"
 	@echo "... src/find_answers.o"
 	@echo "... src/find_answers.i"
 	@echo "... src/find_answers.s"
@@ -306,12 +366,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/parse.o"
-	@echo "... src/parse.i"
-	@echo "... src/parse.s"
-	@echo "... src/solve_lemin.o"
-	@echo "... src/solve_lemin.i"
-	@echo "... src/solve_lemin.s"
+	@echo "... src/solution_functions.o"
+	@echo "... src/solution_functions.i"
+	@echo "... src/solution_functions.s"
+	@echo "... src/suurbale.o"
+	@echo "... src/suurbale.i"
+	@echo "... src/suurbale.s"
 .PHONY : help
 
 

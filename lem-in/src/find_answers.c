@@ -70,7 +70,7 @@ char     *get_end(t_gr_block *buff, t_graph *tmp, int len)
 	}
 	return (NULL);
 }
-
+/*
 char    *get_end()
 {
 	return (NULL);
@@ -123,4 +123,5 @@ t_otv   *find_answers(t_gr_block *buff, int len)
 			solutions = solutions[first];
 		}
 //	}
-}
+}*/
+

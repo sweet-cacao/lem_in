@@ -3,6 +3,7 @@
 
 int main()
 {
+	t_otv *solution;
 	char *name = "4";
 	int num = 4;
 	t_gr_block buff[num];
@@ -26,6 +27,7 @@ int main()
 	i = 0;
 	name = "1";
     buff[0] = create_gr_block(connections, name);
+	buff[0].level = 0;
     buff[0].start = 1;
     name = "2";
     connections[0] = "1";
@@ -61,8 +63,9 @@ int main()
 		i++;
 	}*/
 //	buff[i] = NULL;
-    solve_lemin(4, buff);
-
+	bfs_algorythm(4, buff);
+	delete_useful_links(4, buff);
+	solution = suurbale(4, buff);
 	i = 0;
 	while (i < 4)
 	{

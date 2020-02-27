@@ -20,6 +20,7 @@ typedef struct      s_graph
 
 typedef struct      s_gr_block
 {
+	int             dead_end;
 	int             start;
 	int             end;
 	int             level;
@@ -34,13 +35,16 @@ typedef struct      s_otv
     struct s_otv    *prev;
 }                   t_otv;
 
-void                solve_lemin(int len, t_gr_block *buff);
+void                bfs_algorythm(int len, t_gr_block *buff);
+void                delete_useful_links(int len, t_gr_block *buff);
+t_otv               *suurbale(int len, t_gr_block *buff, int ants);
 
 t_graph             *add_line(char **connections, char *name);
 
 t_graph             *get_next_graph(t_graph *graph);
 t_graph             *add_block_graph(char *name, char *connection);
 void                push_front_graph(t_graph **graph, char *name, char *connection);
+void                delete_one_graph(t_graph **graph, char *name);
 
 t_gr_block          create_gr_block(char **connections, char *name);
 

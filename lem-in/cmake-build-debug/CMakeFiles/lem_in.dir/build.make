@@ -70,22 +70,9 @@ CMakeFiles/lem_in.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/main.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gstarvin/CLionProjects/lem-in/src/main.c -o CMakeFiles/lem_in.dir/src/main.c.s
 
-CMakeFiles/lem_in.dir/src/parse.c.o: CMakeFiles/lem_in.dir/flags.make
-CMakeFiles/lem_in.dir/src/parse.c.o: ../src/parse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lem_in.dir/src/parse.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/parse.c.o   -c /Users/gstarvin/CLionProjects/lem-in/src/parse.c
-
-CMakeFiles/lem_in.dir/src/parse.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/parse.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gstarvin/CLionProjects/lem-in/src/parse.c > CMakeFiles/lem_in.dir/src/parse.c.i
-
-CMakeFiles/lem_in.dir/src/parse.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/parse.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gstarvin/CLionProjects/lem-in/src/parse.c -o CMakeFiles/lem_in.dir/src/parse.c.s
-
 CMakeFiles/lem_in.dir/src/graph_functions.c.o: CMakeFiles/lem_in.dir/flags.make
 CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../src/graph_functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/lem_in.dir/src/graph_functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lem_in.dir/src/graph_functions.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/graph_functions.c.o   -c /Users/gstarvin/CLionProjects/lem-in/src/graph_functions.c
 
 CMakeFiles/lem_in.dir/src/graph_functions.c.i: cmake_force
@@ -96,18 +83,31 @@ CMakeFiles/lem_in.dir/src/graph_functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/graph_functions.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gstarvin/CLionProjects/lem-in/src/graph_functions.c -o CMakeFiles/lem_in.dir/src/graph_functions.c.s
 
-CMakeFiles/lem_in.dir/src/solve_lemin.c.o: CMakeFiles/lem_in.dir/flags.make
-CMakeFiles/lem_in.dir/src/solve_lemin.c.o: ../src/solve_lemin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/lem_in.dir/src/solve_lemin.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/solve_lemin.c.o   -c /Users/gstarvin/CLionProjects/lem-in/src/solve_lemin.c
+CMakeFiles/lem_in.dir/src/solution_functions.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/solution_functions.c.o: ../src/solution_functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/lem_in.dir/src/solution_functions.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/solution_functions.c.o   -c /Users/gstarvin/CLionProjects/lem-in/src/solution_functions.c
 
-CMakeFiles/lem_in.dir/src/solve_lemin.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/solve_lemin.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gstarvin/CLionProjects/lem-in/src/solve_lemin.c > CMakeFiles/lem_in.dir/src/solve_lemin.c.i
+CMakeFiles/lem_in.dir/src/solution_functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/solution_functions.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gstarvin/CLionProjects/lem-in/src/solution_functions.c > CMakeFiles/lem_in.dir/src/solution_functions.c.i
 
-CMakeFiles/lem_in.dir/src/solve_lemin.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/solve_lemin.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gstarvin/CLionProjects/lem-in/src/solve_lemin.c -o CMakeFiles/lem_in.dir/src/solve_lemin.c.s
+CMakeFiles/lem_in.dir/src/solution_functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/solution_functions.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gstarvin/CLionProjects/lem-in/src/solution_functions.c -o CMakeFiles/lem_in.dir/src/solution_functions.c.s
+
+CMakeFiles/lem_in.dir/src/BFS.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/BFS.c.o: ../src/BFS.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/lem_in.dir/src/BFS.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/BFS.c.o   -c /Users/gstarvin/CLionProjects/lem-in/src/BFS.c
+
+CMakeFiles/lem_in.dir/src/BFS.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/BFS.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gstarvin/CLionProjects/lem-in/src/BFS.c > CMakeFiles/lem_in.dir/src/BFS.c.i
+
+CMakeFiles/lem_in.dir/src/BFS.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/BFS.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gstarvin/CLionProjects/lem-in/src/BFS.c -o CMakeFiles/lem_in.dir/src/BFS.c.s
 
 CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o: CMakeFiles/lem_in.dir/flags.make
 CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o: ../libft/ft_str/ft_strcmp.c
@@ -135,27 +135,57 @@ CMakeFiles/lem_in.dir/src/find_answers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/find_answers.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gstarvin/CLionProjects/lem-in/src/find_answers.c -o CMakeFiles/lem_in.dir/src/find_answers.c.s
 
+CMakeFiles/lem_in.dir/src/delete_useful_links.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/delete_useful_links.c.o: ../src/delete_useful_links.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/lem_in.dir/src/delete_useful_links.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/delete_useful_links.c.o   -c /Users/gstarvin/CLionProjects/lem-in/src/delete_useful_links.c
+
+CMakeFiles/lem_in.dir/src/delete_useful_links.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/delete_useful_links.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gstarvin/CLionProjects/lem-in/src/delete_useful_links.c > CMakeFiles/lem_in.dir/src/delete_useful_links.c.i
+
+CMakeFiles/lem_in.dir/src/delete_useful_links.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/delete_useful_links.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gstarvin/CLionProjects/lem-in/src/delete_useful_links.c -o CMakeFiles/lem_in.dir/src/delete_useful_links.c.s
+
+CMakeFiles/lem_in.dir/src/suurbale.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/suurbale.c.o: ../src/suurbale.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/lem_in.dir/src/suurbale.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/suurbale.c.o   -c /Users/gstarvin/CLionProjects/lem-in/src/suurbale.c
+
+CMakeFiles/lem_in.dir/src/suurbale.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/suurbale.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gstarvin/CLionProjects/lem-in/src/suurbale.c > CMakeFiles/lem_in.dir/src/suurbale.c.i
+
+CMakeFiles/lem_in.dir/src/suurbale.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/suurbale.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gstarvin/CLionProjects/lem-in/src/suurbale.c -o CMakeFiles/lem_in.dir/src/suurbale.c.s
+
 # Object files for target lem_in
 lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/src/main.c.o" \
-"CMakeFiles/lem_in.dir/src/parse.c.o" \
 "CMakeFiles/lem_in.dir/src/graph_functions.c.o" \
-"CMakeFiles/lem_in.dir/src/solve_lemin.c.o" \
+"CMakeFiles/lem_in.dir/src/solution_functions.c.o" \
+"CMakeFiles/lem_in.dir/src/BFS.c.o" \
 "CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o" \
-"CMakeFiles/lem_in.dir/src/find_answers.c.o"
+"CMakeFiles/lem_in.dir/src/find_answers.c.o" \
+"CMakeFiles/lem_in.dir/src/delete_useful_links.c.o" \
+"CMakeFiles/lem_in.dir/src/suurbale.c.o"
 
 # External object files for target lem_in
 lem_in_EXTERNAL_OBJECTS =
 
 lem_in: CMakeFiles/lem_in.dir/src/main.c.o
-lem_in: CMakeFiles/lem_in.dir/src/parse.c.o
 lem_in: CMakeFiles/lem_in.dir/src/graph_functions.c.o
-lem_in: CMakeFiles/lem_in.dir/src/solve_lemin.c.o
+lem_in: CMakeFiles/lem_in.dir/src/solution_functions.c.o
+lem_in: CMakeFiles/lem_in.dir/src/BFS.c.o
 lem_in: CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o
 lem_in: CMakeFiles/lem_in.dir/src/find_answers.c.o
+lem_in: CMakeFiles/lem_in.dir/src/delete_useful_links.c.o
+lem_in: CMakeFiles/lem_in.dir/src/suurbale.c.o
 lem_in: CMakeFiles/lem_in.dir/build.make
 lem_in: CMakeFiles/lem_in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable lem_in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable lem_in"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lem_in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

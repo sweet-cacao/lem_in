@@ -86,6 +86,12 @@
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_strcmp.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/BFS.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/delete_useful_links.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/find_answers.c">
 			<Option target="lem_in"/>
 		</Unit>
@@ -95,10 +101,10 @@
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/main.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/parse.c">
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/solution_functions.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/solve_lemin.c">
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/suurbale.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/CMakeLists.txt">

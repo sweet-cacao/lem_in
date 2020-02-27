@@ -4,6 +4,18 @@
 CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o: ../libft/ft_str/ft_strcmp.c
 CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o: ../libft/ft_str/libft.h
 
+CMakeFiles/lem_in.dir/src/BFS.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/BFS.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/BFS.c.o: ../src/BFS.c
+
+CMakeFiles/lem_in.dir/src/delete_useful_links.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/delete_useful_links.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/delete_useful_links.c.o: ../src/delete_useful_links.c
+
+CMakeFiles/lem_in.dir/src/find_answers.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/find_answers.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/find_answers.c.o: ../src/find_answers.c
+
 CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../src/graph_functions.c
@@ -12,11 +24,11 @@ CMakeFiles/lem_in.dir/src/main.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../src/main.c
 
-CMakeFiles/lem_in.dir/src/parse.c.o: ../includes/lem-in.h
-CMakeFiles/lem_in.dir/src/parse.c.o: ../libft/ft_str/libft.h
-CMakeFiles/lem_in.dir/src/parse.c.o: ../src/parse.c
+CMakeFiles/lem_in.dir/src/solution_functions.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/solution_functions.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/solution_functions.c.o: ../src/solution_functions.c
 
-CMakeFiles/lem_in.dir/src/solve_lemin.c.o: ../includes/lem-in.h
-CMakeFiles/lem_in.dir/src/solve_lemin.c.o: ../libft/ft_str/libft.h
-CMakeFiles/lem_in.dir/src/solve_lemin.c.o: ../src/solve_lemin.c
+CMakeFiles/lem_in.dir/src/suurbale.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/suurbale.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/suurbale.c.o: ../src/suurbale.c
 

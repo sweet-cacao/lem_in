@@ -1,18 +1,17 @@
 #include "../includes/lem-in.h"
-/*
-//проставляем у всех линков
-void    set_same_numbers()
+
+int     return_level(t_gr_block *buff, char *name, int len)
 {
+	int i;
 
+	i = 0;
+	while (i < len)
+	{
+		if (ft_strcmp(name, buff[i].name) == 0)
+			return (buff[i].level);
+		i++;
+	}
 }
-
-//проставляем у нужного имени левлы
-void    set_level()
-{
-
-}
-*/
-//ищем нужное имя
 
 void    get_level(t_gr_block *buff, int level, char *name, int len)
 {
@@ -24,7 +23,7 @@ void    get_level(t_gr_block *buff, int level, char *name, int len)
 	{
 		if (ft_strcmp(name, buff[i].name) == 0)
         {
-		    if (buff[i].level == 0 && buff[i].start == 0)
+		    if (buff[i].level == -1)// && buff[i].start == 0)
 		        buff[i].level = level + 1;
         }
 		i++;
@@ -32,7 +31,8 @@ void    get_level(t_gr_block *buff, int level, char *name, int len)
 	}
 }
 
-void    solve_lemin(int len, t_gr_block *buff)
+//BFS
+void    bfs_algorythm(int len, t_gr_block *buff)
 {
 	int i;
 //	t_gr_block edges[len] = buff;
@@ -57,3 +57,5 @@ void    solve_lemin(int len, t_gr_block *buff)
 		i++;
 	}
 }
+
+
