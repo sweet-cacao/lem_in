@@ -89,6 +89,9 @@
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/BFS.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/belman-ford.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/delete_useful_links.c">
 			<Option target="lem_in"/>
 		</Unit>

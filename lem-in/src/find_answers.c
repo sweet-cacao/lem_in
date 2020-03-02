@@ -43,7 +43,20 @@ t_gr_block find_end(t_gr_block *buff, int len)
 	}
 }
 
-char     *get_start(t_gr_block *buff, t_graph *tmp, int len)
+t_gr_block return_t_gr_block(t_gr_block *buff, int len, char *name)
+{
+	int i;
+
+	i = 0;
+	while (i < len)
+	{
+		if (ft_strcmp(buff[i].name, name) == 0)
+			return (buff[i]);
+		i++;
+	}
+}
+
+char     *get_start(t_gr_block *buff, int len)
 {
 	int i;
 
@@ -57,7 +70,7 @@ char     *get_start(t_gr_block *buff, t_graph *tmp, int len)
 	return (NULL);
 }
 
-char     *get_end(t_gr_block *buff, t_graph *tmp, int len)
+char     *get_end(t_gr_block *buff, int len)
 {
 	int i;
 

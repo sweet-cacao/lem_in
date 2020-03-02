@@ -8,6 +8,10 @@ CMakeFiles/lem_in.dir/src/BFS.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/BFS.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/BFS.c.o: ../src/BFS.c
 
+CMakeFiles/lem_in.dir/src/belman-ford.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/belman-ford.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/belman-ford.c.o: ../src/belman-ford.c
+
 CMakeFiles/lem_in.dir/src/delete_useful_links.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/delete_useful_links.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/delete_useful_links.c.o: ../src/delete_useful_links.c

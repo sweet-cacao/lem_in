@@ -13,7 +13,7 @@ int     return_level(t_gr_block *buff, char *name, int len)
 	}
 }
 
-void    get_level(t_gr_block *buff, int level, char *name, int len)
+void    get_level(t_gr_block *buff, int level, char *name, int len, t_graph **solution)
 {
 	int i;
 
@@ -34,6 +34,7 @@ void    get_level(t_gr_block *buff, int level, char *name, int len)
 //BFS
 void    bfs_algorythm(int len, t_gr_block *buff)
 {
+	t_graph *solution;
 	int i;
 //	t_gr_block edges[len] = buff;
 	t_graph *links;
@@ -51,7 +52,7 @@ void    bfs_algorythm(int len, t_gr_block *buff)
 		while (links)
 		{
             printf("link = %s\n", links->link);
-			get_level(buff, buff[i].level, links->link, len);
+			get_level(buff, buff[i].level, links->link, len, &solution);
 			links = links->next;
 		}
 		i++;

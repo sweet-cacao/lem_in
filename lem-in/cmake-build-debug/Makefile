@@ -177,6 +177,33 @@ src/BFS.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/BFS.c.s
 .PHONY : src/BFS.c.s
 
+src/belman-ford.o: src/belman-ford.c.o
+
+.PHONY : src/belman-ford.o
+
+# target to build an object file
+src/belman-ford.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/belman-ford.c.o
+.PHONY : src/belman-ford.c.o
+
+src/belman-ford.i: src/belman-ford.c.i
+
+.PHONY : src/belman-ford.i
+
+# target to preprocess a source file
+src/belman-ford.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/belman-ford.c.i
+.PHONY : src/belman-ford.c.i
+
+src/belman-ford.s: src/belman-ford.c.s
+
+.PHONY : src/belman-ford.s
+
+# target to generate assembly for a file
+src/belman-ford.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/belman-ford.c.s
+.PHONY : src/belman-ford.c.s
+
 src/delete_useful_links.o: src/delete_useful_links.c.o
 
 .PHONY : src/delete_useful_links.o
@@ -354,6 +381,9 @@ help:
 	@echo "... src/BFS.o"
 	@echo "... src/BFS.i"
 	@echo "... src/BFS.s"
+	@echo "... src/belman-ford.o"
+	@echo "... src/belman-ford.i"
+	@echo "... src/belman-ford.s"
 	@echo "... src/delete_useful_links.o"
 	@echo "... src/delete_useful_links.i"
 	@echo "... src/delete_useful_links.s"

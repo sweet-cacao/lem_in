@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o"
   "CMakeFiles/lem_in.dir/src/BFS.c.o"
+  "CMakeFiles/lem_in.dir/src/belman-ford.c.o"
   "CMakeFiles/lem_in.dir/src/delete_useful_links.c.o"
   "CMakeFiles/lem_in.dir/src/find_answers.c.o"
   "CMakeFiles/lem_in.dir/src/graph_functions.c.o"

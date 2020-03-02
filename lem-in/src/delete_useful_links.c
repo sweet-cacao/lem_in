@@ -29,7 +29,7 @@ void    delete_dead_ends(int len, t_gr_block *buff)
 	}
 }
 
-void    delete_useful_links(int len, t_gr_block *buff)
+void    delete_useless_links(int len, t_gr_block *buff)
 {
 	int i;
 

@@ -30,7 +30,7 @@ int main()
 	buff[0].level = 0;
     buff[0].start = 1;
     name = "2";
-    connections[0] = "1";
+	connections[0] = "1";
     connections[1] = "6";
     connections[2] = NULL;
     connections[3] = NULL;
@@ -54,6 +54,7 @@ int main()
 //    connections[5] = NULL;
     buff[3] = create_gr_block(connections, name);
     buff[3].end = 1;
+    buff[3].level = INT32_MAX;
 
             /*	while(i < num)
 	{
@@ -63,13 +64,22 @@ int main()
 		i++;
 	}*/
 //	buff[i] = NULL;
+
 	bfs_algorythm(4, buff);
-	delete_useful_links(4, buff);
-	solution = suurbale(4, buff);
+	give_directions(buff, 4);
+//	delete_useless_links(4, buff);
+//	solution = get_solution(4, buff);
+	belman_ford_req(buff, 4);
+	/*while (solution->solve)
+	{
+		printf("%s\n", solution->solve->link);
+		solution->solve = solution->solve->next;
+	}*/
+
 	i = 0;
 	while (i < 4)
 	{
-		printf("%s : lev = %d, %s, %s\n", buff[i].name, buff[i].level, buff[i].links->link, buff[i].links->next->link);//, buff[i].links->next->next->link);
+		printf("%s : lev = %d, %s, in = %d, out = %d, %s, in = %d, out = %d\n", buff[i].name, buff[i].weight_edge, buff[i].links->link, buff[i].links->in, buff[i].links->out, buff[i].links->next->link, buff[i].links->next->in, buff[i].links->next->out );//, buff[i].links->next->next->link);
 		i++;
 	}
 	return 0;
