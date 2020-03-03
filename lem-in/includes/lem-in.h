@@ -2,7 +2,7 @@
 #define LEM_IN_LEM_IN_H
 
 #include "../libft/ft_str/libft.h"
-
+#include <stdio.h>
 typedef struct      s_lemin
 {
 	int             ants;
@@ -23,7 +23,9 @@ typedef struct      s_graph
 
 typedef struct      s_gr_block
 {
-	struct s_gr_block      *parent;
+	int             count;
+	struct s_gr_block     *parent;
+	char            *parent_name;
 	int             iter;
 	int             weight_edge;
 	int             dead_end;
@@ -64,5 +66,7 @@ t_gr_block          find_end(t_gr_block *buff, int len);
 
 void                push_front_solution(t_otv **otv, t_graph buff);
 t_otv               *add_block_solution(char *name);
+
+void                print_graph(t_gr_block *buff, int len);
 
 #endif

@@ -312,6 +312,33 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/print_graph.o: src/print_graph.c.o
+
+.PHONY : src/print_graph.o
+
+# target to build an object file
+src/print_graph.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_graph.c.o
+.PHONY : src/print_graph.c.o
+
+src/print_graph.i: src/print_graph.c.i
+
+.PHONY : src/print_graph.i
+
+# target to preprocess a source file
+src/print_graph.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_graph.c.i
+.PHONY : src/print_graph.c.i
+
+src/print_graph.s: src/print_graph.c.s
+
+.PHONY : src/print_graph.s
+
+# target to generate assembly for a file
+src/print_graph.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_graph.c.s
+.PHONY : src/print_graph.c.s
+
 src/solution_functions.o: src/solution_functions.c.o
 
 .PHONY : src/solution_functions.o
@@ -396,6 +423,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/print_graph.o"
+	@echo "... src/print_graph.i"
+	@echo "... src/print_graph.s"
 	@echo "... src/solution_functions.o"
 	@echo "... src/solution_functions.i"
 	@echo "... src/solution_functions.s"

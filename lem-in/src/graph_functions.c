@@ -124,6 +124,8 @@ t_gr_block  create_gr_block(char **connections, char *name)
     gr_block.links = add_line(connections, name);
     gr_block.name = name;
     gr_block.parent = NULL;
+    gr_block.parent_name = NULL;
+    gr_block.count = 0;
     return (gr_block);
 }
 

@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/find_answers.c.o"
   "CMakeFiles/lem_in.dir/src/graph_functions.c.o"
   "CMakeFiles/lem_in.dir/src/main.c.o"
+  "CMakeFiles/lem_in.dir/src/print_graph.c.o"
   "CMakeFiles/lem_in.dir/src/solution_functions.c.o"
   "CMakeFiles/lem_in.dir/src/suurbale.c.o"
   "lem_in"

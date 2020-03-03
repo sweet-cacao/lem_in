@@ -9,6 +9,8 @@
 /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
 ../libft/ft_str/libft.h
 /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
+stdio.h
+-
 
 /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
 string.h

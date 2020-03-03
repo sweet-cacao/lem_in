@@ -104,6 +104,9 @@
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/main.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/print_graph.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/solution_functions.c">
 			<Option target="lem_in"/>
 		</Unit>

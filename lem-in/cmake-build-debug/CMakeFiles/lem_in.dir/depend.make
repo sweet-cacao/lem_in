@@ -28,6 +28,10 @@ CMakeFiles/lem_in.dir/src/main.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../src/main.c
 
+CMakeFiles/lem_in.dir/src/print_graph.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/print_graph.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/print_graph.c.o: ../src/print_graph.c
+
 CMakeFiles/lem_in.dir/src/solution_functions.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/solution_functions.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/solution_functions.c.o: ../src/solution_functions.c

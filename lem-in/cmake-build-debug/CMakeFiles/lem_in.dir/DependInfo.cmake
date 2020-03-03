@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gstarvin/CLionProjects/lem-in/src/find_answers.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/find_answers.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/graph_functions.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/graph_functions.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/main.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o"
+  "/Users/gstarvin/CLionProjects/lem-in/src/print_graph.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/print_graph.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/solution_functions.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/solution_functions.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/suurbale.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/suurbale.c.o"
   )
