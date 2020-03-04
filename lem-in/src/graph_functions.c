@@ -119,7 +119,7 @@ t_gr_block  create_gr_block(char **connections, char *name)
     gr_block.end = 0;
     gr_block.start = 0;
     gr_block.level = -1;
-    gr_block.weight_edge = 0;
+    gr_block.weight_edge = INT32_MAX;
     gr_block.iter = -1;
     gr_block.links = add_line(connections, name);
     gr_block.name = name;

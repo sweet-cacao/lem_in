@@ -13,7 +13,7 @@ typedef struct      s_lemin
 
 typedef struct      s_graph
 {
-
+	int             duplicate;
 	char           *link;
 	struct s_graph *next;
 	int             in;
