@@ -1,6 +1,6 @@
 #include "../includes/lem-in.h"
 
-void    get_null_levels(int len, t_gr_block *buff)
+/*void    get_null_levels(int len, t_gr_block *buff)
 {
 	int i;
 
@@ -87,10 +87,10 @@ int     sensible(t_otv *solution, int ants)
 	length_path = count_len_graph(solution->solve);
 	answer = (int)((length_path + ants) / sum);
 	return (answer);
-}
+}*/
 //сначала найти максимальное количество путей
 //нужно еще удалить dead-ends из ссылок
-t_otv   *suurbale(int len, t_gr_block *buff, int ants)
+/*t_otv   *suurbale(int len, t_gr_block *buff, int ants)
 {
 	t_otv *solution;
 	t_otv *new_solution;
@@ -102,4 +102,4 @@ t_otv   *suurbale(int len, t_gr_block *buff, int ants)
 		get_null_levels(len, buff);
 		
 	}
-}
+}*/

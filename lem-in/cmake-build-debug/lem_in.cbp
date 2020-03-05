@@ -83,10 +83,64 @@
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_atoi.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_bzero.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_countletters.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_countwds.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_memdel.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_putchar.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_putstr.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_strchr.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_strcmp.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_strdel.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_strdup.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_strjoin.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_strlen.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_strnew.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_strsplit.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_strstr.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/ft_strsub.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/get_next_line.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/BFS.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/L-print.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/belman-ford.c">
@@ -102,6 +156,9 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/main.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/parse.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/gstarvin/CLionProjects/lem-in/src/print_graph.c">

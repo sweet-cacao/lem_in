@@ -40,3 +40,28 @@ void    print_graph(t_gr_block *buff, int len)
 	}
 }
 
+void    print_solutions(t_otv *otv)
+{
+	t_graph *links;
+	int i;
+
+	i = 1;
+	while (otv)
+	{
+		links = otv->solve;
+		printf("%d solution : ", i);
+		while (links)
+		{
+			printf("%s", links->link);
+			if (links->next != NULL)
+			{
+				printf("-->");
+			}
+			links = links->next;
+		}
+		i++;
+		printf("\n");
+		otv = otv->next;
+	}
+}
+

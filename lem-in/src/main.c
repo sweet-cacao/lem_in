@@ -1,19 +1,74 @@
 #include <stdio.h>
 #include "../includes/lem-in.h"
 
+int     count_len_pointlist(t_pointlist *map)
+{
+	int i;
+
+	i = 0;
+	if (!map)
+		return (0);
+	while (map)
+	{
+		i++;
+		map = map->next;
+	}
+	return (i);
+}
+
+/*t_gr_block  *create_buff(int len, t_pointlist *map, t_gr_block **buff)
+{
+	int i;
+//	t_gr_block buff[len];
+	i = 0;
+	buff = malloc(sizeof(t_gr_block*) * len);
+	while (i < len)
+	{
+		(*buff[i]) = create_gr_block(map->links_list, map->name_point);
+		i++;
+	}
+	return (*buff);
+}*/
+
 int main()
 {
 	t_otv *solution;
 	char *name;
 	char *name2;
 	int num = 5;
-	t_gr_block buff[8];
+
 	int i;
 	char **connections;
+	t_pointlist *map;
+	int len;
+	i = 0;
+	map = parse_map();
+	len = count_len_pointlist(map);
+	t_gr_block buff[len];
+	while (i < len)
+	{
+		buff[i] = create_gr_block(map->links_list, map->name_point);
+		if (ft_strcmp("start", map->start_end) == 0)
+		{
+			buff[i].start = 1;
+			buff[i].weight_edge = 0;
+		}
+		if (ft_strcmp("end", map->start_end) == 0)
+			buff[i].end = 1;
+		map = map->next;
+		i++;
+	}
+	i = 0;
+	t_gr_block one = return_t_gr_block(buff, len, get_start(buff, len));
+
+//	buff = create_buff(len, map, &buff);
+
+//	t_gr_block buff[len];
+
 
 //	connections[i] = (char *)malloc(sizeof(char) * 3);
-	connections = malloc(sizeof(char *) * num + 1);
-	i = 0;
+/*	connections = malloc(sizeof(char *) * num + 1);
+
 	while (i < num)
 	{
 		connections[i] = (char *)malloc(sizeof(char) * 3);
@@ -87,7 +142,7 @@ int main()
 	connections[3] = NULL;
 	connections[4] = NULL;
 //    connections[5] = NULL;
-	buff[7] = create_gr_block(connections, name);
+	buff[7] = create_gr_block(connections, name);*/
 /*	name = "4";
 	connections[0] = "5";
 	connections[1] = "7";
@@ -112,8 +167,8 @@ int main()
 	connections[4] = NULL;
 //    connections[5] = NULL;
 	buff[10] = create_gr_block(connections, name);*/
-    buff[7].end = 1;
-    buff[7].level = INT32_MAX;
+ /*   buff[7].end = 1;
+    buff[7].level = INT32_MAX;*/
 
             /*	while(i < num)
 	{
@@ -128,8 +183,8 @@ int main()
 //	give_directions(buff, 4);
 //	delete_useless_links(4, buff);
 //	solution = get_solution(4, buff);
-	belman_ford_req(buff, 8);
-	print_graph(buff, 8);
+	belman_ford_req(buff, len);
+	print_graph(buff, len);
 	/*while (solution->solve)
 	{
 		printf("%s\n", solution->solve->link);
@@ -144,3 +199,5 @@ int main()
 	}*/
 	return 0;
 }
+
+

@@ -94,25 +94,25 @@ void        push_front_graph(t_graph **graph, char *name, char *connection)
     }
 }
 
-t_graph     *add_line(char **connections, char *name)
+t_graph     *add_line(t_links *connections, char *name)
 {
 	t_graph *graph;
-	int i;
-	int len;
+//	int i;
+//	int len;
 
 	graph = NULL;
-	i = 0;
-	len = massiv_len(connections);
+//	i = 0;
+//	len = massiv_len(connections);
 //	printf("%d\n", len);
-	while (i < len)
+	while (connections)
 	{
-		push_end_graph(&graph, name, connections[i]);
-		i++;
+		push_end_graph(&graph, name, connections->link);
+		connections = connections->next;
 	}
 	return (graph);
 }
 
-t_gr_block  create_gr_block(char **connections, char *name)
+t_gr_block  create_gr_block(t_links *connections, char *name)
 {
     t_gr_block gr_block;
 
@@ -126,6 +126,7 @@ t_gr_block  create_gr_block(char **connections, char *name)
     gr_block.parent = NULL;
     gr_block.parent_name = NULL;
     gr_block.count = 0;
+    gr_block.prev = NULL;
     return (gr_block);
 }
 
