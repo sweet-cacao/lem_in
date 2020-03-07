@@ -36,6 +36,7 @@ int main()
 	char *name;
 	char *name2;
 	int num = 5;
+	int ants;
 
 	int i;
 	char **connections;
@@ -44,6 +45,7 @@ int main()
 	i = 0;
 	map = parse_map();
 	len = count_len_pointlist(map);
+	ants = map->ants;
 	t_gr_block buff[len];
 	while (i < len)
 	{
@@ -183,8 +185,9 @@ int main()
 //	give_directions(buff, 4);
 //	delete_useless_links(4, buff);
 //	solution = get_solution(4, buff);
-	belman_ford_req(buff, len);
-	print_graph(buff, len);
+
+	belman_ford_req(buff, len, ants);
+//	print_graph(buff, len);
 	/*while (solution->solve)
 	{
 		printf("%s\n", solution->solve->link);

@@ -8,8 +8,7 @@ void            printf_double_star_char(char **links)
 	while (links[index] != NULL)
 	{
 		printf("%s ",links[index]);
-		index++;
-	}
+		index++;    }
 	printf("\n");
 }
 
@@ -140,8 +139,11 @@ t_pointlist            *parse_map()
 	t_pointlist     *point_info;
 	t_pointlist     *plus_part;
 	int             ant_number;
+	int             Links_check;
 	int             index;
 
+	ant_number = -1;
+	Links_check = 0;
 	index = ft_strlen("##start##end");
 	markers = (char *)malloc(sizeof(char) * (index + 1));
 	markers[index] = '\0';
@@ -180,12 +182,17 @@ t_pointlist            *parse_map()
 			break;
 		}
 	}
-	while (get_next_line(0, &str) > 0) //старт
+	if (ant_number < 0)
+	{
+		printf("ERROR\n");
+		return(0);
+	}
+	/*while (get_next_line(0, &str) > 0) //старт
 	{
 		ft_putstr(str);
 		ft_putstr("\n");
 		if (((int)ft_strstr(markers, str) - (int)markers) == 0 &&
-		    get_next_line(0, &str) > 0)
+			get_next_line(0, &str) > 0)
 		{
 			ft_putstr(str);
 			ft_putstr("\n");
@@ -205,13 +212,28 @@ t_pointlist            *parse_map()
 			ft_putstr("ERROR\n");
 			break;
 		}
-	}
+	}*/
 	while (get_next_line(0, &str) > 0) //конец и вершины+
 	{
 		ft_putstr(str);
 		ft_putstr("\n");
-		if (((int)ft_strstr(markers, str) - (int)markers) == 7 &&
+		if (((int)ft_strstr(markers, str) - (int)markers) == 0 &&
 		    get_next_line(0, &str) > 0)
+		{
+			ft_putstr(str);
+			ft_putstr("\n");
+			split = ft_strsplit(str, ' ');
+			plus_part = list_creation();
+			plus_part->start_end = "start";
+			plus_part->name_point = split[0];
+			plus_part->coordinates[0] = ft_atoi(split[1]);
+			plus_part->coordinates[1] = ft_atoi(split[2]);
+			plus_part->links_list = NULL;
+			plus_part->next = point_info;
+			point_info = plus_part;
+		}
+		else if (((int)ft_strstr(markers, str) - (int)markers) == 7 &&
+		         get_next_line(0, &str) > 0)
 		{
 			ft_putstr(str);
 			ft_putstr("\n");
@@ -239,6 +261,7 @@ t_pointlist            *parse_map()
 		}
 		else if (str && (split = ft_strsplit(str, '-')) && len_double_star_char(split) == 2)
 		{
+			Links_check = 1;
 			(search_list(point_info, split[0]))->links_list = plus_on_double_star_char((search_list(point_info, split[0]))->links_list, split[1]);
 			(search_list(point_info, split[1]))->links_list = plus_on_double_star_char((search_list(point_info, split[1]))->links_list, split[0]);
 		}
@@ -248,7 +271,21 @@ t_pointlist            *parse_map()
 			break;
 		}*/
 	}
-//	mas_struct_print(point_info);
+	while (get_next_line(0, &str) > 0)
+	{
+		if ((ft_strchr(str, '-') == 0 && ((int)ft_strchr(str, '-') - (int)str) == 0) || (ft_strstr(str, "##") - str) == 0)
+		{
+			printf("ERROR\n");
+			return (0);
+		}
+		if (str && (split = ft_strsplit(str, '-')) && len_double_star_char(split) == 2)
+		{
+			Links_check = 1;
+			(search_list(point_info, split[0]))->links_list = plus_on_double_star_char((search_list(point_info, split[0]))->links_list, split[1]);
+			(search_list(point_info, split[1]))->links_list = plus_on_double_star_char((search_list(point_info, split[1]))->links_list, split[0]);
+		}
+	}
+	point_info->ants = ant_number;
 	//ft_putstr("Link search start\n");
 	/*while (get_next_line(0, &str) > 0)//линки
 	{

@@ -744,6 +744,33 @@ src/find_answers.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/find_answers.c.s
 .PHONY : src/find_answers.c.s
 
+src/give_paths.o: src/give_paths.c.o
+
+.PHONY : src/give_paths.o
+
+# target to build an object file
+src/give_paths.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/give_paths.c.o
+.PHONY : src/give_paths.c.o
+
+src/give_paths.i: src/give_paths.c.i
+
+.PHONY : src/give_paths.i
+
+# target to preprocess a source file
+src/give_paths.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/give_paths.c.i
+.PHONY : src/give_paths.c.i
+
+src/give_paths.s: src/give_paths.c.s
+
+.PHONY : src/give_paths.s
+
+# target to generate assembly for a file
+src/give_paths.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/give_paths.c.s
+.PHONY : src/give_paths.c.s
+
 src/graph_functions.o: src/graph_functions.c.o
 
 .PHONY : src/graph_functions.o
@@ -984,6 +1011,9 @@ help:
 	@echo "... src/find_answers.o"
 	@echo "... src/find_answers.i"
 	@echo "... src/find_answers.s"
+	@echo "... src/give_paths.o"
+	@echo "... src/give_paths.i"
+	@echo "... src/give_paths.s"
 	@echo "... src/graph_functions.o"
 	@echo "... src/graph_functions.i"
 	@echo "... src/graph_functions.s"

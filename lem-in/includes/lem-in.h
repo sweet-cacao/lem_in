@@ -12,6 +12,7 @@ typedef struct              s_links
 
 typedef struct              s_pointlist
 {
+	int                     ants;
 	int                     level;
 	char                    *start_end;
 	char                    *name_point;
@@ -59,7 +60,17 @@ typedef struct      s_otv
     t_graph         *solve;
     struct s_otv    *next;
     struct s_otv    *prev;
+    int             number;
+    int             len;
 }                   t_otv;
+
+typedef struct      s_ants
+{
+	t_graph            *room;
+	int             path;
+	int             number;
+	struct s_ants   *next;
+}                   t_ants;
 
 void                bfs_algorythm(int len, t_gr_block *buff);
 void                delete_useless_links(int len, t_gr_block *buff);
@@ -68,17 +79,19 @@ char                *get_end(t_gr_block *buff, int len);
 char                *get_start(t_gr_block *buff, int len);
 int                 return_level(t_gr_block *buff, char *name, int len);
 t_otv               *get_solution(int len, t_gr_block *buff);
-void                belman_ford_req(t_gr_block *buff, int len);
+void                belman_ford_req(t_gr_block *buff, int len, int ants);
 void                give_directions(t_gr_block *buff, int len);
+void                print_ants_and_paths(int ants, t_otv *solutions);
 
-t_graph     *add_line(t_links *connections, char *name);
+t_graph             *add_line(t_links *connections, char *name);
 
 t_graph             *get_next_graph(t_graph *graph);
 t_graph             *add_block_graph(char *name, char *connection);
 void                push_front_graph(t_graph **graph, char *name, char *connection);
 void                delete_one_graph(t_graph **graph, char *name);
+int                 count_links(t_graph *graph);
 
-t_gr_block  create_gr_block(t_links *connections, char *name);
+t_gr_block          create_gr_block(t_links *connections, char *name);
 t_gr_block          return_t_gr_block(t_gr_block *buff, int len, char *name);
 t_gr_block          find_end(t_gr_block *buff, int len);
 

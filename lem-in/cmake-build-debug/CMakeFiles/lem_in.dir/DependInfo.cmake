@@ -27,6 +27,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gstarvin/CLionProjects/lem-in/src/belman-ford.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/belman-ford.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/delete_useful_links.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/delete_useful_links.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/find_answers.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/find_answers.c.o"
+  "/Users/gstarvin/CLionProjects/lem-in/src/give_paths.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/give_paths.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/graph_functions.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/graph_functions.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/main.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/parse.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/parse.c.o"

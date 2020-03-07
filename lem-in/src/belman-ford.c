@@ -79,7 +79,25 @@ void    make_path_back_minus(t_gr_block *buff, int len, t_gr_block one_block)
 	}
 }
 
-t_graph    *make_path_back_del(t_gr_block *buff, int len, t_gr_block one_block)
+int        is_in_solutions(t_otv *otv, char *name)
+{
+	t_graph *links;
+
+	while (otv)
+	{
+		links = otv->solve;
+		while (links)
+		{
+			if (ft_strcmp(links->link, name) == 0)
+				return (1);
+			links = links->next;
+		}
+		otv = otv->next;
+	}
+	return (0);
+}
+
+t_graph    *make_path_back_del(t_gr_block *buff, int len, t_gr_block one_block, t_otv *otv)
 {
 	t_graph *links;
 	t_gr_block tmp;
@@ -88,6 +106,8 @@ t_graph    *make_path_back_del(t_gr_block *buff, int len, t_gr_block one_block)
 	graph = NULL;
 	while (one_block.parent)
 	{
+		if (one_block.end != 1 && one_block.start != 1 && is_in_solutions(otv, one_block.name))
+			return (NULL);
 		push_front_graph(&graph, one_block.name, one_block.name);
 		links = one_block.links;
 		while (links)
@@ -212,7 +232,6 @@ void    req(t_gr_block *buff, int len, t_gr_block one_block, int i, t_graph *lis
 
 	k = 0;
 	j = 0;
-	printf("%s, %d\n", one_block.name, one_block.end);
 	if (one_block.end == 1 || one_block.count >= 1 || check_edge(list_edges, one_block.name) == 0) //|| one_block.start == 1)
 	{
 	/*	while (j < len)
@@ -321,7 +340,7 @@ int    count_max_paths(t_gr_block *buff, int len)
 	return (max_n_paths);
 }
 
-void    belman_ford_req(t_gr_block *buff, int len)
+void    belman_ford_req(t_gr_block *buff, int len, int ants)
 {
 	int i;
 	t_graph *answer;
@@ -368,14 +387,16 @@ void    belman_ford_req(t_gr_block *buff, int len)
 	//	printf("AFTER RECONSTRUCTION");
 	//	print_graph(buff, len);
 		req(buff, len, return_t_gr_block(buff, len, get_start(buff, len)), i, list_edges);
-		if (k == 1)
-			print_graph(buff, len);
-		answer = make_path_back_del(buff, len, return_t_gr_block(buff, len, get_end(buff, len)));
-	//
-		push_front_solution(&otv, answer);
+	//	if (k == 1)
+	//		print_graph(buff, len);
+		answer = make_path_back_del(buff, len, return_t_gr_block(buff, len, get_end(buff, len)), otv);
+		if (answer)
+			push_front_solution(&otv, answer);
 		k--;
 	}
-	print_solutions(otv);
+//	print_solutions(otv);
+	printf("\n");
+	print_ants_and_paths(ants, otv);
 }
 /*
 void    belman_ford_second(t_gr_block *buff, int len)

@@ -74,6 +74,10 @@ CMakeFiles/lem_in.dir/src/find_answers.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/find_answers.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/find_answers.c.o: ../src/find_answers.c
 
+CMakeFiles/lem_in.dir/src/give_paths.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/give_paths.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/give_paths.c.o: ../src/give_paths.c
+
 CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../src/graph_functions.c
