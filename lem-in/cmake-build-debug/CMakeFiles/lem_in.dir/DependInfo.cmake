@@ -24,6 +24,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/get_next_line.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/get_next_line.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/BFS.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/BFS.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/L-print.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/L-print.c.o"
+  "/Users/gstarvin/CLionProjects/lem-in/src/bel-ford2.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/bel-ford2.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/belman-ford.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/belman-ford.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/delete_useful_links.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/delete_useful_links.c.o"
   "/Users/gstarvin/CLionProjects/lem-in/src/find_answers.c" "/Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/find_answers.c.o"

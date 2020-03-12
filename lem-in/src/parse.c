@@ -46,11 +46,16 @@ t_pointlist             *search_list(t_pointlist *point_info, char *search_name)
 	return (point_info);
 }
 
-int             is_it_numbers_on_str(char *str)
+int             is_it_numbers_on_str(char *str, int a)
 {
 	int     i;
 
 	i = 0;
+	if (a)
+	{
+		while (str[i] != ' ' && str[i] != '\0')
+			i++;
+	}
 	while (str[i])
 	{
 		if (!(str[i] >= '0' && str[i] <= '9') && str[i] != ' ' && str[i] != '\t')
@@ -59,17 +64,18 @@ int             is_it_numbers_on_str(char *str)
 	}
 	return (1);
 }
-int             for_each(char **str)
-{
-	int     index;
 
-	index = 0;
-	while (str[index] != NULL && is_it_numbers_on_str(str[index]))
-		index++;
-	if (str[index] == NULL)
-		return (1);
-	return (0);
-}
+/*int             for_each(char **str)
+{
+    int     index;
+
+    index = 0;
+    while (str[index] != NULL && is_it_numbers_on_str(str[index]))
+        index++;
+    if (str[index] == NULL)
+        return (1);
+    return (0);
+}*/
 
 int             len_double_star_char(char **str)
 {
@@ -171,12 +177,12 @@ t_pointlist            *parse_map()
 	{
 		ft_putstr(str);
 		ft_putstr("\n");
-		if(ft_strstr(markers, str))
+		if(ft_strstr(markers, str) != NULL)
 		{
 			ft_putstr("ERROR\n");
 			return (0);
 		}
-		if (is_it_numbers_on_str(str))
+		if (is_it_numbers_on_str(str, 0))
 		{
 			ant_number = atoi(str);
 			break;
@@ -247,7 +253,7 @@ t_pointlist            *parse_map()
 			plus_part->next = point_info;
 			point_info = plus_part;
 		}
-		else if (is_it_numbers_on_str(str))
+		else if (is_it_numbers_on_str(str, 1) && !(ft_strchr(str, '-')))
 		{
 			plus_part = list_creation();
 			split = ft_strsplit(str, ' ');
@@ -265,13 +271,14 @@ t_pointlist            *parse_map()
 			(search_list(point_info, split[0]))->links_list = plus_on_double_star_char((search_list(point_info, split[0]))->links_list, split[1]);
 			(search_list(point_info, split[1]))->links_list = plus_on_double_star_char((search_list(point_info, split[1]))->links_list, split[0]);
 		}
-		/*if ((ft_strchr(str, '-') && str[0] != '#') || ((int)ft_strstr(markers, str) - (int)markers) == 0)
+		else if ((ft_strchr(str, '-') && str[0] != '#') || ((int)ft_strstr(markers, str) - (int)markers) == 0)
 		{
 			ft_putstr("ERROR\n");
 			break;
-		}*/
+		}
 	}
-	while (get_next_line(0, &str) > 0)
+	//mas_struct_print(point_info);
+	/*while (get_next_line(0, &str) > 0)
 	{
 		if ((ft_strchr(str, '-') == 0 && ((int)ft_strchr(str, '-') - (int)str) == 0) || (ft_strstr(str, "##") - str) == 0)
 		{
@@ -285,9 +292,9 @@ t_pointlist            *parse_map()
 			(search_list(point_info, split[1]))->links_list = plus_on_double_star_char((search_list(point_info, split[1]))->links_list, split[0]);
 		}
 	}
-	point_info->ants = ant_number;
+	mas_struct_print(point_info);
 	//ft_putstr("Link search start\n");
-	/*while (get_next_line(0, &str) > 0)//линки
+	while (get_next_line(0, &str) > 0)//линки
 	{
 		ft_putstr(str);
 		ft_putstr("\n");
@@ -297,5 +304,7 @@ t_pointlist            *parse_map()
 			point_info[search_list(point_info, split[1])].links = plus_on_double_star_char(point_info[search_list(point_info, split[1])].links, split[0]);
 		}
 	}*/
+
+		point_info->ants = ant_number;
 	return (point_info);
 }

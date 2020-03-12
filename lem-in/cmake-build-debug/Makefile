@@ -663,6 +663,33 @@ src/L-print.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/L-print.c.s
 .PHONY : src/L-print.c.s
 
+src/bel-ford2.o: src/bel-ford2.c.o
+
+.PHONY : src/bel-ford2.o
+
+# target to build an object file
+src/bel-ford2.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/bel-ford2.c.o
+.PHONY : src/bel-ford2.c.o
+
+src/bel-ford2.i: src/bel-ford2.c.i
+
+.PHONY : src/bel-ford2.i
+
+# target to preprocess a source file
+src/bel-ford2.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/bel-ford2.c.i
+.PHONY : src/bel-ford2.c.i
+
+src/bel-ford2.s: src/bel-ford2.c.s
+
+.PHONY : src/bel-ford2.s
+
+# target to generate assembly for a file
+src/bel-ford2.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/bel-ford2.c.s
+.PHONY : src/bel-ford2.c.s
+
 src/belman-ford.o: src/belman-ford.c.o
 
 .PHONY : src/belman-ford.o
@@ -1002,6 +1029,9 @@ help:
 	@echo "... src/L-print.o"
 	@echo "... src/L-print.i"
 	@echo "... src/L-print.s"
+	@echo "... src/bel-ford2.o"
+	@echo "... src/bel-ford2.i"
+	@echo "... src/bel-ford2.s"
 	@echo "... src/belman-ford.o"
 	@echo "... src/belman-ford.i"
 	@echo "... src/belman-ford.s"

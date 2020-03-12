@@ -61,7 +61,18 @@ int main()
 		i++;
 	}
 	i = 0;
-	t_gr_block one = return_t_gr_block(buff, len, get_start(buff, len));
+	t_graph *links;
+	while (i < len)
+	{
+		links = buff[i].links;
+		while (links)
+		{
+			links->num_buff = return_j(buff, len, links->link);
+			links = links->next;
+		}
+		i++;
+	}
+//	t_gr_block one = return_t_gr_block(buff, len, get_start(buff, len));
 
 //	buff = create_buff(len, map, &buff);
 
@@ -187,6 +198,7 @@ int main()
 //	solution = get_solution(4, buff);
 
 	belman_ford_req(buff, len, ants);
+//	bel_ford2(len, buff);
 //	print_graph(buff, len);
 	/*while (solution->solve)
 	{

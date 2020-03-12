@@ -19,6 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/libft/ft_str/get_next_line.c.o"
   "CMakeFiles/lem_in.dir/src/BFS.c.o"
   "CMakeFiles/lem_in.dir/src/L-print.c.o"
+  "CMakeFiles/lem_in.dir/src/bel-ford2.c.o"
   "CMakeFiles/lem_in.dir/src/belman-ford.c.o"
   "CMakeFiles/lem_in.dir/src/delete_useful_links.c.o"
   "CMakeFiles/lem_in.dir/src/find_answers.c.o"

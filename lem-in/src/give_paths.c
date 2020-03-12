@@ -111,7 +111,7 @@ void    give_paths(int ants, t_otv *solutions, t_ants *ants_buff)
 	while (i <= ants)
 	{
 		ants_buff[i-1].number = i;
-		k = choose_path(ants - i - 1, tmp);
+		k = choose_path(ants - i + 1, tmp);
 		if (k != 0)
 		{
 			ants_buff[i - 1].path = k;

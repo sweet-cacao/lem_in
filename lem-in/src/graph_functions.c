@@ -29,6 +29,7 @@ t_graph     *add_block_graph(char *name, char *connection)
 	graph->weight_link = 1;
 	graph->link = connection;
 	graph->next = NULL;
+	graph->num_buff = 0;
 	return (graph);
 }
 

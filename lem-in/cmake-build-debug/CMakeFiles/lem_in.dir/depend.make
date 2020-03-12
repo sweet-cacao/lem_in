@@ -62,6 +62,10 @@ CMakeFiles/lem_in.dir/src/L-print.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/L-print.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/L-print.c.o: ../src/L-print.c
 
+CMakeFiles/lem_in.dir/src/bel-ford2.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/bel-ford2.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/bel-ford2.c.o: ../src/bel-ford2.c
+
 CMakeFiles/lem_in.dir/src/belman-ford.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/belman-ford.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/belman-ford.c.o: ../src/belman-ford.c

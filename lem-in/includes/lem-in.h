@@ -37,6 +37,7 @@ typedef struct      s_graph
 	int             in;
 	int             out;
 	int             weight_link;
+	int             num_buff;
 }                   t_graph;
 
 typedef struct      s_gr_block
@@ -103,4 +104,7 @@ void                print_solutions(t_otv *otv);
 
 t_pointlist            *parse_map();
 
+void    bel_ford2(int len, t_gr_block *buff);
+void    bel_ford3(t_gr_block *buff, int len);
+int     return_j(t_gr_block *buff, int len, char *name);
 #endif
