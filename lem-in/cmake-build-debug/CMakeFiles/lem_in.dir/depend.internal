@@ -54,30 +54,18 @@ CMakeFiles/lem_in.dir/libft/ft_str/ft_strsub.c.o
 CMakeFiles/lem_in.dir/libft/ft_str/get_next_line.c.o
  /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/get_next_line.c
  /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
-CMakeFiles/lem_in.dir/src/BFS.c.o
+CMakeFiles/lem_in.dir/src/belman_ford.c.o
  /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
  /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
- /Users/gstarvin/CLionProjects/lem-in/src/BFS.c
-CMakeFiles/lem_in.dir/src/L-print.c.o
+ /Users/gstarvin/CLionProjects/lem-in/src/belman_ford.c
+CMakeFiles/lem_in.dir/src/del_lists.c.o
  /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
  /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
- /Users/gstarvin/CLionProjects/lem-in/src/L-print.c
-CMakeFiles/lem_in.dir/src/bel-ford2.c.o
+ /Users/gstarvin/CLionProjects/lem-in/src/del_lists.c
+CMakeFiles/lem_in.dir/src/find_all_paths.c.o
  /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
  /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
- /Users/gstarvin/CLionProjects/lem-in/src/bel-ford2.c
-CMakeFiles/lem_in.dir/src/belman-ford.c.o
- /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
- /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
- /Users/gstarvin/CLionProjects/lem-in/src/belman-ford.c
-CMakeFiles/lem_in.dir/src/delete_useful_links.c.o
- /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
- /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
- /Users/gstarvin/CLionProjects/lem-in/src/delete_useful_links.c
-CMakeFiles/lem_in.dir/src/find_answers.c.o
- /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
- /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
- /Users/gstarvin/CLionProjects/lem-in/src/find_answers.c
+ /Users/gstarvin/CLionProjects/lem-in/src/find_all_paths.c
 CMakeFiles/lem_in.dir/src/give_paths.c.o
  /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
  /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
@@ -90,19 +78,31 @@ CMakeFiles/lem_in.dir/src/main.c.o
  /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
  /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
  /Users/gstarvin/CLionProjects/lem-in/src/main.c
-CMakeFiles/lem_in.dir/src/parse.c.o
+CMakeFiles/lem_in.dir/src/parse_and_solve.c.o
  /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
  /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
- /Users/gstarvin/CLionProjects/lem-in/src/parse.c
-CMakeFiles/lem_in.dir/src/print_graph.c.o
+ /Users/gstarvin/CLionProjects/lem-in/src/parse_and_solve.c
+CMakeFiles/lem_in.dir/src/parser/extra_functions.c.o
  /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
  /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
- /Users/gstarvin/CLionProjects/lem-in/src/print_graph.c
-CMakeFiles/lem_in.dir/src/solution_functions.c.o
+ /Users/gstarvin/CLionProjects/lem-in/src/parser/extra_functions.c
+CMakeFiles/lem_in.dir/src/parser/parse.c.o
  /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
  /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
- /Users/gstarvin/CLionProjects/lem-in/src/solution_functions.c
-CMakeFiles/lem_in.dir/src/suurbale.c.o
+ /Users/gstarvin/CLionProjects/lem-in/src/parser/parse.c
+CMakeFiles/lem_in.dir/src/parser/print_graph.c.o
  /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
  /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
- /Users/gstarvin/CLionProjects/lem-in/src/suurbale.c
+ /Users/gstarvin/CLionProjects/lem-in/src/parser/print_graph.c
+CMakeFiles/lem_in.dir/src/print_ants.c.o
+ /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
+ /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
+ /Users/gstarvin/CLionProjects/lem-in/src/print_ants.c
+CMakeFiles/lem_in.dir/src/return_find.c.o
+ /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
+ /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
+ /Users/gstarvin/CLionProjects/lem-in/src/return_find.c
+CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.o
+ /Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
+ /Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
+ /Users/gstarvin/CLionProjects/lem-in/src/solution_graph_sorted.c

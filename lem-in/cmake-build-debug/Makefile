@@ -609,167 +609,86 @@ libft/ft_str/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/libft/ft_str/get_next_line.c.s
 .PHONY : libft/ft_str/get_next_line.c.s
 
-src/BFS.o: src/BFS.c.o
+src/belman_ford.o: src/belman_ford.c.o
 
-.PHONY : src/BFS.o
-
-# target to build an object file
-src/BFS.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/BFS.c.o
-.PHONY : src/BFS.c.o
-
-src/BFS.i: src/BFS.c.i
-
-.PHONY : src/BFS.i
-
-# target to preprocess a source file
-src/BFS.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/BFS.c.i
-.PHONY : src/BFS.c.i
-
-src/BFS.s: src/BFS.c.s
-
-.PHONY : src/BFS.s
-
-# target to generate assembly for a file
-src/BFS.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/BFS.c.s
-.PHONY : src/BFS.c.s
-
-src/L-print.o: src/L-print.c.o
-
-.PHONY : src/L-print.o
+.PHONY : src/belman_ford.o
 
 # target to build an object file
-src/L-print.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/L-print.c.o
-.PHONY : src/L-print.c.o
+src/belman_ford.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/belman_ford.c.o
+.PHONY : src/belman_ford.c.o
 
-src/L-print.i: src/L-print.c.i
+src/belman_ford.i: src/belman_ford.c.i
 
-.PHONY : src/L-print.i
+.PHONY : src/belman_ford.i
 
 # target to preprocess a source file
-src/L-print.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/L-print.c.i
-.PHONY : src/L-print.c.i
+src/belman_ford.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/belman_ford.c.i
+.PHONY : src/belman_ford.c.i
 
-src/L-print.s: src/L-print.c.s
+src/belman_ford.s: src/belman_ford.c.s
 
-.PHONY : src/L-print.s
+.PHONY : src/belman_ford.s
 
 # target to generate assembly for a file
-src/L-print.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/L-print.c.s
-.PHONY : src/L-print.c.s
+src/belman_ford.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/belman_ford.c.s
+.PHONY : src/belman_ford.c.s
 
-src/bel-ford2.o: src/bel-ford2.c.o
+src/del_lists.o: src/del_lists.c.o
 
-.PHONY : src/bel-ford2.o
+.PHONY : src/del_lists.o
 
 # target to build an object file
-src/bel-ford2.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/bel-ford2.c.o
-.PHONY : src/bel-ford2.c.o
+src/del_lists.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/del_lists.c.o
+.PHONY : src/del_lists.c.o
 
-src/bel-ford2.i: src/bel-ford2.c.i
+src/del_lists.i: src/del_lists.c.i
 
-.PHONY : src/bel-ford2.i
+.PHONY : src/del_lists.i
 
 # target to preprocess a source file
-src/bel-ford2.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/bel-ford2.c.i
-.PHONY : src/bel-ford2.c.i
+src/del_lists.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/del_lists.c.i
+.PHONY : src/del_lists.c.i
 
-src/bel-ford2.s: src/bel-ford2.c.s
+src/del_lists.s: src/del_lists.c.s
 
-.PHONY : src/bel-ford2.s
+.PHONY : src/del_lists.s
 
 # target to generate assembly for a file
-src/bel-ford2.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/bel-ford2.c.s
-.PHONY : src/bel-ford2.c.s
+src/del_lists.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/del_lists.c.s
+.PHONY : src/del_lists.c.s
 
-src/belman-ford.o: src/belman-ford.c.o
+src/find_all_paths.o: src/find_all_paths.c.o
 
-.PHONY : src/belman-ford.o
+.PHONY : src/find_all_paths.o
 
 # target to build an object file
-src/belman-ford.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/belman-ford.c.o
-.PHONY : src/belman-ford.c.o
+src/find_all_paths.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/find_all_paths.c.o
+.PHONY : src/find_all_paths.c.o
 
-src/belman-ford.i: src/belman-ford.c.i
+src/find_all_paths.i: src/find_all_paths.c.i
 
-.PHONY : src/belman-ford.i
-
-# target to preprocess a source file
-src/belman-ford.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/belman-ford.c.i
-.PHONY : src/belman-ford.c.i
-
-src/belman-ford.s: src/belman-ford.c.s
-
-.PHONY : src/belman-ford.s
-
-# target to generate assembly for a file
-src/belman-ford.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/belman-ford.c.s
-.PHONY : src/belman-ford.c.s
-
-src/delete_useful_links.o: src/delete_useful_links.c.o
-
-.PHONY : src/delete_useful_links.o
-
-# target to build an object file
-src/delete_useful_links.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/delete_useful_links.c.o
-.PHONY : src/delete_useful_links.c.o
-
-src/delete_useful_links.i: src/delete_useful_links.c.i
-
-.PHONY : src/delete_useful_links.i
+.PHONY : src/find_all_paths.i
 
 # target to preprocess a source file
-src/delete_useful_links.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/delete_useful_links.c.i
-.PHONY : src/delete_useful_links.c.i
+src/find_all_paths.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/find_all_paths.c.i
+.PHONY : src/find_all_paths.c.i
 
-src/delete_useful_links.s: src/delete_useful_links.c.s
+src/find_all_paths.s: src/find_all_paths.c.s
 
-.PHONY : src/delete_useful_links.s
-
-# target to generate assembly for a file
-src/delete_useful_links.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/delete_useful_links.c.s
-.PHONY : src/delete_useful_links.c.s
-
-src/find_answers.o: src/find_answers.c.o
-
-.PHONY : src/find_answers.o
-
-# target to build an object file
-src/find_answers.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/find_answers.c.o
-.PHONY : src/find_answers.c.o
-
-src/find_answers.i: src/find_answers.c.i
-
-.PHONY : src/find_answers.i
-
-# target to preprocess a source file
-src/find_answers.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/find_answers.c.i
-.PHONY : src/find_answers.c.i
-
-src/find_answers.s: src/find_answers.c.s
-
-.PHONY : src/find_answers.s
+.PHONY : src/find_all_paths.s
 
 # target to generate assembly for a file
-src/find_answers.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/find_answers.c.s
-.PHONY : src/find_answers.c.s
+src/find_all_paths.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/find_all_paths.c.s
+.PHONY : src/find_all_paths.c.s
 
 src/give_paths.o: src/give_paths.c.o
 
@@ -852,113 +771,194 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/main.c.s
 .PHONY : src/main.c.s
 
-src/parse.o: src/parse.c.o
+src/parse_and_solve.o: src/parse_and_solve.c.o
 
-.PHONY : src/parse.o
-
-# target to build an object file
-src/parse.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parse.c.o
-.PHONY : src/parse.c.o
-
-src/parse.i: src/parse.c.i
-
-.PHONY : src/parse.i
-
-# target to preprocess a source file
-src/parse.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parse.c.i
-.PHONY : src/parse.c.i
-
-src/parse.s: src/parse.c.s
-
-.PHONY : src/parse.s
-
-# target to generate assembly for a file
-src/parse.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parse.c.s
-.PHONY : src/parse.c.s
-
-src/print_graph.o: src/print_graph.c.o
-
-.PHONY : src/print_graph.o
+.PHONY : src/parse_and_solve.o
 
 # target to build an object file
-src/print_graph.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_graph.c.o
-.PHONY : src/print_graph.c.o
+src/parse_and_solve.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parse_and_solve.c.o
+.PHONY : src/parse_and_solve.c.o
 
-src/print_graph.i: src/print_graph.c.i
+src/parse_and_solve.i: src/parse_and_solve.c.i
 
-.PHONY : src/print_graph.i
+.PHONY : src/parse_and_solve.i
 
 # target to preprocess a source file
-src/print_graph.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_graph.c.i
-.PHONY : src/print_graph.c.i
+src/parse_and_solve.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parse_and_solve.c.i
+.PHONY : src/parse_and_solve.c.i
 
-src/print_graph.s: src/print_graph.c.s
+src/parse_and_solve.s: src/parse_and_solve.c.s
 
-.PHONY : src/print_graph.s
+.PHONY : src/parse_and_solve.s
 
 # target to generate assembly for a file
-src/print_graph.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_graph.c.s
-.PHONY : src/print_graph.c.s
+src/parse_and_solve.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parse_and_solve.c.s
+.PHONY : src/parse_and_solve.c.s
 
-src/solution_functions.o: src/solution_functions.c.o
+src/parser/extra_functions.o: src/parser/extra_functions.c.o
 
-.PHONY : src/solution_functions.o
+.PHONY : src/parser/extra_functions.o
 
 # target to build an object file
-src/solution_functions.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/solution_functions.c.o
-.PHONY : src/solution_functions.c.o
+src/parser/extra_functions.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/extra_functions.c.o
+.PHONY : src/parser/extra_functions.c.o
 
-src/solution_functions.i: src/solution_functions.c.i
+src/parser/extra_functions.i: src/parser/extra_functions.c.i
 
-.PHONY : src/solution_functions.i
+.PHONY : src/parser/extra_functions.i
 
 # target to preprocess a source file
-src/solution_functions.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/solution_functions.c.i
-.PHONY : src/solution_functions.c.i
+src/parser/extra_functions.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/extra_functions.c.i
+.PHONY : src/parser/extra_functions.c.i
 
-src/solution_functions.s: src/solution_functions.c.s
+src/parser/extra_functions.s: src/parser/extra_functions.c.s
 
-.PHONY : src/solution_functions.s
+.PHONY : src/parser/extra_functions.s
 
 # target to generate assembly for a file
-src/solution_functions.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/solution_functions.c.s
-.PHONY : src/solution_functions.c.s
+src/parser/extra_functions.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/extra_functions.c.s
+.PHONY : src/parser/extra_functions.c.s
 
-src/suurbale.o: src/suurbale.c.o
+src/parser/parse.o: src/parser/parse.c.o
 
-.PHONY : src/suurbale.o
+.PHONY : src/parser/parse.o
 
 # target to build an object file
-src/suurbale.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/suurbale.c.o
-.PHONY : src/suurbale.c.o
+src/parser/parse.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/parse.c.o
+.PHONY : src/parser/parse.c.o
 
-src/suurbale.i: src/suurbale.c.i
+src/parser/parse.i: src/parser/parse.c.i
 
-.PHONY : src/suurbale.i
+.PHONY : src/parser/parse.i
 
 # target to preprocess a source file
-src/suurbale.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/suurbale.c.i
-.PHONY : src/suurbale.c.i
+src/parser/parse.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/parse.c.i
+.PHONY : src/parser/parse.c.i
 
-src/suurbale.s: src/suurbale.c.s
+src/parser/parse.s: src/parser/parse.c.s
 
-.PHONY : src/suurbale.s
+.PHONY : src/parser/parse.s
 
 # target to generate assembly for a file
-src/suurbale.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/suurbale.c.s
-.PHONY : src/suurbale.c.s
+src/parser/parse.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/parse.c.s
+.PHONY : src/parser/parse.c.s
+
+src/parser/print_graph.o: src/parser/print_graph.c.o
+
+.PHONY : src/parser/print_graph.o
+
+# target to build an object file
+src/parser/print_graph.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/print_graph.c.o
+.PHONY : src/parser/print_graph.c.o
+
+src/parser/print_graph.i: src/parser/print_graph.c.i
+
+.PHONY : src/parser/print_graph.i
+
+# target to preprocess a source file
+src/parser/print_graph.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/print_graph.c.i
+.PHONY : src/parser/print_graph.c.i
+
+src/parser/print_graph.s: src/parser/print_graph.c.s
+
+.PHONY : src/parser/print_graph.s
+
+# target to generate assembly for a file
+src/parser/print_graph.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/print_graph.c.s
+.PHONY : src/parser/print_graph.c.s
+
+src/print_ants.o: src/print_ants.c.o
+
+.PHONY : src/print_ants.o
+
+# target to build an object file
+src/print_ants.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_ants.c.o
+.PHONY : src/print_ants.c.o
+
+src/print_ants.i: src/print_ants.c.i
+
+.PHONY : src/print_ants.i
+
+# target to preprocess a source file
+src/print_ants.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_ants.c.i
+.PHONY : src/print_ants.c.i
+
+src/print_ants.s: src/print_ants.c.s
+
+.PHONY : src/print_ants.s
+
+# target to generate assembly for a file
+src/print_ants.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_ants.c.s
+.PHONY : src/print_ants.c.s
+
+src/return_find.o: src/return_find.c.o
+
+.PHONY : src/return_find.o
+
+# target to build an object file
+src/return_find.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/return_find.c.o
+.PHONY : src/return_find.c.o
+
+src/return_find.i: src/return_find.c.i
+
+.PHONY : src/return_find.i
+
+# target to preprocess a source file
+src/return_find.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/return_find.c.i
+.PHONY : src/return_find.c.i
+
+src/return_find.s: src/return_find.c.s
+
+.PHONY : src/return_find.s
+
+# target to generate assembly for a file
+src/return_find.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/return_find.c.s
+.PHONY : src/return_find.c.s
+
+src/solution_graph_sorted.o: src/solution_graph_sorted.c.o
+
+.PHONY : src/solution_graph_sorted.o
+
+# target to build an object file
+src/solution_graph_sorted.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.o
+.PHONY : src/solution_graph_sorted.c.o
+
+src/solution_graph_sorted.i: src/solution_graph_sorted.c.i
+
+.PHONY : src/solution_graph_sorted.i
+
+# target to preprocess a source file
+src/solution_graph_sorted.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.i
+.PHONY : src/solution_graph_sorted.c.i
+
+src/solution_graph_sorted.s: src/solution_graph_sorted.c.s
+
+.PHONY : src/solution_graph_sorted.s
+
+# target to generate assembly for a file
+src/solution_graph_sorted.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.s
+.PHONY : src/solution_graph_sorted.c.s
 
 # Help Target
 help:
@@ -1023,24 +1023,15 @@ help:
 	@echo "... libft/ft_str/get_next_line.o"
 	@echo "... libft/ft_str/get_next_line.i"
 	@echo "... libft/ft_str/get_next_line.s"
-	@echo "... src/BFS.o"
-	@echo "... src/BFS.i"
-	@echo "... src/BFS.s"
-	@echo "... src/L-print.o"
-	@echo "... src/L-print.i"
-	@echo "... src/L-print.s"
-	@echo "... src/bel-ford2.o"
-	@echo "... src/bel-ford2.i"
-	@echo "... src/bel-ford2.s"
-	@echo "... src/belman-ford.o"
-	@echo "... src/belman-ford.i"
-	@echo "... src/belman-ford.s"
-	@echo "... src/delete_useful_links.o"
-	@echo "... src/delete_useful_links.i"
-	@echo "... src/delete_useful_links.s"
-	@echo "... src/find_answers.o"
-	@echo "... src/find_answers.i"
-	@echo "... src/find_answers.s"
+	@echo "... src/belman_ford.o"
+	@echo "... src/belman_ford.i"
+	@echo "... src/belman_ford.s"
+	@echo "... src/del_lists.o"
+	@echo "... src/del_lists.i"
+	@echo "... src/del_lists.s"
+	@echo "... src/find_all_paths.o"
+	@echo "... src/find_all_paths.i"
+	@echo "... src/find_all_paths.s"
 	@echo "... src/give_paths.o"
 	@echo "... src/give_paths.i"
 	@echo "... src/give_paths.s"
@@ -1050,18 +1041,27 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/parse.o"
-	@echo "... src/parse.i"
-	@echo "... src/parse.s"
-	@echo "... src/print_graph.o"
-	@echo "... src/print_graph.i"
-	@echo "... src/print_graph.s"
-	@echo "... src/solution_functions.o"
-	@echo "... src/solution_functions.i"
-	@echo "... src/solution_functions.s"
-	@echo "... src/suurbale.o"
-	@echo "... src/suurbale.i"
-	@echo "... src/suurbale.s"
+	@echo "... src/parse_and_solve.o"
+	@echo "... src/parse_and_solve.i"
+	@echo "... src/parse_and_solve.s"
+	@echo "... src/parser/extra_functions.o"
+	@echo "... src/parser/extra_functions.i"
+	@echo "... src/parser/extra_functions.s"
+	@echo "... src/parser/parse.o"
+	@echo "... src/parser/parse.i"
+	@echo "... src/parser/parse.s"
+	@echo "... src/parser/print_graph.o"
+	@echo "... src/parser/print_graph.i"
+	@echo "... src/parser/print_graph.s"
+	@echo "... src/print_ants.o"
+	@echo "... src/print_ants.i"
+	@echo "... src/print_ants.s"
+	@echo "... src/return_find.o"
+	@echo "... src/return_find.i"
+	@echo "... src/return_find.s"
+	@echo "... src/solution_graph_sorted.o"
+	@echo "... src/solution_graph_sorted.i"
+	@echo "... src/solution_graph_sorted.s"
 .PHONY : help
 
 

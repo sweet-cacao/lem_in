@@ -33,6 +33,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/parser" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="lem_in" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lem_in" TARGET_NAME="lem_in" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lem_in" RUN_TARGET_NAME="lem_in">
       <method v="2">
@@ -95,7 +100,10 @@
       <workItem from="1583939457823" duration="3844000" />
       <workItem from="1584013033994" duration="7205000" />
       <workItem from="1584025702564" duration="555000" />
-      <workItem from="1584026272622" duration="2893000" />
+      <workItem from="1584026272622" duration="3937000" />
+      <workItem from="1584037981434" duration="9000" />
+      <workItem from="1584094522880" duration="6761000" />
+      <workItem from="1584118872580" duration="406000" />
     </task>
     <servers />
   </component>
@@ -159,11 +167,11 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="333" y="352" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1584026258839" />
-    <state x="480" y="547" key="com.intellij.ide.util.TipDialog" timestamp="1584026272922">
+    <state x="480" y="547" key="com.intellij.ide.util.TipDialog" timestamp="1584118873260">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="480" y="533" key="com.intellij.ide.util.TipDialog/0.0.2560.1360@0.0.2560.1360" timestamp="1582809460600" />
-    <state x="480" y="547" key="com.intellij.ide.util.TipDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1584026272921" />
+    <state x="480" y="547" key="com.intellij.ide.util.TipDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1584118873260" />
     <state x="1005" y="324" width="549" height="722" key="refactoring.ChangeSignatureDialog" timestamp="1582721491080">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>

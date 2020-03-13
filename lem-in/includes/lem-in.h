@@ -43,7 +43,7 @@ typedef struct      s_graph
 typedef struct      s_gr_block
 {
 	int             count;
-	struct s_gr_block     *parent;
+	struct s_gr_block *parent;
 	char            *prev;
 	char            *parent_name;
 	int             iter;
@@ -73,15 +73,12 @@ typedef struct      s_ants
 	struct s_ants   *next;
 }                   t_ants;
 
-void                bfs_algorythm(int len, t_gr_block *buff);
-void                delete_useless_links(int len, t_gr_block *buff);
-t_otv               *suurbale(int len, t_gr_block *buff, int ants);
+
+
 char                *get_end(t_gr_block *buff, int len);
 char                *get_start(t_gr_block *buff, int len);
 int                 return_level(t_gr_block *buff, char *name, int len);
-t_otv               *get_solution(int len, t_gr_block *buff);
 void                belman_ford_req(t_gr_block *buff, int len, int ants);
-void                give_directions(t_gr_block *buff, int len);
 void                print_ants_and_paths(int ants, t_otv *solutions);
 
 t_graph             *add_line(t_links *connections, char *name);
@@ -102,9 +99,24 @@ t_otv               *add_block_solution(t_graph *graph);
 void                print_graph(t_gr_block *buff, int len);
 void                print_solutions(t_otv *otv);
 
-t_pointlist            *parse_map();
+t_pointlist         *parse_map();
 
-void    bel_ford2(int len, t_gr_block *buff);
-void    bel_ford3(t_gr_block *buff, int len);
-int     return_j(t_gr_block *buff, int len, char *name);
+void                bel_ford3(t_gr_block *buff, int len);
+int                 return_j(t_gr_block *buff, int len, char *name);
+
+int		            count_links(t_graph *graph);
+int		            count_max_paths(t_gr_block *buff, int len);
+t_graph		        *return_graph(t_otv *solutions, int path);
+void		        sort_with_len(t_otv **solutions);
+int			        is_in_room(t_ants *buff, int i, int ants);
+int					is_sorted(t_otv *otv);
+void		        give_len(t_otv **solutions);
+void		        give_numbers_solution(t_otv **solutions);
+void				del_solutions(t_otv **solutions);
+void	            del_graph(t_graph **graph);
+void	            del_buff_links(int len, t_gr_block *buff);
+void	del_pointlist(t_pointlist **pointlist);
+void	parse_and_solve(int len, t_pointlist **mapa, int ants);
+int     count_len_pointlist(t_pointlist *map);
+
 #endif

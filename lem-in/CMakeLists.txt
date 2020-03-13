@@ -3,9 +3,9 @@ project(lem_in C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(lem_in src/main.c src/graph_functions.c includes/lem-in.h src/solution_functions.c src/BFS.c
-        libft/ft_str/ft_strcmp.c src/find_answers.c src/delete_useful_links.c src/suurbale.c src/belman-ford.c
-        src/print_graph.c src/L-print.c src/parse.c
+add_executable(lem_in src/main.c src/graph_functions.c includes/lem-in.h src/solution_graph_sorted.c
+        libft/ft_str/ft_strcmp.c src/return_find.c src/find_all_paths.c
+        src/parser/print_graph.c src/parser/parse.c
         libft/ft_str/ft_strsplit.c
         libft/ft_str/ft_putstr.c
         libft/ft_str/ft_putchar.c
@@ -22,7 +22,7 @@ add_executable(lem_in src/main.c src/graph_functions.c includes/lem-in.h src/sol
         libft/ft_str/ft_strnew.c
         libft/ft_str/ft_strsub.c
         libft/ft_str/ft_bzero.c
-        libft/ft_str/ft_memdel.c src/give_paths.c src/bel-ford2.c)
+        libft/ft_str/ft_memdel.c src/give_paths.c src/belman_ford.c src/print_ants.c src/parser/extra_functions.c src/del_lists.c src/parse_and_solve.c)
 
 #find_library(LIBFT_LIB print libft)
 #target_link_libraries(lem_in LINK_PUBLIC ${LIBFT_LIB})
