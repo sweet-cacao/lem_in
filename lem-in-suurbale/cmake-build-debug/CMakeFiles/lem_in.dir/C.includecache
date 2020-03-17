@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
+../libft/ft_str/libft.h
+/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
+stdio.h
+-
+
+/Users/gstarvin/CLionProjects/lem-in/libft/ft_str/libft.h
+string.h
+-
+unistd.h
+-
+stdlib.h
+-
+fcntl.h
+-
+
+/Users/gstarvin/CLionProjects/lem-in/src/find_all_paths.c
+../includes/lem-in.h
+/Users/gstarvin/CLionProjects/lem-in/includes/lem-in.h
+
