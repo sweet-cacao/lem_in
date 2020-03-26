@@ -28,12 +28,17 @@ int			choose_path(int last_ants, t_otv *tmp)
 	while (walk->prev)
 	{
 		walk = walk->prev;
-		sum += len_now - walk->len;
+		sum = sum + (len_now - walk->len);
 	}
+//	printf("оставшиеся муравьи = %d, len_now = %d, cумма = %d\n", last_ants, len_now, sum);
 	if (last_ants > sum)
 	{
 		return (tmp->number);
 	}
+/*	else
+	{
+		return (tmp->prev->number);
+	}*/
 	return (0);
 }
 
@@ -44,20 +49,25 @@ void		give_paths(int ants, t_otv *solutions, t_ants *ants_buff)
 	int		k;
 
 	i = 1;
-	give_len(&solutions);
+	//give_len(&solutions);
 	tmp = solutions;
-	sort_with_len(&solutions);
+//	sort_with_len(&solutions);
 	give_numbers_solution(&solutions);
 	while (i <= ants)
 	{
 		ants_buff[i - 1].number = i;
+		i++;
+	}
+	i = 1;
+	while (i <= ants)
+	{
 		k = choose_path(ants - i + 1, tmp);
 		if (k != 0)
 		{
 			ants_buff[i - 1].path = k;
 			i++;
 		}
-		if (tmp->next)
+		if (tmp->next && k != 0)
 			tmp = tmp->next;
 		else
 			tmp = solutions;
@@ -102,6 +112,13 @@ void		print_ants_and_paths(int ants, t_otv *solutions)
 	t_ants	buff[ants];
 
 	give_rooms(ants, solutions, buff);
+//	print_solutions(solutions);
+//	i = 0;
+/*	while (i < ants)
+	{
+		printf("номер муравья = %d, номер пути = %d\n", buff[i].number, buff[i].path);
+		i++;
+	}*/
 	while (1)
 	{
 		i = 0;

@@ -10,29 +10,59 @@ void    print_graph(t_gr_block *buff, int len)
 	while (i < len)
 	{
 		links = buff[i].links;
-		printf("**[%s]  Weight = %d, Parent_name = %s :**\n", buff[i].name, buff[i].weight_edge, buff[i].parent_name);
+		if ((buff[i].in == 1) && (buff[i].out == 1))
+			printf("**[start/end ");
+		else if (buff[i].in == 1)
+			printf("**[in ");
+		else if (buff[i].out == 1)
+			printf("**[out ");
+		printf("%s]  Weight = %d, Parent_name = %s ", buff[i].name, buff[i].weight_edge, buff[i].parent_name);
+		if (buff[i].parent_name)
+		{
+			if ((buff[i].parent->in == 1) && (buff[i].parent->out  == 1))
+				printf("start/end\n ");
+			else if (buff[i].parent->in == 1)
+				printf("in\n ");
+			else if (buff[i].parent->out == 1)
+				printf("out\n ");
+		}
+		else
+			printf("\n");
 		while (links)
 		{
+			if ((buff[i].in == 1) && (buff[i].out == 1))
+				printf("[start/end ");
+			else if (buff[i].in == 1)
+				printf("[in ");
+			else if (buff[i].out == 1)
+				printf("[out ");
+			printf("%s] ", buff[i].name);
 			if (links->in == 1 && links->out == 1)
 			{
-				printf("[%s] ", buff[i].name);
-				printf("<---> [%s], weight = %d\n", links->link, links->weight_link);
+				printf("<--->");// [%s], weight = %d\n", links->link, links->weight_link);
 			}
 			else if (links->in == 0 && links->out == 1)
 			{
-				printf("[%s] ", buff[i].name);
-				printf("---> [%s], weight = %d\n", links->link, links->weight_link);
+		//		printf("[%s] ", buff[i].name);
+				printf("--->");// [%s], weight = %d\n", links->link, links->weight_link);
 			}
 			else if (links->in == 1 && links->out == 0)
 			{
-				printf("[%s] ", buff[i].name);
-				printf("<--- [%s], weight = %d\n", links->link, links->weight_link);
+		//		printf("[%s] ", buff[i].name);
+				printf("<---");// [%s], weight = %d\n", links->link, links->weight_link);
 			}
 			else
 			{
-				printf("[%s] ", buff[i].name);
-				printf("--- [%s], weight = %d\n", links->link, links->weight_link);
+		//		printf("[%s] ", buff[i].name);
+				printf("--- ");// [%s], weight = %d\n", links->link, links->weight_link);
 			}
+			if ((links->buff_in == 1) && (links->buff_out == 1))
+				printf("[start/end ");
+			else if (links->buff_in == 1)
+				printf("[in ");
+			else if (links->buff_out == 1)
+				printf("[out ");
+			printf("%s], weight = %d\n", links->link, links->weight_link);
 			links = links->next;
 		}
 		printf("\n");
@@ -49,7 +79,7 @@ void    print_solutions(t_otv *otv)
 	while (otv)
 	{
 		links = otv->solve;
-		printf("%d solution : ", i);
+		printf("%d solution : %d  ", i, otv->len);
 		while (links)
 		{
 			printf("%s", links->link);

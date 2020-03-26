@@ -1,6 +1,6 @@
 #ifndef LEM_IN_LEM_IN_H
 #define LEM_IN_LEM_IN_H
-
+# define INT32_MAX 2147483647
 #include "../libft/ft_str/libft.h"
 #include <stdio.h>
 
@@ -70,6 +70,7 @@ typedef struct      s_otv
     struct s_otv    *prev;
     int             number;
     int             len;
+    int				old;
 }                   t_otv;
 
 typedef struct      s_ants
@@ -95,20 +96,23 @@ t_graph             *add_block_graph(char *name, char *connection);
 void                push_front_graph(t_graph **graph, char *name, char *connection);
 void                delete_one_graph(t_graph **graph, char *name);
 int                 count_links(t_graph *graph);
+void			push_end_graph(t_graph **graph, char *name, char *connection);
 
 t_gr_block          create_gr_block(t_links *connections, char *name);
 t_gr_block          return_t_gr_block(t_gr_block *buff, int len, char *name);
 t_gr_block          find_end(t_gr_block *buff, int len);
 
-void                push_front_solution(t_otv **otv, t_graph *graph);
+void                push_end_solution(t_otv **otv, t_graph *graph);
 t_otv               *add_block_solution(t_graph *graph);
+t_otv				*get_next_solution(t_otv *graph);
+int					count_solutions(t_otv *graph);
 
 void                print_graph(t_gr_block *buff, int len);
 void                print_solutions(t_otv *otv);
 
 t_pointlist         *parse_map();
 
-void                bel_ford3(t_gr_block *buff, int len);
+void bel_ford3(t_gr_block *buff, int len, int *otriz);
 int                 return_j(t_gr_block *buff, int len, t_graph *links);
 int		            return_j_by_block(t_gr_block *buff, int len, t_gr_block one_block);
 
@@ -133,5 +137,11 @@ t_gr_block		create_gr_block_in(t_links *connections, char *name);
 t_gr_block		create_gr_block_out(t_links *connections, char *name);
 
 t_gr_block	    return_t_gr_block_by_block(t_gr_block *buff, int len, t_gr_block *one_block);
+
+int         check_duplicate_room(t_graph *graph, char *name);
+t_graph		*make_first(t_gr_block *buff, int len,
+						   t_gr_block one_block);
+int	check_same_link(t_graph *answer, t_otv **first, int ants);
+
 
 #endif

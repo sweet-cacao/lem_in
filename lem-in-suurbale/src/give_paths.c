@@ -59,6 +59,7 @@ void		sort_with_len(t_otv **solutions)
 
 	tmp = (*solutions);
 	tmp2 = tmp->next;
+
 	if (is_sorted(*solutions) != 1)
 	{
 		while (tmp)

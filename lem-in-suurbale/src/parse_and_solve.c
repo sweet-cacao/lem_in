@@ -53,26 +53,53 @@ void			parse_and_solve(int len, t_pointlist **mapa, int ants)
 	int			i;
 
 	map = (*mapa);
-	i = 0;
-	while (i < len)
+	i = 1;
+	while (map)
 	{
 		if (ft_strcmp("start", map->start_end) == 0)
 		{
-			buff[i] = create_gr_block_start(map->links_list, map->name_point);
-			buff[i].start = 1;
-			buff[i].weight_edge = 0;
-			i++;
+			buff[0] = create_gr_block_start(map->links_list, map->name_point);
+			buff[0].start = 1;
+			buff[0].weight_edge = 0;
+			//	i++;
+		}
+		map = map->next;
+	}
+	map = *mapa;
+	while (map)
+	{
+	/*	if (ft_strcmp("start", map->start_end) == 0)
+		{
+			buff[0] = create_gr_block_start(map->links_list, map->name_point);
+			buff[0].start = 1;
+			buff[0].weight_edge = 0;
+		//	i++;
 		}
 		else if (ft_strcmp("end", map->start_end) == 0)
 		{
-			buff[i] = create_gr_block_end(map->links_list, map->name_point);
-			buff[i].end = 1;
-			i++;
-		} else{
-			buff[i] = create_gr_block_out(map->links_list, map->name_point);
-			i++;
-			buff[i] = create_gr_block_in(map->links_list, map->name_point);
-			i++;
+			buff[len - 1] = create_gr_block_end(map->links_list, map->name_point);
+			buff[len - 1].end = 1;
+		//	i++;
+		}
+		else
+		{*/
+			if (i != 0 && i != (len - 1) ) {
+				buff[i] = create_gr_block_out(map->links_list, map->name_point);
+				i++;
+				buff[i] = create_gr_block_in(map->links_list, map->name_point);
+				i++;
+		//	}
+		}
+		map = map->next;
+	}
+	map = *mapa;
+	while (map)
+	{
+		if (ft_strcmp("end", map->start_end) == 0)
+		{
+			buff[len - 1] = create_gr_block_end(map->links_list, map->name_point);
+			buff[len - 1].end = 1;
+			//	i++;
 		}
 		map = map->next;
 	}

@@ -20,22 +20,32 @@ t_otv		*add_block_solution(t_graph *graph)
 	otv->solve = graph;
 	otv->next = NULL;
 	otv->prev = NULL;
+	otv->old = 0;
 	return (otv);
 }
 
-void		push_front_solution(t_otv **otv, t_graph *graph)
+void		push_end_solution(t_otv **otv, t_graph *graph)
 {
 	t_otv	*tmp;
+	t_otv	*next;
 
 	tmp = add_block_solution(graph);
+	tmp->len = count_links(graph);
 	if ((*otv) == NULL)
 		(*otv) = tmp;
 	else
 	{
-		if (*otv)
+		next = *otv;
+		while(next->next)
+		{
+			next = next->next;
+		}
+		next->next = tmp;
+		tmp->prev = next;
+	/*	if (*otv)
 			(*otv)->prev = tmp;
 		tmp->next = (*otv);
-		(*otv) = tmp;
+		(*otv) = tmp;*/
 	}
 }
 
@@ -50,19 +60,30 @@ int			is_sorted(t_otv *otv)
 	tmp2 = otv->next;
 	while (tmp && tmp2)
 	{
-		tmp2 = tmp->next;
 		while (tmp2)
 		{
 			if (tmp->len > tmp2->len)
+			{
 				return (0);
+			}
 			tmp2 = tmp2->next;
 		}
 		tmp = tmp->next;
+		tmp2 = tmp->next;
 	}
 	return (1);
 }
 
 t_graph		*get_next_graph(t_graph *graph)
+{
+	if (graph == NULL)
+		return (NULL);
+	while (graph->next)
+		graph = graph->next;
+	return (graph);
+}
+
+t_otv		*get_next_solution(t_otv *graph)
 {
 	if (graph == NULL)
 		return (NULL);

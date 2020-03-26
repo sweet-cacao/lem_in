@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/sweet-cacao/Загрузки/clion-2019.2.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /home/sweet-cacao/Загрузки/clion-2019.2.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gstarvin/CLionProjects/lem-in
+CMAKE_SOURCE_DIR = /home/sweet-cacao/lem-in/lem-in-suurbale
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gstarvin/CLionProjects/lem-in/cmake-build-debug
+CMAKE_BINARY_DIR = /home/sweet-cacao/lem-in/lem-in-suurbale/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/gstarvin/CLionProjects/lem-in/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/sweet-cacao/Загрузки/clion-2019.2.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/sweet-cacao/Загрузки/clion-2019.2.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles /Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sweet-cacao/lem-in/lem-in-suurbale/cmake-build-debug/CMakeFiles /home/sweet-cacao/lem-in/lem-in-suurbale/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gstarvin/CLionProjects/lem-in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sweet-cacao/lem-in/lem-in-suurbale/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -690,6 +690,33 @@ src/find_all_paths.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/find_all_paths.c.s
 .PHONY : src/find_all_paths.c.s
 
+src/first_answer.o: src/first_answer.c.o
+
+.PHONY : src/first_answer.o
+
+# target to build an object file
+src/first_answer.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer.c.o
+.PHONY : src/first_answer.c.o
+
+src/first_answer.i: src/first_answer.c.i
+
+.PHONY : src/first_answer.i
+
+# target to preprocess a source file
+src/first_answer.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer.c.i
+.PHONY : src/first_answer.c.i
+
+src/first_answer.s: src/first_answer.c.s
+
+.PHONY : src/first_answer.s
+
+# target to generate assembly for a file
+src/first_answer.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer.c.s
+.PHONY : src/first_answer.c.s
+
 src/give_paths.o: src/give_paths.c.o
 
 .PHONY : src/give_paths.o
@@ -967,8 +994,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... lem_in"
+	@echo "... edit_cache"
 	@echo "... libft/ft_str/ft_atoi.o"
 	@echo "... libft/ft_str/ft_atoi.i"
 	@echo "... libft/ft_str/ft_atoi.s"
@@ -1032,6 +1059,9 @@ help:
 	@echo "... src/find_all_paths.o"
 	@echo "... src/find_all_paths.i"
 	@echo "... src/find_all_paths.s"
+	@echo "... src/first_answer.o"
+	@echo "... src/first_answer.i"
+	@echo "... src/first_answer.s"
 	@echo "... src/give_paths.o"
 	@echo "... src/give_paths.i"
 	@echo "... src/give_paths.s"

@@ -248,7 +248,7 @@ t_gr_block		create_gr_block_end(t_links *connections, char *name)
 	gr_block.level = -1;
 	gr_block.weight_edge = INT32_MAX;
 	gr_block.iter = -1;
-	gr_block.links = NULL;//add_line_in_end(connections, name);
+	gr_block.links = add_line_in_end(connections, name);
 	gr_block.name = name;
 	gr_block.parent = NULL;
 	gr_block.parent_name = NULL;

@@ -20,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/belman_ford.c.o"
   "CMakeFiles/lem_in.dir/src/del_lists.c.o"
   "CMakeFiles/lem_in.dir/src/find_all_paths.c.o"
+  "CMakeFiles/lem_in.dir/src/first_answer.c.o"
   "CMakeFiles/lem_in.dir/src/give_paths.c.o"
   "CMakeFiles/lem_in.dir/src/graph_functions.c.o"
   "CMakeFiles/lem_in.dir/src/main.c.o"

@@ -25,6 +25,19 @@ int		count_links(t_graph *graph)
 	return (i);
 }
 
+int		count_solutions(t_otv *graph)
+{
+	int i;
+
+	i = 0;
+	while (graph)
+	{
+		i++;
+		graph = graph->next;
+	}
+	return (i);
+}
+
 int		count_max_paths(t_gr_block *buff, int len)
 {
 	int max_n_end_paths;
@@ -75,7 +88,7 @@ int		return_j_by_block(t_gr_block *buff, int len, t_gr_block one_block)
 	return (0);
 }
 
-int		change_weight(t_gr_block *buff, int len, int i)
+int		change_weight(t_gr_block *buff, int len, int i, int *otriz)
 {
 	t_graph	*links;
 	int		change;
@@ -88,7 +101,7 @@ int		change_weight(t_gr_block *buff, int len, int i)
 		&& buff[links->num_buff].iter != 1
 		&& buff[i].weight_edge != INT32_MAX &&
 		links->out == 1 &&
-		buff[links->num_buff].weight_edge >=
+		buff[links->num_buff].weight_edge >
 		(buff[i].weight_edge + links->weight_link))
 		{
 			buff[links->num_buff].weight_edge =
@@ -97,14 +110,17 @@ int		change_weight(t_gr_block *buff, int len, int i)
 			buff[links->num_buff].parent_name = buff[i].name;
 			change++;
 			if (links->weight_link == -1)
+			{
+				*otriz = 1;
 				buff[return_j(buff, len, links)].iter = 1;
+			}
 		}
 		links = links->next;
 	}
 	return (change);
 }
 
-void	bel_ford3(t_gr_block *buff, int len)
+void bel_ford3(t_gr_block *buff, int len, int *otriz)
 {
 	int		i;
 	int		k;
@@ -117,7 +133,7 @@ void	bel_ford3(t_gr_block *buff, int len)
 		change = 0;
 		while (i < len)
 		{
-			change += change_weight(buff, len, i);
+			change += change_weight(buff, len, i, otriz);
 			i++;
 		}
 		if (change == 0)
