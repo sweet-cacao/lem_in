@@ -109,6 +109,7 @@ int					count_solutions(t_otv *graph);
 
 void                print_graph(t_gr_block *buff, int len);
 void                print_solutions(t_otv *otv);
+void				print_links(char *text, t_graph *graph);
 
 t_pointlist         *parse_map();
 

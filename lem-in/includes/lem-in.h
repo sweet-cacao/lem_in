@@ -3,6 +3,7 @@
 
 #include "../libft/ft_str/libft.h"
 #include <stdio.h>
+# define INT32_MAX 2147483647
 
 typedef struct              s_links
 {

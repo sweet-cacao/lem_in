@@ -30,16 +30,18 @@ t_graph *get_first_answer(t_graph *end_new, t_graph *whole_first)
 	t_graph *graph;
 
 	graph = NULL;
+/*	whole_first = whole_first->next;
 	while (ft_strcmp(whole_first->link, end_new->link) != 0)
 	{
 		push_end_graph(&graph, whole_first->link, whole_first->link);
 		whole_first = whole_first->next;
-	}
+	}*/
 	t_graph *tmp;
 	tmp = end_new;
-	whole_first = whole_first->next;
+//	whole_first = whole_first->next;
 	while(whole_first)
 	{
+		push_end_graph(&graph, whole_first->link, whole_first->link);
 		tmp = end_new;
 		while(tmp)
 		{
@@ -47,9 +49,12 @@ t_graph *get_first_answer(t_graph *end_new, t_graph *whole_first)
 				break;
 			tmp = tmp->next;
 		}
+		if (tmp && ft_strcmp(whole_first->link, tmp->link) == 0)
+			break;
 		whole_first = whole_first->next;
 	}
-	end_new = end_new->next->next;
+//	end_new = end_new->next->next;
+	tmp = tmp->next;
 	while(tmp)
 	{
 		push_end_graph(&graph, tmp->link, tmp->link);
@@ -119,6 +124,44 @@ int 	check_useful(t_otv **first, int ants)
 	else
 		return (0);
 }
+int 	compare_graph(t_graph *one, t_graph *two)
+{
+	if (!one || !two)
+		return (0);
+	while (one && two)
+	{
+		if (ft_strcmp(one->link, two->link) != 0)
+			return (0);
+		one = one->next;
+		two = two->next;
+	}
+	if (one == NULL && two == NULL)
+		return (1);
+	else
+		return (0);
+}
+
+void		delete_first_gr(t_otv **sort)
+{
+	t_otv	*tmp;
+
+	if (!sort)
+		return ;
+	tmp = (*sort);
+	if (!tmp)
+		return ;
+	if (!tmp->next)
+	{
+		free(*sort);
+		(*sort) = NULL;
+		sort = NULL;
+		return ;
+	}
+	(*sort) = (*sort)->next;
+	free(tmp);
+	tmp = NULL;
+	(*sort)->prev = NULL;
+}
 
 void	del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second)//нужно проверку на налл два раза и пофришить
 {
@@ -131,17 +174,20 @@ void	del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second)//нужно 
 	tmp = *otv;
 	while (tmp)
 	{
-		if (tmp->len == len_one)
+		if (compare_graph(tmp->solve, first) == 1)// == len_one && tmp->old != 1)
 		{
 			if (!tmp->prev)//пофришить
 			{
-				tmp = tmp->next;
-				free(tmp->prev);
+				delete_first_gr(otv);
+				/*tmp = tmp->next;
+			//	free(tmp->prev);
 				tmp->prev = NULL;
-				(*otv) = tmp;
+				otv = &((*otv)->next);
+			//	otv = &tmp;
+			//	(*otv) = tmp;*/
 			} else if (!tmp->next)
 			{
-				tmp = NULL;
+				tmp->prev->next = NULL;
 			}
 			else {
 				tmp->prev->next = tmp->next;
@@ -155,17 +201,20 @@ void	del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second)//нужно 
 	tmp = *otv;
 	while (tmp)
 	{
-		if (tmp->len == len_two)
+		if (compare_graph(tmp->solve, second) == 1)
 		{
 			if (!tmp->prev)//пофришить
 			{
-				tmp = tmp->next;
-				free(tmp->prev);
+				delete_first_gr(otv);
+			/*	tmp = tmp->next;
+			//	free(tmp->prev);
 				tmp->prev = NULL;
-				(*otv) = tmp;
+				otv = &((*otv)->next);*/
+			//	otv = &tmp;
+			//	(*otv) = tmp;
 			} else if (!tmp->next)
 			{
-				tmp = NULL;
+				tmp->prev->next = NULL;
 			}
 			else {
 				tmp->prev->next = tmp->next;
@@ -186,33 +235,127 @@ void	del_sol_old(t_otv **first)
 	t_otv *tmp;
 
 	tmp = *first;
+	static int k = 0;
 	while (tmp) {
-		if (tmp->old == 1) {
+		if (tmp->old == 1)
+		{
 			if (!tmp->prev)//пофришить, вроде это не особо правильно работает
 			{
-				tmp = tmp->next;
-				free(tmp->prev);
+//				k++;
+//				printf("BEFORE");
+//				print_solutions(*first);
+				delete_first_gr(first);
+//				printf("AFTER");
+//				print_solutions(*first);
+//				if (k == 2)
+//					exit (0);
+			/*	tmp = tmp->next;
+			//	free(tmp->prev);
 				tmp->prev = NULL;
-				(*first) = tmp;
+				first = &((*first)->next);*/
+			//	first = &tmp;
 			} else if (!tmp->next)
 			{
-				tmp = NULL;
+				tmp->prev->next = NULL;
 				//free(tmp);
 			} else
 			{
 				tmp->prev->next = tmp->next;
 				tmp->next->prev = tmp->prev;
-
 			}
-
 			break;
 		}
 		tmp = tmp->next;
 	}
 }
 
+int			count_simmilar(t_graph *one, t_graph *two)
+{
+	t_graph *tmp;
+	int res;
+
+	tmp = two;
+	res = 0;
+	one = one->next;
+	while (one->next)
+	{
+		tmp = two->next;
+		while (tmp->next)
+		{
+			if (ft_strcmp(tmp->link, one->link) == 0)
+				res++;
+			tmp = tmp->next;
+		}
+		one = one->next;
+	}
+	printf("res=%d", res);
+	return (res);
+}
+int			is_in_solutions_graph(t_otv **first, t_graph *tmp)
+{
+	t_graph *links;
+	t_graph *graph;
+	t_graph *new_answer_1;
+	t_graph *new_answer_2;
+	t_otv *otv;
+	t_graph *old;
+	int res;
+
+	otv = *first;
+	links = NULL;
+	graph = NULL;
+	res = 0;
+//	print_links("new_answer for split:", tmp);
+	while (otv)
+	{
+		graph = tmp->next;
+//		print_links("before split:", otv->solve);
+		if (otv->old == 0)
+		{
+			while (graph->next)
+			{
+				links = otv->solve->next;
+				while (links->next)
+				{
+					if (ft_strcmp(links->link, graph->link) == 0)
+					{
+//						if (count_simmilar(tmp, otv->solve) > 20)
+						res = 1;
+						new_answer_1 = get_first_answer(graph, otv->solve);//конец нового графа
+						new_answer_2 = get_second_answer(tmp, links);//
+						old = otv->solve;
+//						printf("SECOND LEVEL");
+//						print_links("before split:", otv->solve);
+//						print_links("new_answer for split:", tmp);
+//						print_links("new_answer 1:", new_answer_1);
+//						print_links("new_answer 2:", new_answer_2);
+//						print_solutions(*first);
+					//	otv->prev->next = NULL;
+					//	otv = NULL;
+						del_sol_last_two(first, old, old);
+				//		if (is_in_solutions_graph(first, new_answer_1) == 0)
+							push_end_solution(first, new_answer_1);
+				//		if (is_in_solutions_graph(first, new_answer_2) == 0)
+							push_end_solution(first, new_answer_2);
+						break;
+					}
+					links = links->next;
+				}
+				if (res == 1)
+					break;
+				graph = graph->next;
+			}
+		}
+		if (res == 1)
+			break;
+		otv = otv->next;
+	}
+	return (res);
+}
+
 int	check_same_link(t_graph *answer, t_otv **first, int ants)
 {
+	t_graph *old;
 	t_otv *tmp;
 	t_graph *graph;
 	t_graph *walk;
@@ -232,20 +375,33 @@ int	check_same_link(t_graph *answer, t_otv **first, int ants)
 			while (walk->next)
 			{
 				if (ft_strcmp(graph->link, walk->link) == 0) {
-
 					new_answer_1 = get_first_answer(graph, tmp->solve);//конец нового графа
 					new_answer_2 = get_second_answer(answer, walk);//
+//					print_links("before split:", tmp->solve);
+//					print_links("new_answer for split:", answer);
+//					print_links("new_answer 1:", new_answer_1);
+//					print_links("new_answer 2:", new_answer_2);
+//					print_solutions(*first);
+				//	print_solutions(*first);
 					tmp->old = 1;
+					old = tmp->solve;
 			//		printf("\ntmp_len = %d\n", tmp->len);
-					push_end_solution(first, new_answer_1);
-					push_end_solution(first, new_answer_2);
+					if (is_in_solutions_graph(first, new_answer_1) == 0)
+						push_end_solution(first, new_answer_1);
+					if (is_in_solutions_graph(first, new_answer_2) == 0)
+						push_end_solution(first, new_answer_2);
 					sort_with_len(first);
 					if (check_useful(first, ants) == 0)
 					{
 						del_sol_last_two(first, new_answer_1, new_answer_2);//не правильно нужно четко знать какие именно удалять
-						tmp->old = 0;
+				//		tmp->old = 0;
 						return (3);
 					} else {
+				/*		print_links("\nbefore split:", old);
+						print_links("\nwhole_answer_new:", answer);
+						print_links("\nnew_answer 1:", new_answer_1);
+						print_links("\nnew_answer 2:", new_answer_2);*/
+					//	del_sol_last_two(first, old, old);//не правильно нужно четко знать какие именно удалять
 						del_sol_old(first);
 						return (1);
 					}
@@ -265,5 +421,6 @@ int	check_same_link(t_graph *answer, t_otv **first, int ants)
 		tmp = NULL;
 		return (3);
 	}
+//	print_links("\nanswer:", answer);
 	return (2);
 }

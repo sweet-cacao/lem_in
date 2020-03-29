@@ -95,3 +95,18 @@ void    print_solutions(t_otv *otv)
 	}
 }
 
+void	print_links(char *text, t_graph *graph)
+{
+	printf("%s\n", text);
+	while (graph)
+	{
+		printf("%s", graph->link);
+		if (graph->next != NULL)
+		{
+			printf("-->");
+		}
+		graph = graph->next;
+	}
+	printf("\n");
+}
+
