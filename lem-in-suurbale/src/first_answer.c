@@ -291,7 +291,7 @@ int			count_simmilar(t_graph *one, t_graph *two)
 	printf("res=%d", res);
 	return (res);
 }
-int			is_in_solutions_graph(t_otv **first, t_graph *tmp)
+int is_in_solutions_graph(t_otv **first, t_graph *tmp, int ants)
 {
 	t_graph *links;
 	t_graph *graph;
@@ -336,7 +336,13 @@ int			is_in_solutions_graph(t_otv **first, t_graph *tmp)
 				//		if (is_in_solutions_graph(first, new_answer_1) == 0)
 							push_end_solution(first, new_answer_1);
 				//		if (is_in_solutions_graph(first, new_answer_2) == 0)
-							push_end_solution(first, new_answer_2);
+						push_end_solution(first, new_answer_2);
+						sort_with_len(first);
+						if (check_useful(first, ants) == 0)
+						{
+							del_sol_last_two(first, new_answer_1, new_answer_2);
+							return (0);
+						}
 						break;
 					}
 					links = links->next;
@@ -386,9 +392,9 @@ int	check_same_link(t_graph *answer, t_otv **first, int ants)
 					tmp->old = 1;
 					old = tmp->solve;
 			//		printf("\ntmp_len = %d\n", tmp->len);
-					if (is_in_solutions_graph(first, new_answer_1) == 0)
+					if (is_in_solutions_graph(first, new_answer_1, ants) == 0)
 						push_end_solution(first, new_answer_1);
-					if (is_in_solutions_graph(first, new_answer_2) == 0)
+					if (is_in_solutions_graph(first, new_answer_2, ants) == 0)
 						push_end_solution(first, new_answer_2);
 					sort_with_len(first);
 					if (check_useful(first, ants) == 0)

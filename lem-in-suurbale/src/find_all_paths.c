@@ -235,8 +235,8 @@ void		belman_ford_req(t_gr_block *buff, int len, int ants)
 	{
 		otriz = 0;
 		bel_ford3(buff, len, &otriz);
-	//	if (!(make_path_back(buff, len, buff[len-1])))
-	//		break ;
+		if (!(make_path_back(buff, len, buff[len-1])))
+			break ;
 		first_answer = make_first(buff, len, buff[len - 1]);
 		if (first_answer == NULL)
 			break;
@@ -261,7 +261,7 @@ void		belman_ford_req(t_gr_block *buff, int len, int ants)
 		//	break;
 	}
 //	print_graph(buff, len);
-/*	reconstruct_initial(buff, len);
+	reconstruct_initial(buff, len);
 	while (i-- >= -1)
 	{
 //		print_graph(buff, len);
@@ -286,7 +286,7 @@ void		belman_ford_req(t_gr_block *buff, int len, int ants)
 			j++;
 		}
 		buff[0].weight_edge = 0;
-	}*/
+	}
 //	print_solutions(otv);
 //	print_solutions(first);
 //	del_graph(&answer);
