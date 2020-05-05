@@ -12,69 +12,199 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="103ad042-cb34-4efa-bcd7-8aae519374b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/why" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Adj8--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Ahe6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Ahl5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Aid7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Alh7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Aly8--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Atj6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/B_h2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/B_x2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Baj3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Bj_7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Bji5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Bo_3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Bub6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Bxm9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_atoi.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_atoi.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_bzero.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_bzero.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_countletters.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_countletters.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_countwds.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_countwds.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_memdel.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_memdel.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_putchar.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_putchar.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_putstr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_putstr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strchr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strchr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strdel.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strdel.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strdup.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strdup.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strjoin.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strjoin.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strnew.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strnew.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strsplit.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strsplit.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strstr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strstr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strsub.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strsub.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/get_next_line.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/get_next_line.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/belman_ford.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/belman_ford.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/del_lists.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/del_lists.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/find_all_paths.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/find_all_paths.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/first_answer.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/first_answer.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/give_paths.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/give_paths.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/graph_functions.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/graph_functions.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/parse_and_solve.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/parse_and_solve.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/parser/extra_functions.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/parser/extra_functions.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/parser/parse.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/parser/parse.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/parser/print_graph.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/parser/print_graph.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/print_ants.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/print_ants.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/return_find.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/return_find.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/C__6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/C_a4--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Caf2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Cg_8--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Cim5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Ckv1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Clk4--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Csj2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/D_p1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Dcy7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Dll7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Do_5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Dvh4--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Dyi3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/E__8--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/E_a9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Ecw7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Eih1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Elq3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Eqi6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Eu_0--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Exu3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Feu6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Fkd8--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Fm_4--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Fpt2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/G_o3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Gcu0--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Gfu8--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Gjz1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Gpq4--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Gqw1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Grj5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Gsx4--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Gzt6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/H__9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Htf3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Htt5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Hx_9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Hxs2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/I_m8--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Iby2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Ihp1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Iji1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Inn8--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Iqm3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Iur6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Iv_1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Ixh1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/J__3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/J_n6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Jcn0--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Jdo9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Ji_9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Jlf8--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Jnu3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Jod0--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Jvh6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/K_c2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/K_o1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Kfk5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Kho3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Kid0--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Kma7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Kmp8--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Kon1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Kwg8--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/M_f7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Mbc5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Mhl5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Mii2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Mik0--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Ml_1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Mxx5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Ndy7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Num6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/O_j9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Og_3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Omj5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/P_o0--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Pke1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Pqq3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Pvl4--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Pxo1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Qg_7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Qkb7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Qnz2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Qoi8--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Qpf0--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Qsh6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/R_m8--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Rqy5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Rtl5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Ryh9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Sfs7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Shf2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Sjc4--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Suo3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/T_u9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Tdb4--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Tpp3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Ttg1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Ty_5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Uoi3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Use4--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Uwi7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/V__9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Vbr1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Vhp9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Vhv3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Vnk9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Vqx9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Vwz5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Vzd9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Wav3--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Wdq2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Wop9--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Xil1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Xql6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Xr_0--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Xtq5--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Xwi2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Yau7--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Yco2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Ykg2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Z__0--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Zfh6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Zmj1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Zsa2--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Zsx6--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Zsy1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/Zzq1--" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/big-42" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/lem_in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/suurbale" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/suurbale" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/verifier" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/cmake-build-debug/verifier" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/includes/lem-in.h" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/includes/lem-in.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/libft/ft_str/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/libft/ft_str/libft.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/src/belman_ford.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/src/belman_ford.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/src/find_all_paths.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/src/find_all_paths.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/src/first_answer.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/src/first_answer.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/src/parser/print_graph.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/src/parser/print_graph.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/src/parse_and_solve.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/src/parse_and_solve.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lem-in-suurbale/src/parser/parse.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lem-in-suurbale/src/parser/parse.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_atoi.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_atoi.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_bzero.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_bzero.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_countletters.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_countletters.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_countwds.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_countwds.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_memdel.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_memdel.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_putchar.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_putchar.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_putstr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_putstr.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strchr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strchr.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strdel.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strdel.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strdup.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strdup.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strjoin.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strjoin.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strlen.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strlen.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strnew.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strnew.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strsplit.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strsplit.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strstr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strstr.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strsub.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/ft_strsub.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/get_next_line.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_str/get_next_line.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/belman_ford.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/belman_ford.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/del_lists.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/del_lists.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/find_all_paths.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/find_all_paths.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/give_paths.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/give_paths.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/graph_functions.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/graph_functions.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/parse_and_solve.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/parse_and_solve.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/parser/extra_functions.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/parser/extra_functions.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/parser/parse.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/parser/parse.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/parser/print_graph.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/parser/print_graph.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/print_ants.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/print_ants.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/return_find.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/return_find.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_in.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_in.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/lem-in.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/lem-in.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/verifier" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/verifier" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../verif" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -187,6 +317,10 @@
       <workItem from="1584094522880" duration="6761000" />
       <workItem from="1584118872580" duration="406000" />
       <workItem from="1584989297280" duration="2574000" />
+      <workItem from="1587223617270" duration="895000" />
+      <workItem from="1587484299034" duration="367000" />
+      <workItem from="1588090957954" duration="1935000" />
+      <workItem from="1588248310655" duration="916000" />
     </task>
     <servers />
   </component>
@@ -198,7 +332,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

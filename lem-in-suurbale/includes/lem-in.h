@@ -42,6 +42,7 @@ typedef struct      s_graph
 	int             buff_out;
 	int             no;
 	int             time;
+	int				code_link;
 }                   t_graph;
 
 typedef struct      s_gr_block
@@ -61,6 +62,7 @@ typedef struct      s_gr_block
 	char            *name;
 	t_graph         *links;
 	int             num;
+	int 			code;
 }                   t_gr_block;
 
 typedef struct      s_otv
@@ -139,10 +141,10 @@ t_gr_block		create_gr_block_out(t_links *connections, char *name);
 
 t_gr_block	    return_t_gr_block_by_block(t_gr_block *buff, int len, t_gr_block *one_block);
 
-int         check_duplicate_room(t_graph *graph, char *name);
+int check_duplicate_room(t_graph *graph, char *name, int code_gr);
 t_graph		*make_first(t_gr_block *buff, int len,
 						   t_gr_block one_block);
 int	check_same_link(t_graph *answer, t_otv **first, int ants);
-
+void	del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second);
 
 #endif

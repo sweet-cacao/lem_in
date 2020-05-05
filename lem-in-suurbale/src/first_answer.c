@@ -13,8 +13,11 @@ t_graph		*make_first(t_gr_block *buff, int len,
 		//	if (one_block.end != 1 && one_block.start != 1)// &&
 		//	is_in_solutions(otv, one_block.name))
 		//		k++;
-		if (!check_duplicate_room(graph, one_block.name))
+		if (!check_duplicate_room(graph, one_block.name, one_block.code))
+		{
 			push_front_graph(&graph, one_block.name, one_block.name);
+			graph->code_link = one_block.code;
+		}
 	//	if (one_block.end != 1 && one_block.start != 1)
 	//		buff[one_block.num].dead_end = 1;
 		one_block = buff[one_block.parent->num];// return_t_gr_block_by_block(buff, len, one_block.parent);
@@ -106,18 +109,19 @@ int 	check_useful(t_otv **first, int ants)
 	int len;
 
 	sum = 0;
+	last_ants = ants - count_solutions(*first) + 1;
 	tmp = get_next_solution(*first);
 	len = tmp->len;
-	last_ants = ants - count_solutions(*first) + 1;
+//	printf("\n");
 	while(tmp->prev)
 	{
 		tmp = tmp->prev;
-		if (tmp->old == 0)
+		if (tmp->old != 1)
 		{
 			sum += len - tmp->len;
 		}
 	}
-	if (last_ants > sum)
+	if (last_ants > sum+10)
 	{
 		return (1);
 	}
@@ -233,14 +237,18 @@ void	del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second)//нужно 
 void	del_sol_old(t_otv **first)
 {
 	t_otv *tmp;
+	int count;
 
+	count = 0;
 	tmp = *first;
 	static int k = 0;
 	while (tmp) {
-		if (tmp->old == 1)
+		if (tmp->old == 1 && count == 0)
 		{
+			count++;
 			if (!tmp->prev)//пофришить, вроде это не особо правильно работает
 			{
+
 //				k++;
 //				printf("BEFORE");
 //				print_solutions(*first);
@@ -265,6 +273,11 @@ void	del_sol_old(t_otv **first)
 			}
 			break;
 		}
+
+//		else if (tmp->old == 1 && count != 0)
+//		{
+//			tmp->old = 0;
+//		}
 		tmp = tmp->next;
 	}
 }
@@ -334,13 +347,14 @@ int is_in_solutions_graph(t_otv **first, t_graph *tmp, int ants)
 					//	otv = NULL;
 						del_sol_last_two(first, old, old);
 				//		if (is_in_solutions_graph(first, new_answer_1) == 0)
-							push_end_solution(first, new_answer_1);
+						push_end_solution(first, new_answer_1);
 				//		if (is_in_solutions_graph(first, new_answer_2) == 0)
 						push_end_solution(first, new_answer_2);
 						sort_with_len(first);
 						if (check_useful(first, ants) == 0)
 						{
 							del_sol_last_two(first, new_answer_1, new_answer_2);
+//							printf("\nhere\n");
 							return (0);
 						}
 						break;
@@ -399,8 +413,7 @@ int	check_same_link(t_graph *answer, t_otv **first, int ants)
 					sort_with_len(first);
 					if (check_useful(first, ants) == 0)
 					{
-						del_sol_last_two(first, new_answer_1, new_answer_2);//не правильно нужно четко знать какие именно удалять
-				//		tmp->old = 0;
+						del_sol_last_two(first, new_answer_1, new_answer_2);
 						return (3);
 					} else {
 				/*		print_links("\nbefore split:", old);

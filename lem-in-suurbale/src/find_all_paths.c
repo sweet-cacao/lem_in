@@ -18,8 +18,13 @@ int			make_path_back(t_gr_block *buff, int len, t_gr_block one_block)
 	while (one_block.parent)
 	{
 		one_block = buff[one_block.parent->num];
-		if (one_block.count == 1)
+		if (one_block.count >= 1)
+			printf("%s, in = %d, out = %d\n", one_block.name, one_block.in, one_block.out);
+		if (one_block.count == 3)
+		{
+//			printf("%s", one_block.name);
 			return (0);// return_t_gr_block_by_block(buff, len, one_block.parent);
+		}
 		buff[one_block.num].count++;
 	}
 	if (one_block.start == 1)
@@ -53,7 +58,8 @@ int			make_path_back_minus(t_gr_block *buff, int len, t_gr_block one_block)
 				links->in  = 0;
 				links->weight_link = -1;
 	//			links->no = -1;
-				if (ft_strcmp(links->link, one_block.name) == 0) //здесь было парент нэйм и периодически работало но все равно на 2-3 больше
+				if (links->code_link == one_block.code)
+				//if (ft_strcmp(links->link, one_block.name) == 0) //здесь было парент нэйм и периодически работало но все равно на 2-3 больше
 				{
 					links->weight_link = 0;
 				}
@@ -64,7 +70,6 @@ int			make_path_back_minus(t_gr_block *buff, int len, t_gr_block one_block)
 					{
 						links2->out = 0;
 						links2->in = 1;
-
 				//		if (ft_strcmp(links2->link, buff[links->num_buff].name) == 0)
 				//		{
 				//			links2->out = 1;
@@ -121,11 +126,13 @@ int			is_in_solutions(t_otv *otv, char *name)
 	return (0);
 }
 
-int         check_duplicate_room(t_graph *graph, char *name)
+int check_duplicate_room(t_graph *graph, char *name, int code_gr)
 {
 	while(graph)
 	{
-		if (ft_strcmp(graph->link, name) == 0)
+		if (graph->code_link == code_gr)
+
+//		if (ft_strcmp(graph->link, name) == 0)
 			return (1);
 		graph = graph->next;
 	}
@@ -145,8 +152,11 @@ t_graph		*make_path_back_del(t_gr_block *buff, int len,
 	//	if (one_block.end != 1 && one_block.start != 1)// &&
 	//	is_in_solutions(otv, one_block.name))
 	//		k++;
-		if (!check_duplicate_room(graph, one_block.name))
+		if (!check_duplicate_room(graph, one_block.name, one_block.code))
+		{
 			push_front_graph(&graph, one_block.name, one_block.name);
+			graph->code_link = one_block.code;
+		}
 		if (one_block.end != 1 && one_block.start != 1)
 			buff[one_block.num].dead_end = 1;
 		one_block = buff[one_block.parent->num];// return_t_gr_block_by_block(buff, len, one_block.parent);
@@ -210,6 +220,56 @@ void		exit_no_way(t_otv *otv, int len, t_gr_block *buff)
 	}
 }
 
+void		check_simmilar(t_otv **otv, t_graph *graph, t_graph *walk)
+{
+	t_graph *tmp;
+	t_graph *tmp2;
+
+	tmp2 = graph->next;
+	graph = graph->next;
+	while(tmp2->next)
+	{
+		tmp = walk->next;
+		while(tmp->next)
+		{
+			if (ft_strcmp(tmp->link, graph->link) == 0)
+			{
+				if (count_links(graph)>count_links(walk))
+				{
+					del_sol_last_two(otv, graph, graph);
+				}
+				else
+				{
+					del_sol_last_two(otv, walk, walk);
+				}
+			}
+			tmp = tmp->next;
+		}
+		tmp2 = tmp2->next;
+	}
+}
+void 		check_solutions_last(t_otv **otv)
+{
+	t_otv *tmp;
+	t_otv *tmp2;
+	t_graph *graph;
+	t_graph *walk;
+
+	tmp = (*otv);
+	while(tmp)
+	{
+		graph = tmp->solve->next;
+		tmp2 = tmp->next;
+		while(tmp2)
+		{
+			walk = tmp2->solve;
+			check_simmilar(otv, graph, walk);
+			tmp2 = tmp2->next;
+		}
+		tmp = tmp->next;
+	}
+}
+
 void		belman_ford_req(t_gr_block *buff, int len, int ants)
 {
 	t_graph	*answer;
@@ -236,7 +296,10 @@ void		belman_ford_req(t_gr_block *buff, int len, int ants)
 		otriz = 0;
 		bel_ford3(buff, len, &otriz);
 		if (!(make_path_back(buff, len, buff[len-1])))
+		{
+//			print_graph(buff, len);
 			break ;
+		}
 		first_answer = make_first(buff, len, buff[len - 1]);
 		if (first_answer == NULL)
 			break;
@@ -257,37 +320,39 @@ void		belman_ford_req(t_gr_block *buff, int len, int ants)
 		buff[0].weight_edge = 0;
 
 		i++;
-		//if (i == 15)
-		//	break;
+//		if (i == 11)
+//			break;
 	}
 //	print_graph(buff, len);
-	reconstruct_initial(buff, len);
-	while (i-- >= -1)
-	{
-//		print_graph(buff, len);
-
-		bel_ford3(buff, len, &otriz);
-		if (!(make_path_back(buff, len,buff[len - 1])))
-			break ;
-		answer = make_path_back_del(buff, len, buff[len - 1], otv);
-		//return_t_gr_block(buff, len, get_end(buff, len)), otv);
-		if (answer)
-		{
-			push_end_solution(&otv, answer);
-		}
-		j = 0;
-		while (j < len)
-		{
-			buff[j].count = 0;
-			buff[j].weight_edge = INT32_MAX;
-			buff[j].parent_name = NULL;
-			buff[j].parent = NULL;
-			buff[j].iter = -1;
-			j++;
-		}
-		buff[0].weight_edge = 0;
-	}
+//	reconstruct_initial(buff, len);
+//	while (i-- >= -1)
+//	{
+////		print_graph(buff, len);
+//
+//		bel_ford3(buff, len, &otriz);
+//		if (!(make_path_back(buff, len,buff[len - 1])))
+//			break ;
+//		answer = make_path_back_del(buff, len, buff[len - 1], otv);
+//		//return_t_gr_block(buff, len, get_end(buff, len)), otv);
+//		if (answer)
+//		{
+//			push_end_solution(&otv, answer);
+//		}
+//		j = 0;
+//		while (j < len)
+//		{
+//			buff[j].count = 0;
+//			buff[j].weight_edge = INT32_MAX;
+//			buff[j].parent_name = NULL;
+//			buff[j].parent = NULL;
+//			buff[j].iter = -1;
+//			j++;
+//		}
+//		buff[0].weight_edge = 0;
+//	}
+//	check_solutions_last(&first);
 //	print_solutions(otv);
+////	print_graph(buff, len);
 //	print_solutions(first);
 //	del_graph(&answer);
 //	exit_no_way(otv, len, buff);

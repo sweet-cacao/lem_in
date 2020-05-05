@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sweet-cacao/lem-in/lem-in-last/includes/lem-in.h
+../libft/ft_str/libft.h
+/home/sweet-cacao/lem-in/lem-in-last/libft/ft_str/libft.h
+stdio.h
+-
+
+/home/sweet-cacao/lem-in/lem-in-last/libft/ft_str/libft.h
+string.h
+-
+unistd.h
+-
+stdlib.h
+-
+fcntl.h
+-
+
+/home/sweet-cacao/lem-in/lem-in-last/src/first_answer.c
+../includes/lem-in.h
+/home/sweet-cacao/lem-in/lem-in-last/includes/lem-in.h
+
