@@ -155,4 +155,22 @@ t_graph		*make_first(t_gr_block *buff, int len,
 int	check_same_link(t_graph *answer, t_otv **first, int ants);
 void	del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second);
 
+t_graph			*make_first(t_gr_block *buff, int len,
+						   t_gr_block one_block);
+t_graph			*get_first_answer(t_graph *end_new, t_graph *whole_first);
+t_graph			*get_second_answer(t_graph *whole_new, t_graph *end_first);
+int				check_useful(t_otv **first, int ants);
+int				compare_graph(t_graph *one, t_graph *two);
+void			delete_first_gr(t_otv **sort);
+void			find_delete(t_otv **otv, t_graph *first, t_otv *tmp);
+void			del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second);
+void 			choose_place_for_del(t_otv **first, t_otv *tmp);
+void			del_sol_old(t_otv **first);
+void			overlay_solve(const t_gr_block *buff, t_gr_block *one_block, t_graph *links, t_graph *links2);
+int			make_path_back(t_gr_block *buff, int len, t_gr_block one_block);
+int			make_path_back_minus(t_gr_block *buff, int len, t_gr_block one_block);
+int			make_path_back_minus(t_gr_block *buff, int len, t_gr_block one_block);
+void		reconstruct_initial(t_gr_block *buff, int len);
+
+
 #endif

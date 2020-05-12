@@ -717,6 +717,87 @@ src/first_answer.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer.c.s
 .PHONY : src/first_answer.c.s
 
+src/first_answer2.o: src/first_answer2.c.o
+
+.PHONY : src/first_answer2.o
+
+# target to build an object file
+src/first_answer2.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer2.c.o
+.PHONY : src/first_answer2.c.o
+
+src/first_answer2.i: src/first_answer2.c.i
+
+.PHONY : src/first_answer2.i
+
+# target to preprocess a source file
+src/first_answer2.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer2.c.i
+.PHONY : src/first_answer2.c.i
+
+src/first_answer2.s: src/first_answer2.c.s
+
+.PHONY : src/first_answer2.s
+
+# target to generate assembly for a file
+src/first_answer2.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer2.c.s
+.PHONY : src/first_answer2.c.s
+
+src/first_answer3.o: src/first_answer3.c.o
+
+.PHONY : src/first_answer3.o
+
+# target to build an object file
+src/first_answer3.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer3.c.o
+.PHONY : src/first_answer3.c.o
+
+src/first_answer3.i: src/first_answer3.c.i
+
+.PHONY : src/first_answer3.i
+
+# target to preprocess a source file
+src/first_answer3.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer3.c.i
+.PHONY : src/first_answer3.c.i
+
+src/first_answer3.s: src/first_answer3.c.s
+
+.PHONY : src/first_answer3.s
+
+# target to generate assembly for a file
+src/first_answer3.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer3.c.s
+.PHONY : src/first_answer3.c.s
+
+src/first_answer4.o: src/first_answer4.c.o
+
+.PHONY : src/first_answer4.o
+
+# target to build an object file
+src/first_answer4.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer4.c.o
+.PHONY : src/first_answer4.c.o
+
+src/first_answer4.i: src/first_answer4.c.i
+
+.PHONY : src/first_answer4.i
+
+# target to preprocess a source file
+src/first_answer4.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer4.c.i
+.PHONY : src/first_answer4.c.i
+
+src/first_answer4.s: src/first_answer4.c.s
+
+.PHONY : src/first_answer4.s
+
+# target to generate assembly for a file
+src/first_answer4.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer4.c.s
+.PHONY : src/first_answer4.c.s
+
 src/give_paths.o: src/give_paths.c.o
 
 .PHONY : src/give_paths.o
@@ -1062,6 +1143,15 @@ help:
 	@echo "... src/first_answer.o"
 	@echo "... src/first_answer.i"
 	@echo "... src/first_answer.s"
+	@echo "... src/first_answer2.o"
+	@echo "... src/first_answer2.i"
+	@echo "... src/first_answer2.s"
+	@echo "... src/first_answer3.o"
+	@echo "... src/first_answer3.i"
+	@echo "... src/first_answer3.s"
+	@echo "... src/first_answer4.o"
+	@echo "... src/first_answer4.i"
+	@echo "... src/first_answer4.s"
 	@echo "... src/give_paths.o"
 	@echo "... src/give_paths.i"
 	@echo "... src/give_paths.s"

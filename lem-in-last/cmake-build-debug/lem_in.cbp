@@ -147,6 +147,15 @@
 		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/first_answer.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/first_answer2.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/first_answer3.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/first_answer4.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/give_paths.c">
 			<Option target="lem_in"/>
 		</Unit>

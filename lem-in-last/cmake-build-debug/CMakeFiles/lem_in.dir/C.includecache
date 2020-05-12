@@ -22,7 +22,15 @@ stdlib.h
 fcntl.h
 -
 
+/home/sweet-cacao/lem-in/lem-in-last/src/find_all_paths.c
+../includes/lem-in.h
+/home/sweet-cacao/lem-in/lem-in-last/includes/lem-in.h
+
 /home/sweet-cacao/lem-in/lem-in-last/src/first_answer.c
+../includes/lem-in.h
+/home/sweet-cacao/lem-in/lem-in-last/includes/lem-in.h
+
+/home/sweet-cacao/lem-in/lem-in-last/src/first_answer4.c
 ../includes/lem-in.h
 /home/sweet-cacao/lem-in/lem-in-last/includes/lem-in.h
 

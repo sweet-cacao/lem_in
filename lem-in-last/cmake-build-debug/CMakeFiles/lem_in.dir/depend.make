@@ -70,6 +70,18 @@ CMakeFiles/lem_in.dir/src/first_answer.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/first_answer.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/first_answer.c.o: ../src/first_answer.c
 
+CMakeFiles/lem_in.dir/src/first_answer2.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/first_answer2.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/first_answer2.c.o: ../src/first_answer2.c
+
+CMakeFiles/lem_in.dir/src/first_answer3.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/first_answer3.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/first_answer3.c.o: ../src/first_answer3.c
+
+CMakeFiles/lem_in.dir/src/first_answer4.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/first_answer4.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/first_answer4.c.o: ../src/first_answer4.c
+
 CMakeFiles/lem_in.dir/src/give_paths.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/give_paths.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/give_paths.c.o: ../src/give_paths.c

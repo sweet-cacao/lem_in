@@ -22,7 +22,7 @@ add_executable(lem_in src/main.c src/graph_functions.c includes/lem-in.h src/sol
         libft/ft_str/ft_strnew.c
         libft/ft_str/ft_strsub.c
         libft/ft_str/ft_bzero.c
-        libft/ft_str/ft_memdel.c src/give_paths.c src/belman_ford.c src/print_ants.c src/parser/extra_functions.c src/del_lists.c src/parse_and_solve.c src/first_answer.c)
+        libft/ft_str/ft_memdel.c src/give_paths.c src/belman_ford.c src/print_ants.c src/parser/extra_functions.c src/del_lists.c src/parse_and_solve.c src/first_answer.c src/first_answer2.c src/first_answer3.c src/first_answer4.c)
 
 #find_library(LIBFT_LIB print libft)
 #target_link_libraries(lem_in LINK_PUBLIC ${LIBFT_LIB})
