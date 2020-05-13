@@ -22,7 +22,7 @@ stdlib.h
 fcntl.h
 -
 
-/home/sweet-cacao/lem-in/lem-in-last/src/parse_and_solve.c
-../includes/lem-in.h
+/home/sweet-cacao/lem-in/lem-in-last/src/parser/parse.c
+../../includes/lem-in.h
 /home/sweet-cacao/lem-in/lem-in-last/includes/lem-in.h
 

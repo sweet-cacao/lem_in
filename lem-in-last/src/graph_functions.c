@@ -53,6 +53,7 @@ t_gr_block		create_gr_block_out(t_links *connections, char *name)
 	gr_block.parent_name = NULL;
 	gr_block.count = 0;
 	gr_block.prev = NULL;
+	gr_block.dead_end = 0;
 	return (gr_block);
 }
 
@@ -73,6 +74,7 @@ t_gr_block		create_gr_block_in(t_links *connections, char *name)
 	gr_block.parent_name = NULL;
 	gr_block.count = 0;
 	gr_block.prev = NULL;
+	gr_block.dead_end = 0;
 	return (gr_block);
 }
 
@@ -93,6 +95,7 @@ t_gr_block		create_gr_block_start(t_links *connections, char *name)
 	gr_block.parent_name = NULL;
 	gr_block.count = 0;
 	gr_block.prev = NULL;
+	gr_block.dead_end = 0;
 	return (gr_block);
 }
 
@@ -113,5 +116,6 @@ t_gr_block		create_gr_block_end(t_links *connections, char *name)
 	gr_block.parent_name = NULL;
 	gr_block.count = 0;
 	gr_block.prev = NULL;
+	gr_block.dead_end = 0;
 	return (gr_block);
 }
