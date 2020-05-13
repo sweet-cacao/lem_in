@@ -36,16 +36,12 @@ void		push_end_solution(t_otv **otv, t_graph *graph)
 	else
 	{
 		next = *otv;
-		while(next->next)
+		while (next->next)
 		{
 			next = next->next;
 		}
 		next->next = tmp;
 		tmp->prev = next;
-	/*	if (*otv)
-			(*otv)->prev = tmp;
-		tmp->next = (*otv);
-		(*otv) = tmp;*/
 	}
 }
 

@@ -58,6 +58,10 @@ CMakeFiles/lem_in.dir/src/belman_ford.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/belman_ford.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/belman_ford.c.o: ../src/belman_ford.c
 
+CMakeFiles/lem_in.dir/src/belman_ford2.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/belman_ford2.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/belman_ford2.c.o: ../src/belman_ford2.c
+
 CMakeFiles/lem_in.dir/src/del_lists.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/del_lists.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/del_lists.c.o: ../src/del_lists.c
@@ -82,6 +86,10 @@ CMakeFiles/lem_in.dir/src/first_answer4.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/first_answer4.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/first_answer4.c.o: ../src/first_answer4.c
 
+CMakeFiles/lem_in.dir/src/first_answer5.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/first_answer5.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/first_answer5.c.o: ../src/first_answer5.c
+
 CMakeFiles/lem_in.dir/src/give_paths.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/give_paths.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/give_paths.c.o: ../src/give_paths.c
@@ -89,6 +97,14 @@ CMakeFiles/lem_in.dir/src/give_paths.c.o: ../src/give_paths.c
 CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../src/graph_functions.c
+
+CMakeFiles/lem_in.dir/src/graph_functions2.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/graph_functions2.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/graph_functions2.c.o: ../src/graph_functions2.c
+
+CMakeFiles/lem_in.dir/src/graph_functions3.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/graph_functions3.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/graph_functions3.c.o: ../src/graph_functions3.c
 
 CMakeFiles/lem_in.dir/src/main.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../libft/ft_str/libft.h

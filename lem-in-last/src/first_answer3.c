@@ -1,6 +1,6 @@
 #include "../includes/lem-in.h"
 
-void		delete_first_gr(t_otv **sort)
+void	delete_first_gr(t_otv **sort)
 {
 	t_otv	*tmp;
 
@@ -28,7 +28,7 @@ void	find_delete(t_otv **otv, t_graph *first, t_otv *tmp)
 	{
 		if (compare_graph(tmp->solve, first) == 1)
 		{
-			if (!tmp->prev)//пофришить
+			if (!tmp->prev)
 			{
 				delete_first_gr(otv);
 			}
@@ -42,13 +42,14 @@ void	find_delete(t_otv **otv, t_graph *first, t_otv *tmp)
 				tmp->next->prev = tmp->prev;
 			}
 			free(tmp);
-			break;
+			break ;
 		}
 		tmp = tmp->next;
 	}
 }
 
-void	del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second)//нужно проверку на налл два раза и пофришить
+void	del_sol_last_two(t_otv **otv, t_graph *first,
+		t_graph *second)//нужно проверку на налл два раза и пофришить
 {
 	t_otv *tmp;
 
@@ -57,7 +58,7 @@ void	del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second)//нужно 
 	find_delete(otv, second, tmp);
 }
 
-void choose_place_for_del(t_otv **first, t_otv *tmp)
+void	choose_place_for_del(t_otv **first, t_otv *tmp)
 {
 	if (!tmp->prev)//пофришить, вроде это не особо правильно работает
 	{
@@ -76,8 +77,8 @@ void choose_place_for_del(t_otv **first, t_otv *tmp)
 
 void	del_sol_old(t_otv **first)
 {
-	t_otv *tmp;
-	int count;
+	t_otv	*tmp;
+	int		count;
 
 	count = 0;
 	tmp = *first;
@@ -87,9 +88,8 @@ void	del_sol_old(t_otv **first)
 		{
 			count++;
 			choose_place_for_del(first, tmp);
-			break;
+			break ;
 		}
 		tmp = tmp->next;
 	}
 }
-

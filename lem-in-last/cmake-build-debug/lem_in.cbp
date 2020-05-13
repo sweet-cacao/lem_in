@@ -138,6 +138,9 @@
 		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/belman_ford.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/belman_ford2.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/del_lists.c">
 			<Option target="lem_in"/>
 		</Unit>
@@ -156,10 +159,19 @@
 		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/first_answer4.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/first_answer5.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/give_paths.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/graph_functions.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/graph_functions2.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/graph_functions3.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/sweet-cacao/lem-in/lem-in-last/src/main.c">

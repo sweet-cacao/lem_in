@@ -92,6 +92,13 @@ typedef struct 		s_glob
 	t_graph			*new_answer_2;
 }					t_glob;
 
+typedef struct 		s_num
+{
+	int 			i;
+	int 			len;
+	int 			change;
+}					t_num;
+
 
 char                *get_end(t_gr_block *buff, int len);
 char                *get_start(t_gr_block *buff, int len);
@@ -149,28 +156,39 @@ t_gr_block		create_gr_block_out(t_links *connections, char *name);
 
 t_gr_block	    return_t_gr_block_by_block(t_gr_block *buff, int len, t_gr_block *one_block);
 
-int check_duplicate_room(t_graph *graph, char *name, int code_gr);
-t_graph		*make_first(t_gr_block *buff, int len,
-						   t_gr_block one_block);
-int	check_same_link(t_graph *answer, t_otv **first, int ants);
-void	del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second);
-
+int				check_duplicate_room(t_graph *graph, char *name, int code_gr);
 t_graph			*make_first(t_gr_block *buff, int len,
 						   t_gr_block one_block);
+int				check_same_link(t_graph *answer, t_otv **first, int ants);
+void			del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second);
+
+//t_graph			*make_first(t_gr_block *buff, int len,
+//						   t_gr_block one_block);
 t_graph			*get_first_answer(t_graph *end_new, t_graph *whole_first);
 t_graph			*get_second_answer(t_graph *whole_new, t_graph *end_first);
 int				check_useful(t_otv **first, int ants);
 int				compare_graph(t_graph *one, t_graph *two);
 void			delete_first_gr(t_otv **sort);
 void			find_delete(t_otv **otv, t_graph *first, t_otv *tmp);
-void			del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second);
+//void			del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second);
 void 			choose_place_for_del(t_otv **first, t_otv *tmp);
 void			del_sol_old(t_otv **first);
 void			overlay_solve(const t_gr_block *buff, t_gr_block *one_block, t_graph *links, t_graph *links2);
-int			make_path_back(t_gr_block *buff, int len, t_gr_block one_block);
-int			make_path_back_minus(t_gr_block *buff, int len, t_gr_block one_block);
-int			make_path_back_minus(t_gr_block *buff, int len, t_gr_block one_block);
-void		reconstruct_initial(t_gr_block *buff, int len);
+int				make_path_back(t_gr_block *buff, int len, t_gr_block one_block);
+int				make_path_back_minus(t_gr_block *buff, int len, t_gr_block one_block);
+//int				make_path_back_minus(t_gr_block *buff, int len, t_gr_block one_block);
+void			reconstruct_initial(t_gr_block *buff, int len);
+int				new_solutions_branch(t_otv **first, t_graph *new_answer_1, t_graph *new_answer_2, int ants);
+int 			is_in_solutions_graph_links(t_otv **first, t_otv *tmp, t_graph *answer, int ants);
+int				is_in_solutions_graph(t_otv **first, t_graph *tmp, int ants);
+int				new_solutions(t_otv **first, t_graph *new_answer_1, t_graph *new_answer_2, int ants);
+int				simple_solution(t_otv **first, int ants);
+
+//t_gr_block		create_gr_block(t_links *connections, char *name);
+t_graph			*add_line_out(t_links *connections, char *name);
+t_graph			*add_line_out_start(t_links *connections, char *name);
+t_graph			*add_line_in_end(t_links *connections, char *name);
+
 
 
 #endif

@@ -1,6 +1,7 @@
 #include "../includes/lem-in.h"
 
-void overlay_solve(const t_gr_block *buff, t_gr_block *one_block, t_graph *links, t_graph *links2)
+void		overlay_solve(const t_gr_block *buff, t_gr_block *one_block,
+			t_graph *links, t_graph *links2)
 {
 	links->out = 1;
 	links->time++;
@@ -18,10 +19,10 @@ void overlay_solve(const t_gr_block *buff, t_gr_block *one_block, t_graph *links
 			if (links->time > 1 || links2->time >= 1)
 			{
 				links->out = 0;
-				links2->in = 0; // ссылка обратно должна убираться тожеi
+				links2->in = 0;
 			}
 			links2->time++;
-			break;
+			break ;
 		}
 		links2 = links2->next;
 	}
@@ -45,7 +46,8 @@ int			make_path_back(t_gr_block *buff, int len, t_gr_block one_block)
 		return (0);
 }
 
-int			make_path_back_minus(t_gr_block *buff, int len, t_gr_block one_block)
+int			make_path_back_minus(t_gr_block *buff, int len,
+			t_gr_block one_block)
 {
 	t_graph *links;
 	t_graph *links2;
@@ -54,12 +56,12 @@ int			make_path_back_minus(t_gr_block *buff, int len, t_gr_block one_block)
 	while (one_block.parent && one_block.start != 1)
 	{
 		links = one_block.links;
-		while(links)
+		while (links)
 		{
 			if (links->num_buff == one_block.parent->num)
 			{
 				overlay_solve(buff, &one_block, links, links2);
-				break;
+				break ;
 			}
 			links = links->next;
 		}
@@ -73,7 +75,7 @@ int			make_path_back_minus(t_gr_block *buff, int len, t_gr_block one_block)
 
 int			check_duplicate_room(t_graph *graph, char *name, int code_gr)
 {
-	while(graph)
+	while (graph)
 	{
 		if (graph->code_link == code_gr)
 			return (1);
@@ -88,7 +90,8 @@ void		reconstruct_initial(t_gr_block *buff, int len)
 	t_graph *links;
 
 	i = 0;
-	while (i < len) {
+	while (i < len)
+	{
 		buff[i].count = 0;
 		buff[i].weight_edge = INT32_MAX;
 		buff[i].parent_name = NULL;

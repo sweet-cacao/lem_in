@@ -174,7 +174,7 @@ t_pointlist            *parse_map()
 		 ft_putstr(split[index++]);*/
 	point_info = NULL;
 //	int fd =0;
-	int fd = open("unsolved98", O_RDONLY );
+	int fd = open("cool_map", O_RDONLY );
 	while (get_next_line(fd, &str) > 0) //число муравьев
 	{
 		ft_putstr(str);

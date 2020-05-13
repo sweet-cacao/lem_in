@@ -636,6 +636,33 @@ src/belman_ford.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/belman_ford.c.s
 .PHONY : src/belman_ford.c.s
 
+src/belman_ford2.o: src/belman_ford2.c.o
+
+.PHONY : src/belman_ford2.o
+
+# target to build an object file
+src/belman_ford2.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/belman_ford2.c.o
+.PHONY : src/belman_ford2.c.o
+
+src/belman_ford2.i: src/belman_ford2.c.i
+
+.PHONY : src/belman_ford2.i
+
+# target to preprocess a source file
+src/belman_ford2.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/belman_ford2.c.i
+.PHONY : src/belman_ford2.c.i
+
+src/belman_ford2.s: src/belman_ford2.c.s
+
+.PHONY : src/belman_ford2.s
+
+# target to generate assembly for a file
+src/belman_ford2.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/belman_ford2.c.s
+.PHONY : src/belman_ford2.c.s
+
 src/del_lists.o: src/del_lists.c.o
 
 .PHONY : src/del_lists.o
@@ -798,6 +825,33 @@ src/first_answer4.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer4.c.s
 .PHONY : src/first_answer4.c.s
 
+src/first_answer5.o: src/first_answer5.c.o
+
+.PHONY : src/first_answer5.o
+
+# target to build an object file
+src/first_answer5.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer5.c.o
+.PHONY : src/first_answer5.c.o
+
+src/first_answer5.i: src/first_answer5.c.i
+
+.PHONY : src/first_answer5.i
+
+# target to preprocess a source file
+src/first_answer5.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer5.c.i
+.PHONY : src/first_answer5.c.i
+
+src/first_answer5.s: src/first_answer5.c.s
+
+.PHONY : src/first_answer5.s
+
+# target to generate assembly for a file
+src/first_answer5.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/first_answer5.c.s
+.PHONY : src/first_answer5.c.s
+
 src/give_paths.o: src/give_paths.c.o
 
 .PHONY : src/give_paths.o
@@ -851,6 +905,60 @@ src/graph_functions.s: src/graph_functions.c.s
 src/graph_functions.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/graph_functions.c.s
 .PHONY : src/graph_functions.c.s
+
+src/graph_functions2.o: src/graph_functions2.c.o
+
+.PHONY : src/graph_functions2.o
+
+# target to build an object file
+src/graph_functions2.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/graph_functions2.c.o
+.PHONY : src/graph_functions2.c.o
+
+src/graph_functions2.i: src/graph_functions2.c.i
+
+.PHONY : src/graph_functions2.i
+
+# target to preprocess a source file
+src/graph_functions2.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/graph_functions2.c.i
+.PHONY : src/graph_functions2.c.i
+
+src/graph_functions2.s: src/graph_functions2.c.s
+
+.PHONY : src/graph_functions2.s
+
+# target to generate assembly for a file
+src/graph_functions2.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/graph_functions2.c.s
+.PHONY : src/graph_functions2.c.s
+
+src/graph_functions3.o: src/graph_functions3.c.o
+
+.PHONY : src/graph_functions3.o
+
+# target to build an object file
+src/graph_functions3.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/graph_functions3.c.o
+.PHONY : src/graph_functions3.c.o
+
+src/graph_functions3.i: src/graph_functions3.c.i
+
+.PHONY : src/graph_functions3.i
+
+# target to preprocess a source file
+src/graph_functions3.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/graph_functions3.c.i
+.PHONY : src/graph_functions3.c.i
+
+src/graph_functions3.s: src/graph_functions3.c.s
+
+.PHONY : src/graph_functions3.s
+
+# target to generate assembly for a file
+src/graph_functions3.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/graph_functions3.c.s
+.PHONY : src/graph_functions3.c.s
 
 src/main.o: src/main.c.o
 
@@ -1134,6 +1242,9 @@ help:
 	@echo "... src/belman_ford.o"
 	@echo "... src/belman_ford.i"
 	@echo "... src/belman_ford.s"
+	@echo "... src/belman_ford2.o"
+	@echo "... src/belman_ford2.i"
+	@echo "... src/belman_ford2.s"
 	@echo "... src/del_lists.o"
 	@echo "... src/del_lists.i"
 	@echo "... src/del_lists.s"
@@ -1152,12 +1263,21 @@ help:
 	@echo "... src/first_answer4.o"
 	@echo "... src/first_answer4.i"
 	@echo "... src/first_answer4.s"
+	@echo "... src/first_answer5.o"
+	@echo "... src/first_answer5.i"
+	@echo "... src/first_answer5.s"
 	@echo "... src/give_paths.o"
 	@echo "... src/give_paths.i"
 	@echo "... src/give_paths.s"
 	@echo "... src/graph_functions.o"
 	@echo "... src/graph_functions.i"
 	@echo "... src/graph_functions.s"
+	@echo "... src/graph_functions2.o"
+	@echo "... src/graph_functions2.i"
+	@echo "... src/graph_functions2.s"
+	@echo "... src/graph_functions3.o"
+	@echo "... src/graph_functions3.i"
+	@echo "... src/graph_functions3.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

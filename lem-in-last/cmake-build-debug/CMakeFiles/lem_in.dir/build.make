@@ -512,6 +512,58 @@ CMakeFiles/lem_in.dir/src/first_answer4.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/first_answer4.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sweet-cacao/lem-in/lem-in-last/src/first_answer4.c -o CMakeFiles/lem_in.dir/src/first_answer4.c.s
 
+CMakeFiles/lem_in.dir/src/first_answer5.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/first_answer5.c.o: ../src/first_answer5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sweet-cacao/lem-in/lem-in-last/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/lem_in.dir/src/first_answer5.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/first_answer5.c.o   -c /home/sweet-cacao/lem-in/lem-in-last/src/first_answer5.c
+
+CMakeFiles/lem_in.dir/src/first_answer5.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/first_answer5.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sweet-cacao/lem-in/lem-in-last/src/first_answer5.c > CMakeFiles/lem_in.dir/src/first_answer5.c.i
+
+CMakeFiles/lem_in.dir/src/first_answer5.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/first_answer5.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sweet-cacao/lem-in/lem-in-last/src/first_answer5.c -o CMakeFiles/lem_in.dir/src/first_answer5.c.s
+
+CMakeFiles/lem_in.dir/src/belman_ford2.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/belman_ford2.c.o: ../src/belman_ford2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sweet-cacao/lem-in/lem-in-last/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/lem_in.dir/src/belman_ford2.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/belman_ford2.c.o   -c /home/sweet-cacao/lem-in/lem-in-last/src/belman_ford2.c
+
+CMakeFiles/lem_in.dir/src/belman_ford2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/belman_ford2.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sweet-cacao/lem-in/lem-in-last/src/belman_ford2.c > CMakeFiles/lem_in.dir/src/belman_ford2.c.i
+
+CMakeFiles/lem_in.dir/src/belman_ford2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/belman_ford2.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sweet-cacao/lem-in/lem-in-last/src/belman_ford2.c -o CMakeFiles/lem_in.dir/src/belman_ford2.c.s
+
+CMakeFiles/lem_in.dir/src/graph_functions2.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/graph_functions2.c.o: ../src/graph_functions2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sweet-cacao/lem-in/lem-in-last/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/lem_in.dir/src/graph_functions2.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/graph_functions2.c.o   -c /home/sweet-cacao/lem-in/lem-in-last/src/graph_functions2.c
+
+CMakeFiles/lem_in.dir/src/graph_functions2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/graph_functions2.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sweet-cacao/lem-in/lem-in-last/src/graph_functions2.c > CMakeFiles/lem_in.dir/src/graph_functions2.c.i
+
+CMakeFiles/lem_in.dir/src/graph_functions2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/graph_functions2.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sweet-cacao/lem-in/lem-in-last/src/graph_functions2.c -o CMakeFiles/lem_in.dir/src/graph_functions2.c.s
+
+CMakeFiles/lem_in.dir/src/graph_functions3.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/graph_functions3.c.o: ../src/graph_functions3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sweet-cacao/lem-in/lem-in-last/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/lem_in.dir/src/graph_functions3.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/graph_functions3.c.o   -c /home/sweet-cacao/lem-in/lem-in-last/src/graph_functions3.c
+
+CMakeFiles/lem_in.dir/src/graph_functions3.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/graph_functions3.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sweet-cacao/lem-in/lem-in-last/src/graph_functions3.c > CMakeFiles/lem_in.dir/src/graph_functions3.c.i
+
+CMakeFiles/lem_in.dir/src/graph_functions3.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/graph_functions3.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sweet-cacao/lem-in/lem-in-last/src/graph_functions3.c -o CMakeFiles/lem_in.dir/src/graph_functions3.c.s
+
 # Object files for target lem_in
 lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/src/main.c.o" \
@@ -548,7 +600,11 @@ lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/src/first_answer.c.o" \
 "CMakeFiles/lem_in.dir/src/first_answer2.c.o" \
 "CMakeFiles/lem_in.dir/src/first_answer3.c.o" \
-"CMakeFiles/lem_in.dir/src/first_answer4.c.o"
+"CMakeFiles/lem_in.dir/src/first_answer4.c.o" \
+"CMakeFiles/lem_in.dir/src/first_answer5.c.o" \
+"CMakeFiles/lem_in.dir/src/belman_ford2.c.o" \
+"CMakeFiles/lem_in.dir/src/graph_functions2.c.o" \
+"CMakeFiles/lem_in.dir/src/graph_functions3.c.o"
 
 # External object files for target lem_in
 lem_in_EXTERNAL_OBJECTS =
@@ -588,9 +644,13 @@ lem_in: CMakeFiles/lem_in.dir/src/first_answer.c.o
 lem_in: CMakeFiles/lem_in.dir/src/first_answer2.c.o
 lem_in: CMakeFiles/lem_in.dir/src/first_answer3.c.o
 lem_in: CMakeFiles/lem_in.dir/src/first_answer4.c.o
+lem_in: CMakeFiles/lem_in.dir/src/first_answer5.c.o
+lem_in: CMakeFiles/lem_in.dir/src/belman_ford2.c.o
+lem_in: CMakeFiles/lem_in.dir/src/graph_functions2.c.o
+lem_in: CMakeFiles/lem_in.dir/src/graph_functions3.c.o
 lem_in: CMakeFiles/lem_in.dir/build.make
 lem_in: CMakeFiles/lem_in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sweet-cacao/lem-in/lem-in-last/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking C executable lem_in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sweet-cacao/lem-in/lem-in-last/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking C executable lem_in"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lem_in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

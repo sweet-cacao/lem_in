@@ -43,7 +43,7 @@ void		swap_solutions(t_otv *tmp, t_otv *tmp2)
 {
 	int		len_tmp;
 	t_graph *solve_tmp;
-	int 	old;
+	int		old;
 
 	old = tmp->old;
 	len_tmp = tmp->len;
@@ -63,7 +63,6 @@ void		sort_with_len(t_otv **solutions)
 
 	tmp = (*solutions);
 	tmp2 = tmp->next;
-
 	if (is_sorted(*solutions) != 1)
 	{
 		while (tmp)

@@ -29,14 +29,14 @@ void		check_simmilar(t_otv **otv, t_graph *graph, t_graph *walk)
 
 	tmp2 = graph->next;
 	graph = graph->next;
-	while(tmp2->next)
+	while (tmp2->next)
 	{
 		tmp = walk->next;
-		while(tmp->next)
+		while (tmp->next)
 		{
 			if (ft_strcmp(tmp->link, graph->link) == 0)
 			{
-				if (count_links(graph)>count_links(walk))
+				if (count_links(graph) > count_links(walk))
 					del_sol_last_two(otv, graph, graph);
 				else
 					del_sol_last_two(otv, walk, walk);
@@ -47,19 +47,19 @@ void		check_simmilar(t_otv **otv, t_graph *graph, t_graph *walk)
 	}
 }
 
-void 		check_solutions_last(t_otv **otv)
+void		check_solutions_last(t_otv **otv)
 {
-	t_otv *tmp;
-	t_otv *tmp2;
+	t_otv	*tmp;
+	t_otv	*tmp2;
 	t_graph *graph;
 	t_graph *walk;
 
 	tmp = (*otv);
-	while(tmp)
+	while (tmp)
 	{
 		graph = tmp->solve->next;
 		tmp2 = tmp->next;
-		while(tmp2)
+		while (tmp2)
 		{
 			walk = tmp2->solve;
 			check_simmilar(otv, graph, walk);
@@ -72,26 +72,25 @@ void 		check_solutions_last(t_otv **otv)
 void		belman_ford_req(t_gr_block *buff, int len, int ants)
 {
 	t_graph *first_answer;
-	t_otv *first;
+	t_otv	*first;
 	int		k;
-	int otriz;
+	int		otriz;
 
 	k = count_max_paths(buff, len);
 	first = NULL;
-	first_answer = NULL;
 	while (k-- >= 0)
 	{
 		otriz = 0;
 		bel_ford3(buff, len, &otriz);
-		if (!(make_path_back(buff, len, buff[len-1])))//не нужно
+		if (!(make_path_back(buff, len, buff[len - 1])))//не нужно
 			break ;
 		first_answer = make_first(buff, len, buff[len - 1]);
 		if (first_answer == NULL)
-			break;
+			break ;
 		if (check_same_link(first_answer, &first, ants) == 3)
-			break;
-		if (!make_path_back_minus(buff, len, buff[len-1]))
-			break;
+			break ;
+		if (!make_path_back_minus(buff, len, buff[len - 1]))
+			break ;
 		reconstruct_initial(buff, len);
 	}
 	exit_no_way(first, len, buff);
