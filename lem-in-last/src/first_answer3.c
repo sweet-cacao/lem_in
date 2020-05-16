@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   first_answer3.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/03/13 17:27:46 by gstarvin          #+#    #+#             */
+/*   Updated: 2020/05/16 17:18:22 by sweet-cacao      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/lem-in.h"
 
 void	delete_first_gr(t_otv **sort)
@@ -34,14 +46,19 @@ void	find_delete(t_otv **otv, t_graph *first, t_otv *tmp)
 			}
 			else if (!tmp->next)
 			{
-				tmp->prev->next = NULL;
+//				del_graph(&tmp->solve);
+				tmp->prev->next= NULL;
+				free(tmp);
+				tmp = NULL;
 			}
 			else
 			{
 				tmp->prev->next = tmp->next;
 				tmp->next->prev = tmp->prev;
+//				del_graph(&tmp->solve);
+				free(tmp);
+				tmp = NULL;
 			}
-			free(tmp);
 			break ;
 		}
 		tmp = tmp->next;
@@ -55,6 +72,7 @@ void	del_sol_last_two(t_otv **otv, t_graph *first,
 
 	tmp = *otv;
 	find_delete(otv, first, tmp);
+	tmp = *otv;
 	find_delete(otv, second, tmp);
 }
 
@@ -62,16 +80,21 @@ void	choose_place_for_del(t_otv **first, t_otv *tmp)
 {
 	if (!tmp->prev)//пофришить, вроде это не особо правильно работает
 	{
+		del_graph(&(*first)->solve);
 		delete_first_gr(first);
 	}
 	else if (!tmp->next)
 	{
+		del_graph(&tmp->solve);
 		tmp->prev->next = NULL;
+		free(tmp);
 	}
 	else
 	{
 		tmp->prev->next = tmp->next;
 		tmp->next->prev = tmp->prev;
+		del_graph(&tmp->solve);
+		free(tmp);
 	}
 }
 

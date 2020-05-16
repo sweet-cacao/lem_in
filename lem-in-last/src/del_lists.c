@@ -6,7 +6,7 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:30:24 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/03/13 17:30:45 by gstarvin         ###   ########.fr       */
+/*   Updated: 2020/05/16 15:58:09 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,9 @@ void	del_buff_links(int len, t_gr_block *buff)
 	{
 		if (buff[i].links)
 			del_graph(&buff[i].links);
-		buff[i].parent_name = NULL;
-//		free(&buff[i].parent_name);
+//		buff[i].parent_name = NULL;
+//		buff[i].name = NULL;
+//		free(buff[i].name);
 //		free(&buff[i].parent);
 		i++;
 	}
@@ -53,6 +54,7 @@ void	del_solutions(t_otv **solutions)
 	while (*solutions)
 	{
 		next = (*solutions)->next;
+		del_graph(&(*solutions)->solve);
 		free(*solutions);
 		(*solutions) = NULL;
 		(*solutions) = next;

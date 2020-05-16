@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   first_answer5.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/03/13 17:27:46 by gstarvin          #+#    #+#             */
+/*   Updated: 2020/05/16 17:26:44 by sweet-cacao      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/lem-in.h"
 
 int		new_solutions_branch(t_otv **first, t_graph *new_answer_1,
@@ -9,6 +21,8 @@ int		new_solutions_branch(t_otv **first, t_graph *new_answer_1,
 	if (check_useful(first, ants) == 0)
 	{
 		del_sol_last_two(first, new_answer_1, new_answer_2);
+		del_graph(&new_answer_1);
+		del_graph(&new_answer_2);
 		return (3);
 	}
 	return (2);
@@ -74,6 +88,8 @@ int		new_solutions(t_otv **first, t_graph *new_answer_1,
 	if (check_useful(first, ants) == 0)
 	{
 		del_sol_last_two(first, new_answer_1, new_answer_2);
+		del_graph(&new_answer_1);
+		del_graph(&new_answer_2);
 		return (3);
 	}
 	else
@@ -90,8 +106,9 @@ int		simple_solution(t_otv **first, int ants)
 	tmp = get_next_solution(*first);
 	if (check_useful(first, ants) == 0)
 	{
-		//free(tmp);
+//		free(tmp);
 		tmp = NULL;
+		free(tmp);
 		return (3);
 	}
 	return (2);

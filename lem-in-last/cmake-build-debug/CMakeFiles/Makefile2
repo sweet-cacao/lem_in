@@ -44,10 +44,10 @@ RM = /home/sweet-cacao/Загрузки/clion-2019.2.4/bin/cmake/linux/bin/cmake
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sweet-cacao/lem-in/lem-in-last
+CMAKE_SOURCE_DIR = /home/sweet-cacao/lem-last/lem-in-last
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sweet-cacao/lem-in/lem-in-last/cmake-build-debug
+CMAKE_BINARY_DIR = /home/sweet-cacao/lem-last/lem-in-last/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ preinstall:
 CMakeFiles/lem_in.dir/all:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/depend
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sweet-cacao/lem-in/lem-in-last/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40 "Built target lem_in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sweet-cacao/lem-last/lem-in-last/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40 "Built target lem_in"
 .PHONY : CMakeFiles/lem_in.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lem_in.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sweet-cacao/lem-in/lem-in-last/cmake-build-debug/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sweet-cacao/lem-last/lem-in-last/cmake-build-debug/CMakeFiles 40
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lem_in.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sweet-cacao/lem-in/lem-in-last/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sweet-cacao/lem-last/lem-in-last/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/lem_in.dir/rule
 
 # Convenience name for target.

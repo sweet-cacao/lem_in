@@ -6,7 +6,7 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 13:21:29 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/03/13 15:05:40 by gstarvin         ###   ########.fr       */
+/*   Updated: 2020/05/15 16:35:33 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,15 +78,15 @@ void	bel_ford3(t_gr_block *buff, int len, int *otriz)
 	t_num	num;
 
 	num.len = len;
-	k = 0;
-	while(k < 1000)
+	k = -1;
+	while(k++ < 1000)
 	{
 		all_links[k][0] = 0;
 		all_links[k][1] = 0;
-		k++;
+//		k++;
 	}
 	k = 0;
-	while (k < len - 1)
+	while (k++ < len)
 	{
 		num.i = 0;
 		num.i = 0;
@@ -98,6 +98,5 @@ void	bel_ford3(t_gr_block *buff, int len, int *otriz)
 		}
 		if (num.change == 0)
 			break ;
-		k++;
 	}
 }

@@ -21,6 +21,8 @@ t_otv		*add_block_solution(t_graph *graph)
 	otv->next = NULL;
 	otv->prev = NULL;
 	otv->old = 0;
+	otv->len = 0;
+	otv->number = 0;
 	return (otv);
 }
 

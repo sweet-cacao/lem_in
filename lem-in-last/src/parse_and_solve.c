@@ -6,7 +6,7 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:28:10 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/03/13 17:31:20 by gstarvin         ###   ########.fr       */
+/*   Updated: 2020/05/16 12:45:38 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ void			parse_and_solve(int len, t_pointlist **mapa, int ants)
 	{
 		if (ft_strcmp("start", map->start_end) == 0)
 		{
+			del_graph(&buff[0].links);
 			buff[0] = create_gr_block_start(map->links_list, map->name_point);
 			buff[0].start = 1;
 			buff[0].weight_edge = 0;

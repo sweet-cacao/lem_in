@@ -77,7 +77,7 @@ typedef struct      s_otv
 
 typedef struct      s_ants
 {
-	t_graph            *room;
+	t_graph         *room;
 	int             path;
 	int             number;
 	struct s_ants   *next;

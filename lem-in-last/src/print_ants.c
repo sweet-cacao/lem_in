@@ -6,7 +6,7 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 15:53:54 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/03/13 16:30:44 by gstarvin         ###   ########.fr       */
+/*   Updated: 2020/05/16 12:55:34 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void		give_paths(int ants, t_otv *solutions, t_ants *ants_buff)
 	}
 }
 
-void		give_rooms(int ants, t_otv *solutions, t_ants *buff)
+t_otv		*give_rooms(int ants, t_otv *solutions, t_ants *buff)
 {
 	int		i;
 	t_graph *graph;
@@ -69,11 +69,12 @@ void		give_rooms(int ants, t_otv *solutions, t_ants *buff)
 	give_paths(ants, solutions, buff);
 	while (i < ants)
 	{
-		graph = return_graph(solutions, buff[i].path);
-		buff[i].room = graph;
+//		graph = return_graph(solutions, buff[i].path);
+		buff[i].room = return_graph(solutions, buff[i].path);
 		i++;
 	}
 	printf("\n");
+	return (solutions);
 }
 
 void		print_ants(t_ants *buff, int ants)
@@ -97,7 +98,8 @@ void		print_ants_and_paths(int ants, t_otv *solutions)
 	int		i;
 	t_ants	buff[ants];
 
-	give_rooms(ants, solutions, buff);
+	i = 0;
+	solutions = give_rooms(ants, solutions, buff);
 	while (1)
 	{
 		i = 0;
@@ -113,5 +115,5 @@ void		print_ants_and_paths(int ants, t_otv *solutions)
 		print_ants(buff, ants);
 		printf("\n");
 	}
-	del_solutions(&solutions);
+
 }

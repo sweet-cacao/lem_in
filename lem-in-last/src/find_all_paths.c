@@ -6,20 +6,21 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 15:04:40 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/03/13 17:33:37 by gstarvin         ###   ########.fr       */
+/*   Updated: 2020/05/16 17:42:55 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/lem-in.h"
 
-void		exit_no_way(t_otv *otv, int len, t_gr_block *buff)
+int		exit_no_way(t_otv *otv, int len, t_gr_block *buff)
 {
 	if (otv == NULL)
 	{
 		printf("NO WAY\n");
 		del_buff_links(len, buff);
-		exit(0);
+		return (1);
 	}
+	return (0);
 }
 
 void		check_simmilar(t_otv **otv, t_graph *graph, t_graph *walk)
@@ -78,6 +79,7 @@ void		belman_ford_req(t_gr_block *buff, int len, int ants)
 
 	k = count_max_paths(buff, len);
 	first = NULL;
+	first_answer = NULL;
 	while (k-- >= 0)
 	{
 		otriz = 0;
@@ -88,12 +90,17 @@ void		belman_ford_req(t_gr_block *buff, int len, int ants)
 		if (first_answer == NULL)
 			break ;
 		if (check_same_link(first_answer, &first, ants) == 3)
+		{
 			break ;
+		}
 		if (!make_path_back_minus(buff, len, buff[len - 1]))
 			break ;
 		reconstruct_initial(buff, len);
 	}
-	exit_no_way(first, len, buff);
-	check_solutions_last(&first);
-	print_ants_and_paths(ants, first);
+	if (exit_no_way(first, len, buff) == 0)
+	{
+		check_solutions_last(&first);
+		print_ants_and_paths(ants, first);
+		del_solutions(&first);
+	}
 }
