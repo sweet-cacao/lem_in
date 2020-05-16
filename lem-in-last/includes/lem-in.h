@@ -103,7 +103,7 @@ typedef struct 		s_num
 char                *get_end(t_gr_block *buff, int len);
 char                *get_start(t_gr_block *buff, int len);
 int                 return_level(t_gr_block *buff, char *name, int len);
-void                belman_ford_req(t_gr_block *buff, int len, int ants);
+void belman_ford_req(t_gr_block *buff, int len, int ants, char *str);
 void                print_ants_and_paths(int ants, t_otv *solutions);
 
 t_graph             *add_line(t_links *connections, char *name);
@@ -146,7 +146,7 @@ void				del_solutions(t_otv **solutions);
 void	            del_graph(t_graph **graph);
 void	            del_buff_links(int len, t_gr_block *buff);
 void	del_pointlist(t_pointlist **pointlist);
-void	parse_and_solve(int len, t_pointlist **mapa, int ants);
+void parse_and_solve(int len, t_pointlist **mapa, int ants, char *str);
 int     count_len_pointlist(t_pointlist *map);
 
 t_gr_block		create_gr_block_end(t_links *connections, char *name);
@@ -157,8 +157,7 @@ t_gr_block		create_gr_block_out(t_links *connections, char *name);
 t_gr_block	    return_t_gr_block_by_block(t_gr_block *buff, int len, t_gr_block *one_block);
 
 int				check_duplicate_room(t_graph *graph, char *name, int code_gr);
-t_graph			*make_first(t_gr_block *buff, int len,
-						   t_gr_block one_block);
+t_graph *make_first(t_gr_block *buff, t_gr_block one_block);
 int				check_same_link(t_graph *answer, t_otv **first, int ants);
 void			del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second);
 
@@ -169,7 +168,7 @@ t_graph			*get_second_answer(t_graph *whole_new, t_graph *end_first);
 int				check_useful(t_otv **first, int ants);
 int				compare_graph(t_graph *one, t_graph *two);
 void			delete_first_gr(t_otv **sort);
-t_graph * find_delete(t_otv **otv, t_graph *first, t_otv *tmp);
+void find_delete(t_otv **otv, t_graph *first, t_otv *tmp);
 //void			del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second);
 void 			choose_place_for_del(t_otv **first, t_otv *tmp);
 void			del_sol_old(t_otv **first);

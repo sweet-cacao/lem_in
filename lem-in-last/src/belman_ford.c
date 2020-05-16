@@ -79,11 +79,10 @@ void	bel_ford3(t_gr_block *buff, int len, int *otriz)
 
 	num.len = len;
 	k = -1;
-	while(k++ < 1000)
+	while (k++ < 1000)
 	{
 		all_links[k][0] = 0;
 		all_links[k][1] = 0;
-//		k++;
 	}
 	k = 0;
 	while (k++ < len)

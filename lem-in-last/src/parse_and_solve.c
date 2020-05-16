@@ -6,13 +6,13 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:28:10 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/16 12:45:38 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/17 00:12:31 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/lem-in.h"
 
-int				count_len_pointlist(t_pointlist *map)
+int			count_len_pointlist(t_pointlist *map)
 {
 	int			i;
 
@@ -27,7 +27,7 @@ int				count_len_pointlist(t_pointlist *map)
 	return (i);
 }
 
-void			give_j(int len, t_gr_block *buff)
+void		give_j(int len, t_gr_block *buff)
 {
 	int			i;
 	t_graph		*links;
@@ -47,7 +47,41 @@ void			give_j(int len, t_gr_block *buff)
 	}
 }
 
-void			parse_and_solve(int len, t_pointlist **mapa, int ants)
+int			start_point(t_gr_block *buff, t_pointlist *map, int len, int flag)
+{
+	if (flag == 0)
+	{
+		buff[0] = create_gr_block_start(map->links_list, map->name_point);
+		buff[0].start = 1;
+		buff[0].weight_edge = 0;
+		buff[0].code = 0;
+	}
+	else if (flag == 1)
+	{
+		buff[len - 1] = create_gr_block_end(map->links_list, map->name_point);
+		buff[len - 1].end = 1;
+		buff[len - 1].code = len - 1;
+	}
+	else
+	{
+		buff[len] = create_gr_block_out(map->links_list, map->name_point);
+		buff[len].code = len;
+		len++;
+		buff[len] = create_gr_block_in(map->links_list, map->name_point);
+		buff[len].code = len - 1;
+		len++;
+	}
+	return (len);
+}
+
+void		part_solve(int len, int ants, t_gr_block *buff, char *str)
+{
+	give_j(len, buff);
+	belman_ford_req(buff, len, ants, str);
+	del_buff_links(len, buff);
+}
+
+void		parse_and_solve(int len, t_pointlist **mapa, int ants, char *str)
 {
 	t_gr_block	buff[len];
 	t_pointlist *map;
@@ -57,41 +91,21 @@ void			parse_and_solve(int len, t_pointlist **mapa, int ants)
 	map = (*mapa);
 	test = (*mapa);
 	i = 1;
-	buff[0] = create_gr_block_start(map->links_list, map->name_point);
-	buff[0].start = 0;
-	buff[0].weight_edge = 0;
-	buff[0].code = 0;
+	start_point(buff, map, len, 0);
 	while (map)
 	{
 		if (ft_strcmp("start", map->start_end) == 0)
 		{
 			del_graph(&buff[0].links);
-			buff[0] = create_gr_block_start(map->links_list, map->name_point);
-			buff[0].start = 1;
-			buff[0].weight_edge = 0;
-			buff[0].code = 0;
+			start_point(buff, map, len, 0);
 		}
-		if (ft_strcmp("end", map->start_end) == 0)
-		{
+		else if (ft_strcmp("end", map->start_end) == 0)
 			test = map;
-		}
-		if ((i != 0 && i != (len - 1)) && (ft_strcmp("start", map->start_end) != 0) && (ft_strcmp("end", map->start_end) != 0))
-		{
-			buff[i] = create_gr_block_out(map->links_list, map->name_point);
-			buff[i].code = i;
-			i++;
-			buff[i] = create_gr_block_in(map->links_list, map->name_point);
-			buff[i].code = i - 1;
-			i++;
-		}
+		else if (i != (len - 1))
+			i = start_point(buff, map, i, 2);
 		map = map->next;
 	}
-	map = *mapa;
-	buff[len - 1] = create_gr_block_end(test->links_list, test->name_point);
-	buff[len - 1].end = 1;
-	buff[len - 1].code = len - 1;
+	start_point(buff, test, len, 1);
 	del_pointlist(mapa);
-	give_j(len, buff);
-	belman_ford_req(buff, len, ants);
-	del_buff_links(len, buff);
+	part_solve(len, ants, buff, str);
 }

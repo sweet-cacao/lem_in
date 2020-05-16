@@ -6,22 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 15:04:40 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/16 17:42:55 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/17 00:15:25 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/lem-in.h"
-
-int		exit_no_way(t_otv *otv, int len, t_gr_block *buff)
-{
-	if (otv == NULL)
-	{
-		printf("NO WAY\n");
-		del_buff_links(len, buff);
-		return (1);
-	}
-	return (0);
-}
 
 void		check_simmilar(t_otv **otv, t_graph *graph, t_graph *walk)
 {
@@ -70,7 +59,51 @@ void		check_solutions_last(t_otv **otv)
 	}
 }
 
-void		belman_ford_req(t_gr_block *buff, int len, int ants)
+void		exit_no_way(t_otv **first, int len, t_gr_block *buff, int ants)
+{
+	if (!(first) || (*first) == NULL)
+	{
+		printf("NO WAY\n");
+		del_buff_links(len, buff);
+	}
+	else
+	{
+		check_solutions_last(first);
+		print_ants_and_paths(ants, *first);
+		del_solutions(first);
+	}
+}
+
+int			print_flags(char *str, t_gr_block *buff, t_otv **first, int len)
+{
+	int		i;
+	int		fl;
+
+	i = 0;
+	fl = 0;
+	while (str && (i < ft_strlen(str)))
+	{
+		if (str[i] == 's')
+		{
+			fl++;
+			print_solutions(*first);
+		}
+		if (str[i] == 'g')
+		{
+			fl++;
+			print_graph(buff, len);
+		}
+		i++;
+	}
+	if (fl != 0)
+	{
+		del_solutions(first);
+		exit(0);
+	}
+	return (fl);
+}
+
+void		belman_ford_req(t_gr_block *buff, int len, int ants, char *str)
 {
 	t_graph *first_answer;
 	t_otv	*first;
@@ -79,28 +112,19 @@ void		belman_ford_req(t_gr_block *buff, int len, int ants)
 
 	k = count_max_paths(buff, len);
 	first = NULL;
-	first_answer = NULL;
 	while (k-- >= 0)
 	{
 		otriz = 0;
 		bel_ford3(buff, len, &otriz);
-		if (!(make_path_back(buff, len, buff[len - 1])))//не нужно
+		if (!(make_path_back(buff, len, buff[len - 1])))
 			break ;
-		first_answer = make_first(buff, len, buff[len - 1]);
-		if (first_answer == NULL)
-			break ;
-		if (check_same_link(first_answer, &first, ants) == 3)
-		{
-			break ;
-		}
-		if (!make_path_back_minus(buff, len, buff[len - 1]))
+		first_answer = make_first(buff, buff[len - 1]);
+		if (first_answer == NULL ||
+		(check_same_link(first_answer, &first, ants) == 3)
+		|| (!make_path_back_minus(buff, len, buff[len - 1])))
 			break ;
 		reconstruct_initial(buff, len);
 	}
-	if (exit_no_way(first, len, buff) == 0)
-	{
-		check_solutions_last(&first);
-		print_ants_and_paths(ants, first);
-		del_solutions(&first);
-	}
+	if (print_flags(str, buff, &first, len) == 0)
+		exit_no_way(&first, len, buff, ants);
 }

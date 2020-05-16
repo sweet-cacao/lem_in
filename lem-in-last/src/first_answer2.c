@@ -12,13 +12,10 @@
 
 #include "../includes/lem-in.h"
 
-t_graph		*make_first(t_gr_block *buff, int len,
-			t_gr_block one_block)
+t_graph		*make_first(t_gr_block *buff, t_gr_block one_block)
 {
 	t_graph *graph;
-	int		k;
 
-	k = 0;
 	graph = NULL;
 	while (one_block.parent)
 	{

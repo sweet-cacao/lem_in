@@ -22,7 +22,9 @@ stdlib.h
 fcntl.h
 -
 
-/home/sweet-cacao/lem-last/lem-in-last/src/first_answer5.c
-../includes/lem-in.h
+/home/sweet-cacao/lem-last/lem-in-last/src/parser/print_graph.c
+../../includes/lem-in.h
 /home/sweet-cacao/lem-last/lem-in-last/includes/lem-in.h
+stdio.h
+-
 

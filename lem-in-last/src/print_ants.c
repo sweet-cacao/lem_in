@@ -69,7 +69,6 @@ t_otv		*give_rooms(int ants, t_otv *solutions, t_ants *buff)
 	give_paths(ants, solutions, buff);
 	while (i < ants)
 	{
-//		graph = return_graph(solutions, buff[i].path);
 		buff[i].room = return_graph(solutions, buff[i].path);
 		i++;
 	}
@@ -98,7 +97,6 @@ void		print_ants_and_paths(int ants, t_otv *solutions)
 	int		i;
 	t_ants	buff[ants];
 
-	i = 0;
 	solutions = give_rooms(ants, solutions, buff);
 	while (1)
 	{
@@ -115,5 +113,4 @@ void		print_ants_and_paths(int ants, t_otv *solutions)
 		print_ants(buff, ants);
 		printf("\n");
 	}
-
 }
