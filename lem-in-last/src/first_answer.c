@@ -6,7 +6,7 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:27:46 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/16 15:18:01 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/16 16:15:05 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,10 @@ int		check_same_link(t_graph *answer, t_otv **first, int ants)
 		{
 			k = check_same_link_inner_while(first, ants, glob, answer);
 			if (k != 0)
+			{
+				del_graph(&answer);
 				return (k);
+			}
 			glob.graph = glob.graph->next;
 		}
 		glob.tmp = glob.tmp->next;
