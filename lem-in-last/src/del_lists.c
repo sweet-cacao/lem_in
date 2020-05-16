@@ -6,7 +6,7 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:30:24 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/16 15:58:09 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/16 16:33:02 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,8 @@ void	del_graph(t_graph **graph)
 
 	if (!graph || !(*graph))
 		return ;
+	if ((*graph) == NULL)
+		return;
 	while (*graph)
 	{
 		next = (*graph)->next;
@@ -75,5 +77,6 @@ void	del_graph(t_graph **graph)
 		(*graph) = NULL;
 		(*graph) = next;
 	}
+	(*graph) = NULL;
 	graph = NULL;
 }

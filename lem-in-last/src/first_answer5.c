@@ -6,7 +6,7 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:27:46 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/16 17:26:44 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/16 21:07:30 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ int		is_in_solutions_graph_links(t_otv **first, t_otv *tmp,
 				t_graph *answer, int ants)
 {
 	t_glob	glob;
+	int 	k;
 
+	k = 0;
 	glob.graph = answer->next;
 	glob.tmp = tmp;
 	while (glob.graph->next)
@@ -44,9 +46,14 @@ int		is_in_solutions_graph_links(t_otv **first, t_otv *tmp,
 			{
 				glob.new_answer_1 = get_first_answer(glob.graph, tmp->solve);
 				glob.new_answer_2 = get_second_answer(answer, glob.walk);
-				del_sol_last_two(first, glob.tmp->solve, glob.tmp->solve);
-				return (new_solutions_branch(first,
-						glob.new_answer_1, glob.new_answer_2, ants));
+				glob.tmp->old = 1;
+				k = new_solutions_branch(first,
+						glob.new_answer_1, glob.new_answer_2, ants);
+				if (k == 2)
+				{
+					del_sol_old(first);
+				}
+				return (k);
 			}
 			glob.walk = glob.walk->next;
 		}
@@ -68,7 +75,10 @@ int		is_in_solutions_graph(t_otv **first, t_graph *tmp, int ants)
 		{
 			res = is_in_solutions_graph_links(first, otv, tmp, ants);
 			if (res == 2)
+			{
+				del_graph(&tmp);
 				break ;
+			}
 			if (res == 3)
 				return (0);
 		}
@@ -106,9 +116,6 @@ int		simple_solution(t_otv **first, int ants)
 	tmp = get_next_solution(*first);
 	if (check_useful(first, ants) == 0)
 	{
-//		free(tmp);
-		tmp = NULL;
-		free(tmp);
 		return (3);
 	}
 	return (2);

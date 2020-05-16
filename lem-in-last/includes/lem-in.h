@@ -169,7 +169,7 @@ t_graph			*get_second_answer(t_graph *whole_new, t_graph *end_first);
 int				check_useful(t_otv **first, int ants);
 int				compare_graph(t_graph *one, t_graph *two);
 void			delete_first_gr(t_otv **sort);
-void			find_delete(t_otv **otv, t_graph *first, t_otv *tmp);
+t_graph * find_delete(t_otv **otv, t_graph *first, t_otv *tmp);
 //void			del_sol_last_two(t_otv **otv, t_graph *first, t_graph *second);
 void 			choose_place_for_del(t_otv **first, t_otv *tmp);
 void			del_sol_old(t_otv **first);

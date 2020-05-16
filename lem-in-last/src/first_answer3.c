@@ -6,7 +6,7 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:27:46 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/16 17:18:22 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/16 20:46:35 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,18 @@ void	delete_first_gr(t_otv **sort)
 	(*sort)->prev = NULL;
 }
 
-void	find_delete(t_otv **otv, t_graph *first, t_otv *tmp)
+t_graph *find_delete(t_otv **otv, t_graph *first, t_otv *tmp)
 {
+	t_graph *graph;
+
+	graph = NULL;
 	while (tmp)
 	{
 		if (compare_graph(tmp->solve, first) == 1)
 		{
+			graph = tmp->solve;
+//			if (tmp->solve)
+//				del_graph(&tmp->solve);
 			if (!tmp->prev)
 			{
 				delete_first_gr(otv);
@@ -63,17 +69,21 @@ void	find_delete(t_otv **otv, t_graph *first, t_otv *tmp)
 		}
 		tmp = tmp->next;
 	}
+	return (graph);
 }
 
 void	del_sol_last_two(t_otv **otv, t_graph *first,
 		t_graph *second)//нужно проверку на налл два раза и пофришить
 {
 	t_otv *tmp;
+	t_graph *graph;
 
 	tmp = *otv;
-	find_delete(otv, first, tmp);
+	graph = find_delete(otv, first, tmp);
+//	del_graph(&graph);
 	tmp = *otv;
-	find_delete(otv, second, tmp);
+	graph = find_delete(otv, second, tmp);
+//	del_graph(&graph);
 }
 
 void	choose_place_for_del(t_otv **first, t_otv *tmp)
