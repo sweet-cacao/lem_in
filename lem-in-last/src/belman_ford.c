@@ -6,11 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 13:21:29 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/15 16:35:33 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/17 15:18:00 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lem-in.h"
+#include "lem-in.h"
 
 int		check_all_links(int buff_code, int link_code,
 		int all_links[1000][2], int change)

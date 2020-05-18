@@ -6,11 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:27:46 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/03/13 17:31:41 by gstarvin         ###   ########.fr       */
+/*   Updated: 2020/05/17 15:18:00 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lem-in.h"
+#include "lem-in.h"
 
 t_graph		*make_first(t_gr_block *buff, t_gr_block one_block)
 {

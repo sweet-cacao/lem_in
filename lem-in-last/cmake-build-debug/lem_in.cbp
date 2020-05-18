@@ -78,9 +78,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sweet-cacao/lem-last/lem-in-last/includes/lem-in.h">
-			<Option target="lem_in"/>
-		</Unit>
 		<Unit filename="/home/sweet-cacao/lem-last/lem-in-last/libft/ft_str/ft_atoi.c">
 			<Option target="lem_in"/>
 		</Unit>
@@ -174,7 +171,13 @@
 		<Unit filename="/home/sweet-cacao/lem-last/lem-in-last/src/graph_functions3.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/home/sweet-cacao/lem-last/lem-in-last/src/lem-in.h">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/home/sweet-cacao/lem-last/lem-in-last/src/main.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/sweet-cacao/lem-last/lem-in-last/src/parse.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/sweet-cacao/lem-last/lem-in-last/src/parse_and_solve.c">
@@ -183,13 +186,10 @@
 		<Unit filename="/home/sweet-cacao/lem-last/lem-in-last/src/parser/extra_functions.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/sweet-cacao/lem-last/lem-in-last/src/parser/parse.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/home/sweet-cacao/lem-last/lem-in-last/src/parser/print_graph.c">
-			<Option target="lem_in"/>
-		</Unit>
 		<Unit filename="/home/sweet-cacao/lem-last/lem-in-last/src/print_ants.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/sweet-cacao/lem-last/lem-in-last/src/print_graph.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/sweet-cacao/lem-last/lem-in-last/src/return_find.c">

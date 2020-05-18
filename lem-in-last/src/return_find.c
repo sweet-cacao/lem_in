@@ -6,11 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 15:09:10 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/03/13 16:11:48 by gstarvin         ###   ########.fr       */
+/*   Updated: 2020/05/17 15:18:00 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lem-in.h"
+#include "lem-in.h"
 
 t_gr_block	return_t_gr_block(t_gr_block *buff, int len, char *name)
 {

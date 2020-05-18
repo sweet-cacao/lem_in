@@ -135,31 +135,31 @@ CMakeFiles/lem_in.dir/src/find_all_paths.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/find_all_paths.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sweet-cacao/lem-last/lem-in-last/src/find_all_paths.c -o CMakeFiles/lem_in.dir/src/find_all_paths.c.s
 
-CMakeFiles/lem_in.dir/src/parser/print_graph.c.o: CMakeFiles/lem_in.dir/flags.make
-CMakeFiles/lem_in.dir/src/parser/print_graph.c.o: ../src/parser/print_graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sweet-cacao/lem-last/lem-in-last/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/lem_in.dir/src/parser/print_graph.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/parser/print_graph.c.o   -c /home/sweet-cacao/lem-last/lem-in-last/src/parser/print_graph.c
+CMakeFiles/lem_in.dir/src/print_graph.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/print_graph.c.o: ../src/print_graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sweet-cacao/lem-last/lem-in-last/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/lem_in.dir/src/print_graph.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/print_graph.c.o   -c /home/sweet-cacao/lem-last/lem-in-last/src/print_graph.c
 
-CMakeFiles/lem_in.dir/src/parser/print_graph.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/parser/print_graph.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sweet-cacao/lem-last/lem-in-last/src/parser/print_graph.c > CMakeFiles/lem_in.dir/src/parser/print_graph.c.i
+CMakeFiles/lem_in.dir/src/print_graph.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/print_graph.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sweet-cacao/lem-last/lem-in-last/src/print_graph.c > CMakeFiles/lem_in.dir/src/print_graph.c.i
 
-CMakeFiles/lem_in.dir/src/parser/print_graph.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/parser/print_graph.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sweet-cacao/lem-last/lem-in-last/src/parser/print_graph.c -o CMakeFiles/lem_in.dir/src/parser/print_graph.c.s
+CMakeFiles/lem_in.dir/src/print_graph.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/print_graph.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sweet-cacao/lem-last/lem-in-last/src/print_graph.c -o CMakeFiles/lem_in.dir/src/print_graph.c.s
 
-CMakeFiles/lem_in.dir/src/parser/parse.c.o: CMakeFiles/lem_in.dir/flags.make
-CMakeFiles/lem_in.dir/src/parser/parse.c.o: ../src/parser/parse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sweet-cacao/lem-last/lem-in-last/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/lem_in.dir/src/parser/parse.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/parser/parse.c.o   -c /home/sweet-cacao/lem-last/lem-in-last/src/parser/parse.c
+CMakeFiles/lem_in.dir/src/parse.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/parse.c.o: ../src/parse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sweet-cacao/lem-last/lem-in-last/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/lem_in.dir/src/parse.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/parse.c.o   -c /home/sweet-cacao/lem-last/lem-in-last/src/parse.c
 
-CMakeFiles/lem_in.dir/src/parser/parse.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/parser/parse.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sweet-cacao/lem-last/lem-in-last/src/parser/parse.c > CMakeFiles/lem_in.dir/src/parser/parse.c.i
+CMakeFiles/lem_in.dir/src/parse.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/parse.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sweet-cacao/lem-last/lem-in-last/src/parse.c > CMakeFiles/lem_in.dir/src/parse.c.i
 
-CMakeFiles/lem_in.dir/src/parser/parse.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/parser/parse.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sweet-cacao/lem-last/lem-in-last/src/parser/parse.c -o CMakeFiles/lem_in.dir/src/parser/parse.c.s
+CMakeFiles/lem_in.dir/src/parse.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/parse.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sweet-cacao/lem-last/lem-in-last/src/parse.c -o CMakeFiles/lem_in.dir/src/parse.c.s
 
 CMakeFiles/lem_in.dir/libft/ft_str/ft_strsplit.c.o: CMakeFiles/lem_in.dir/flags.make
 CMakeFiles/lem_in.dir/libft/ft_str/ft_strsplit.c.o: ../libft/ft_str/ft_strsplit.c
@@ -572,8 +572,8 @@ lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o" \
 "CMakeFiles/lem_in.dir/src/return_find.c.o" \
 "CMakeFiles/lem_in.dir/src/find_all_paths.c.o" \
-"CMakeFiles/lem_in.dir/src/parser/print_graph.c.o" \
-"CMakeFiles/lem_in.dir/src/parser/parse.c.o" \
+"CMakeFiles/lem_in.dir/src/print_graph.c.o" \
+"CMakeFiles/lem_in.dir/src/parse.c.o" \
 "CMakeFiles/lem_in.dir/libft/ft_str/ft_strsplit.c.o" \
 "CMakeFiles/lem_in.dir/libft/ft_str/ft_putstr.c.o" \
 "CMakeFiles/lem_in.dir/libft/ft_str/ft_putchar.c.o" \
@@ -615,8 +615,8 @@ lem_in: CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.o
 lem_in: CMakeFiles/lem_in.dir/libft/ft_str/ft_strcmp.c.o
 lem_in: CMakeFiles/lem_in.dir/src/return_find.c.o
 lem_in: CMakeFiles/lem_in.dir/src/find_all_paths.c.o
-lem_in: CMakeFiles/lem_in.dir/src/parser/print_graph.c.o
-lem_in: CMakeFiles/lem_in.dir/src/parser/parse.c.o
+lem_in: CMakeFiles/lem_in.dir/src/print_graph.c.o
+lem_in: CMakeFiles/lem_in.dir/src/parse.c.o
 lem_in: CMakeFiles/lem_in.dir/libft/ft_str/ft_strsplit.c.o
 lem_in: CMakeFiles/lem_in.dir/libft/ft_str/ft_putstr.c.o
 lem_in: CMakeFiles/lem_in.dir/libft/ft_str/ft_putchar.c.o

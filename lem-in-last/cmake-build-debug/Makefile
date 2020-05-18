@@ -987,6 +987,33 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/parse.o: src/parse.c.o
+
+.PHONY : src/parse.o
+
+# target to build an object file
+src/parse.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parse.c.o
+.PHONY : src/parse.c.o
+
+src/parse.i: src/parse.c.i
+
+.PHONY : src/parse.i
+
+# target to preprocess a source file
+src/parse.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parse.c.i
+.PHONY : src/parse.c.i
+
+src/parse.s: src/parse.c.s
+
+.PHONY : src/parse.s
+
+# target to generate assembly for a file
+src/parse.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parse.c.s
+.PHONY : src/parse.c.s
+
 src/parse_and_solve.o: src/parse_and_solve.c.o
 
 .PHONY : src/parse_and_solve.o
@@ -1041,60 +1068,6 @@ src/parser/extra_functions.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/extra_functions.c.s
 .PHONY : src/parser/extra_functions.c.s
 
-src/parser/parse.o: src/parser/parse.c.o
-
-.PHONY : src/parser/parse.o
-
-# target to build an object file
-src/parser/parse.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/parse.c.o
-.PHONY : src/parser/parse.c.o
-
-src/parser/parse.i: src/parser/parse.c.i
-
-.PHONY : src/parser/parse.i
-
-# target to preprocess a source file
-src/parser/parse.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/parse.c.i
-.PHONY : src/parser/parse.c.i
-
-src/parser/parse.s: src/parser/parse.c.s
-
-.PHONY : src/parser/parse.s
-
-# target to generate assembly for a file
-src/parser/parse.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/parse.c.s
-.PHONY : src/parser/parse.c.s
-
-src/parser/print_graph.o: src/parser/print_graph.c.o
-
-.PHONY : src/parser/print_graph.o
-
-# target to build an object file
-src/parser/print_graph.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/print_graph.c.o
-.PHONY : src/parser/print_graph.c.o
-
-src/parser/print_graph.i: src/parser/print_graph.c.i
-
-.PHONY : src/parser/print_graph.i
-
-# target to preprocess a source file
-src/parser/print_graph.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/print_graph.c.i
-.PHONY : src/parser/print_graph.c.i
-
-src/parser/print_graph.s: src/parser/print_graph.c.s
-
-.PHONY : src/parser/print_graph.s
-
-# target to generate assembly for a file
-src/parser/print_graph.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/parser/print_graph.c.s
-.PHONY : src/parser/print_graph.c.s
-
 src/print_ants.o: src/print_ants.c.o
 
 .PHONY : src/print_ants.o
@@ -1121,6 +1094,33 @@ src/print_ants.s: src/print_ants.c.s
 src/print_ants.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_ants.c.s
 .PHONY : src/print_ants.c.s
+
+src/print_graph.o: src/print_graph.c.o
+
+.PHONY : src/print_graph.o
+
+# target to build an object file
+src/print_graph.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_graph.c.o
+.PHONY : src/print_graph.c.o
+
+src/print_graph.i: src/print_graph.c.i
+
+.PHONY : src/print_graph.i
+
+# target to preprocess a source file
+src/print_graph.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_graph.c.i
+.PHONY : src/print_graph.c.i
+
+src/print_graph.s: src/print_graph.c.s
+
+.PHONY : src/print_graph.s
+
+# target to generate assembly for a file
+src/print_graph.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_graph.c.s
+.PHONY : src/print_graph.c.s
 
 src/return_find.o: src/return_find.c.o
 
@@ -1281,21 +1281,21 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/parse.o"
+	@echo "... src/parse.i"
+	@echo "... src/parse.s"
 	@echo "... src/parse_and_solve.o"
 	@echo "... src/parse_and_solve.i"
 	@echo "... src/parse_and_solve.s"
 	@echo "... src/parser/extra_functions.o"
 	@echo "... src/parser/extra_functions.i"
 	@echo "... src/parser/extra_functions.s"
-	@echo "... src/parser/parse.o"
-	@echo "... src/parser/parse.i"
-	@echo "... src/parser/parse.s"
-	@echo "... src/parser/print_graph.o"
-	@echo "... src/parser/print_graph.i"
-	@echo "... src/parser/print_graph.s"
 	@echo "... src/print_ants.o"
 	@echo "... src/print_ants.i"
 	@echo "... src/print_ants.s"
+	@echo "... src/print_graph.o"
+	@echo "... src/print_graph.i"
+	@echo "... src/print_graph.s"
 	@echo "... src/return_find.o"
 	@echo "... src/return_find.i"
 	@echo "... src/return_find.s"

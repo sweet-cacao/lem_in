@@ -54,87 +54,108 @@ CMakeFiles/lem_in.dir/libft/ft_str/ft_strsub.c.o: ../libft/ft_str/libft.h
 CMakeFiles/lem_in.dir/libft/ft_str/get_next_line.c.o: ../libft/ft_str/get_next_line.c
 CMakeFiles/lem_in.dir/libft/ft_str/get_next_line.c.o: ../libft/ft_str/libft.h
 
-CMakeFiles/lem_in.dir/src/belman_ford.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/belman_ford.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/belman_ford.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/belman_ford.c.o: ../src/belman_ford.c
+CMakeFiles/lem_in.dir/src/belman_ford.c.o: ../src/lem-in.h
 
-CMakeFiles/lem_in.dir/src/belman_ford2.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/belman_ford2.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/belman_ford2.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/belman_ford2.c.o: ../src/belman_ford2.c
+CMakeFiles/lem_in.dir/src/belman_ford2.c.o: ../src/lem-in.h
 
-CMakeFiles/lem_in.dir/src/del_lists.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/del_lists.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/del_lists.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/del_lists.c.o: ../src/del_lists.c
+CMakeFiles/lem_in.dir/src/del_lists.c.o: ../src/lem-in.h
 
-CMakeFiles/lem_in.dir/src/find_all_paths.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/find_all_paths.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/find_all_paths.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/find_all_paths.c.o: ../src/find_all_paths.c
+CMakeFiles/lem_in.dir/src/find_all_paths.c.o: ../src/lem-in.h
 
-CMakeFiles/lem_in.dir/src/first_answer.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/first_answer.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/first_answer.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/first_answer.c.o: ../src/first_answer.c
+CMakeFiles/lem_in.dir/src/first_answer.c.o: ../src/lem-in.h
 
-CMakeFiles/lem_in.dir/src/first_answer2.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/first_answer2.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/first_answer2.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/first_answer2.c.o: ../src/first_answer2.c
+CMakeFiles/lem_in.dir/src/first_answer2.c.o: ../src/lem-in.h
 
-CMakeFiles/lem_in.dir/src/first_answer3.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/first_answer3.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/first_answer3.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/first_answer3.c.o: ../src/first_answer3.c
+CMakeFiles/lem_in.dir/src/first_answer3.c.o: ../src/lem-in.h
 
-CMakeFiles/lem_in.dir/src/first_answer4.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/first_answer4.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/first_answer4.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/first_answer4.c.o: ../src/first_answer4.c
+CMakeFiles/lem_in.dir/src/first_answer4.c.o: ../src/lem-in.h
 
-CMakeFiles/lem_in.dir/src/first_answer5.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/first_answer5.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/first_answer5.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/first_answer5.c.o: ../src/first_answer5.c
+CMakeFiles/lem_in.dir/src/first_answer5.c.o: ../src/lem-in.h
 
-CMakeFiles/lem_in.dir/src/give_paths.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/give_paths.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/give_paths.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/give_paths.c.o: ../src/give_paths.c
+CMakeFiles/lem_in.dir/src/give_paths.c.o: ../src/lem-in.h
 
-CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../src/graph_functions.c
+CMakeFiles/lem_in.dir/src/graph_functions.c.o: ../src/lem-in.h
 
-CMakeFiles/lem_in.dir/src/graph_functions2.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/graph_functions2.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/graph_functions2.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/graph_functions2.c.o: ../src/graph_functions2.c
+CMakeFiles/lem_in.dir/src/graph_functions2.c.o: ../src/lem-in.h
 
-CMakeFiles/lem_in.dir/src/graph_functions3.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/graph_functions3.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/graph_functions3.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/graph_functions3.c.o: ../src/graph_functions3.c
+CMakeFiles/lem_in.dir/src/graph_functions3.c.o: ../src/lem-in.h
 
-CMakeFiles/lem_in.dir/src/main.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/main.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/lem_in.dir/src/main.c.o: ../src/lem-in.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../src/main.c
 
-CMakeFiles/lem_in.dir/src/parse_and_solve.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/parse.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/parse.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/lem_in.dir/src/parse.c.o: ../src/lem-in.h
+CMakeFiles/lem_in.dir/src/parse.c.o: ../src/parse.c
+
 CMakeFiles/lem_in.dir/src/parse_and_solve.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/parse_and_solve.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/lem_in.dir/src/parse_and_solve.c.o: ../src/lem-in.h
 CMakeFiles/lem_in.dir/src/parse_and_solve.c.o: ../src/parse_and_solve.c
 
-CMakeFiles/lem_in.dir/src/parser/extra_functions.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/parser/extra_functions.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/parser/extra_functions.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/lem_in.dir/src/parser/extra_functions.c.o: ../src/lem-in.h
 CMakeFiles/lem_in.dir/src/parser/extra_functions.c.o: ../src/parser/extra_functions.c
 
-CMakeFiles/lem_in.dir/src/parser/parse.c.o: ../includes/lem-in.h
-CMakeFiles/lem_in.dir/src/parser/parse.c.o: ../libft/ft_str/libft.h
-CMakeFiles/lem_in.dir/src/parser/parse.c.o: ../src/parser/parse.c
-
-CMakeFiles/lem_in.dir/src/parser/print_graph.c.o: ../includes/lem-in.h
-CMakeFiles/lem_in.dir/src/parser/print_graph.c.o: ../libft/ft_str/libft.h
-CMakeFiles/lem_in.dir/src/parser/print_graph.c.o: ../src/parser/print_graph.c
-
-CMakeFiles/lem_in.dir/src/print_ants.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/print_ants.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/print_ants.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/lem_in.dir/src/print_ants.c.o: ../src/lem-in.h
 CMakeFiles/lem_in.dir/src/print_ants.c.o: ../src/print_ants.c
 
-CMakeFiles/lem_in.dir/src/return_find.c.o: ../includes/lem-in.h
+CMakeFiles/lem_in.dir/src/print_graph.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/print_graph.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/lem_in.dir/src/print_graph.c.o: ../src/lem-in.h
+CMakeFiles/lem_in.dir/src/print_graph.c.o: ../src/print_graph.c
+
 CMakeFiles/lem_in.dir/src/return_find.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/return_find.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/lem_in.dir/src/return_find.c.o: ../src/lem-in.h
 CMakeFiles/lem_in.dir/src/return_find.c.o: ../src/return_find.c
 
-CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.o: ../includes/lem-in.h
 CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.o: ../libft/ft_str/libft.h
+CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.o: ../src/lem-in.h
 CMakeFiles/lem_in.dir/src/solution_graph_sorted.c.o: ../src/solution_graph_sorted.c
 

@@ -6,11 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 16:12:11 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/03/13 16:13:36 by gstarvin         ###   ########.fr       */
+/*   Updated: 2020/05/17 15:18:00 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lem-in.h"
+#include "lem-in.h"
 
 t_otv		*add_block_solution(t_graph *graph)
 {

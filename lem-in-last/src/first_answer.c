@@ -6,11 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:27:46 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/16 19:27:05 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/17 15:18:00 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lem-in.h"
+#include "lem-in.h"
 
 int		check_same_link_inner_while(t_otv **first, int ants,
 		t_glob glob, t_graph *answer)

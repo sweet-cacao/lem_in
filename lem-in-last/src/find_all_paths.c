@@ -6,11 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 15:04:40 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/17 00:15:25 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/17 15:18:44 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lem-in.h"
+#include "lem-in.h"
 
 void		check_simmilar(t_otv **otv, t_graph *graph, t_graph *walk)
 {

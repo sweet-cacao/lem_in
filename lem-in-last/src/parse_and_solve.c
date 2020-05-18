@@ -6,11 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:28:10 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/17 00:12:31 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/17 15:18:11 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lem-in.h"
+#include "lem-in.h"
 
 int			count_len_pointlist(t_pointlist *map)
 {

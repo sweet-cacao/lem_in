@@ -43,8 +43,6 @@ OBJS = $(SRC:.c=.o)
 
 LIBFT = ./ft_str
 
-WFL = -Wall -Wextra -Werror
-
 IFL = -I$(INC_DIR)
 
 SRCS = $(addprefix $(SRC_DIR))
@@ -58,7 +56,7 @@ $(NAME): $(OBJS)
 	ranlib $(NAME)
 
 %.o: $(SRC_DIR)/%.c
-	gcc $(WFL) $(IFL) -c $< -o $@
+	gcc $(IFL) -c $< -o $@
 
 clean:
 	$(MAKE) -C $(LIBFT)/ clean
