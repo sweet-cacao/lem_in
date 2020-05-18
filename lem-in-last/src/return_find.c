@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 t_gr_block	return_t_gr_block(t_gr_block *buff, int len, char *name)
 {

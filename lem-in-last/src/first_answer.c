@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 int		check_same_link_inner_while(t_otv **first, int ants,
 		t_glob glob, t_graph *answer)

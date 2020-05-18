@@ -6,11 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 15:10:30 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/17 16:38:49 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/18 20:42:46 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 void		give_len(t_otv **solutions)
 {
@@ -82,7 +82,7 @@ void		sort_with_len(t_otv **solutions)
 	}
 }
 
-int			is_in_room(t_ants *buff, int i, int ants)
+int			is_in_room(t_ants *buff, int i)
 {
 	int		j;
 

@@ -6,11 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:27:46 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/17 16:38:49 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/18 20:33:58 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 t_graph		*make_first(t_gr_block *buff, t_gr_block one_block)
 {
@@ -19,7 +19,7 @@ t_graph		*make_first(t_gr_block *buff, t_gr_block one_block)
 	graph = NULL;
 	while (one_block.parent)
 	{
-		if (!check_duplicate_room(graph, one_block.name, one_block.code))
+		if (!check_duplicate_room(graph, one_block.code))
 		{
 			push_front_graph(&graph, one_block.name, one_block.name);
 			graph->code_link = one_block.code;

@@ -6,22 +6,22 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:27:46 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/17 16:38:49 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/18 20:43:13 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 int				flag_help(char *str)
 {
-	int			i;
+	unsigned int			i;
 
 	i = 0;
 	while (i < ft_strlen(str))
 	{
 		if (str[i] == 'h')
 		{
-			printf("Usage: lem-in [-hsg] < [map]\n"
+			ft_printf("Usage: lem-in [-hsg] < [map]\n"
 	"-h - help\n-g - print graph\n-s - print all "
 	"solutions\n\nFor visualizer:\npython3 parse.py "
 	"< [lem-in-output]\nP.S.: You need tkinter and PIL\n");
@@ -40,7 +40,7 @@ int				main(int ac, char **av)
 
 	if (ac > 2 || (ac == 2 && ft_strlen(av[1]) > 4))
 	{
-		printf("Wrong number of arguments or flags.\n"
+		ft_printf("Wrong number of arguments or flags.\n"
 		"Run with -h for help.\n");
 		return (0);
 	}

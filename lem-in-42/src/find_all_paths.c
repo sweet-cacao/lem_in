@@ -6,11 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 15:04:40 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/17 16:38:49 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/18 21:59:09 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 void		check_simmilar(t_otv **otv, t_graph *graph, t_graph *walk)
 {
@@ -63,7 +63,7 @@ void		exit_no_way(t_otv **first, int len, t_gr_block *buff, int ants)
 {
 	if (!(first) || (*first) == NULL)
 	{
-		printf("NO WAY\n");
+		ft_printf("NO WAY\n");
 		del_buff_links(len, buff);
 	}
 	else
@@ -76,8 +76,8 @@ void		exit_no_way(t_otv **first, int len, t_gr_block *buff, int ants)
 
 int			print_flags(char *str, t_gr_block *buff, t_otv **first, int len)
 {
-	int		i;
-	int		fl;
+	unsigned int		i;
+	int					fl;
 
 	i = 0;
 	fl = 0;
@@ -110,18 +110,18 @@ void		belman_ford_req(t_gr_block *buff, int len, int ants, char *str)
 	int		k;
 	int		otriz;
 
-	k = count_max_paths(buff, len);
+	k = count_max_paths(buff);
 	first = NULL;
 	while (k-- >= 0)
 	{
 		otriz = 0;
 		bel_ford3(buff, len, &otriz);
-		if (!(make_path_back(buff, len, buff[len - 1])))
+		if (!(make_path_back(buff, buff[len - 1])))
 			break ;
 		first_answer = make_first(buff, buff[len - 1]);
 		if (first_answer == NULL ||
 		(check_same_link(first_answer, &first, ants) == 3)
-		|| (!make_path_back_minus(buff, len, buff[len - 1])))
+		|| (!make_path_back_minus(buff, buff[len - 1])))
 			break ;
 		reconstruct_initial(buff, len);
 	}

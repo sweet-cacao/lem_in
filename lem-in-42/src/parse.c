@@ -1,15 +1,15 @@
-#include "lem-in.h"
+#include "lemin.h"
 
-void            printf_double_star_char(char **links)
+void            ft_printf_double_star_char(char **links)
 {
 	int     index;
 
 	index = 0;
 	while (links[index] != NULL)
 	{
-		printf("%s ",links[index]);
+		ft_printf("%s ",links[index]);
 		index++;    }
-	printf("\n");
+	ft_printf("\n");
 }
 
 void            mas_struct_print(t_pointlist *structs)
@@ -19,19 +19,19 @@ void            mas_struct_print(t_pointlist *structs)
 	index = 0;
 	while (structs != NULL)
 	{
-		printf("\nstart_end = %s\nname_point = %s\ncoorditates = [%d, %d]\n", structs->start_end, structs->name_point, structs->coordinates[0], structs->coordinates[1]);
-		printf("Links :");
+		ft_printf("\nstart_end = %s\nname_point = %s\ncoorditates = [%d, %d]\n", structs->start_end, structs->name_point, structs->coordinates[0], structs->coordinates[1]);
+		ft_printf("Links :");
 		while (structs->links_list != NULL)
 		{
-			printf("%s, ", structs->links_list->link);
+			ft_printf("%s, ", structs->links_list->link);
 			structs->links_list = structs->links_list->next;
 		}
-		printf("\n");
-		// printf_double_start_char(structs[index].links);
+		ft_printf("\n");
+		// ft_printf_double_start_char(structs[index].links);
 		structs = structs->next;
 	}
-	//printf("start_end = %s\nname_point = %s\ncoorditates = [%d, %d]\n\n", structs->start_end, structs->name_point, structs->coordinates[0], structs->coordinates[1]);
-	//  printf_double_start_char(structs[index].links);
+	//ft_printf("start_end = %s\nname_point = %s\ncoorditates = [%d, %d]\n\n", structs->start_end, structs->name_point, structs->coordinates[0], structs->coordinates[1]);
+	//  ft_printf_double_start_char(structs[index].links);
 }
 
 t_pointlist             *search_list(t_pointlist *point_info, char *search_name)
@@ -108,7 +108,7 @@ t_pointlist     *list_creation()
         len_list++;
     }
     new_list = (t_pointlist *)malloc(sizeof(t_pointlist) * (len_list + 1));
-    printf("==============struct len = %d\n", len_list + 1);
+    ft_printf("==============struct len = %d\n", len_list + 1);
     while (index <= len_list)
     {
         if (main_list->next == NULL)
@@ -169,7 +169,7 @@ t_pointlist            *parse_map()
 	/* ft_putstr("sdl");
 	 split = ft_strsplit(markers, '#');
 	 ft_putstr("gggg");
-	 printf("%s\n",split[0]);
+	 ft_printf("%s\n",split[0]);
 	 while (split[index] != NULL)
 		 ft_putstr(split[index++]);*/
 	point_info = NULL;
@@ -192,7 +192,7 @@ t_pointlist            *parse_map()
 	}
 	if (ant_number < 0)
 	{
-		printf("ERROR\n");
+		ft_printf("ERROR\n");
 		return(0);
 	}
 	/*while (get_next_line(0, &str) > 0) //старт

@@ -1,4 +1,4 @@
-#include "../lem-in.h"
+#include "../lemin.h"
 
 void        delete_one_graph(t_graph **graph, char *name)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 int		new_solutions_branch(t_otv **first, t_graph *new_answer_1,
 		t_graph *new_answer_2, int ants)

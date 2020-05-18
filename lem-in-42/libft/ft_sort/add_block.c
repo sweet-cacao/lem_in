@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   add_block.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gstarvin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 10:03:06 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/02/18 10:04:52 by gstarvin         ###   ########.fr       */
+/*   Updated: 2020/02/24 19:46:52 by gstarvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ t_sort		*add_block(int data, int order)
 {
 	t_sort	*sort;
 
-	sort = malloc(sizeof(t_sort));
+	sort = (t_sort*)malloc(sizeof(t_sort));
+	if (!sort)
+		return (NULL);
 	sort->data = data;
 	sort->order = order;
 	sort->next = NULL;

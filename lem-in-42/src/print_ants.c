@@ -6,11 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 15:53:54 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/17 16:38:49 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/18 21:53:59 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 int			choose_path(int last_ants, t_otv *tmp)
 {
@@ -63,7 +63,6 @@ void		give_paths(int ants, t_otv *solutions, t_ants *ants_buff)
 t_otv		*give_rooms(int ants, t_otv *solutions, t_ants *buff)
 {
 	int		i;
-	t_graph *graph;
 
 	i = 0;
 	give_paths(ants, solutions, buff);
@@ -72,7 +71,7 @@ t_otv		*give_rooms(int ants, t_otv *solutions, t_ants *buff)
 		buff[i].room = return_graph(solutions, buff[i].path);
 		i++;
 	}
-	printf("\n");
+	ft_printf("\n");
 	return (solutions);
 }
 
@@ -83,10 +82,10 @@ void		print_ants(t_ants *buff, int ants)
 	i = 0;
 	while (i < ants)
 	{
-		if (buff[i].room->next && is_in_room(buff, i, ants) == 0)
+		if (buff[i].room->next && is_in_room(buff, i) == 0)
 		{
 			buff[i].room = buff[i].room->next;
-			printf("L%d-%s ", buff[i].number, buff[i].room->link);
+			ft_printf("L%d-%s ", buff[i].number, buff[i].room->link);
 		}
 		i++;
 	}
@@ -111,6 +110,6 @@ void		print_ants_and_paths(int ants, t_otv *solutions)
 		if (i == ants)
 			break ;
 		print_ants(buff, ants);
-		printf("\n");
+		ft_printf("\n");
 	}
 }

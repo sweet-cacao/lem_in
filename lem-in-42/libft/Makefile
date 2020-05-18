@@ -1,3 +1,4 @@
+
 NAME		= libftprintf.a
 
 INC_DIR		= ./includes 
@@ -42,7 +43,7 @@ OBJS = $(SRC:.c=.o)
 
 LIBFT = ./ft_str
 
-WFL =
+WFL = 
 
 IFL = -I$(INC_DIR)
 

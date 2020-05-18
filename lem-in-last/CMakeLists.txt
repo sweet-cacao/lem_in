@@ -3,7 +3,7 @@ project(lem_in C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(lem_in src/main.c src/graph_functions.c src/lem-in.h src/solution_graph_sorted.c
+add_executable(lem_in src/main.c src/graph_functions.c src/lemin.h src/solution_graph_sorted.c
         libft/ft_str/ft_strcmp.c src/return_find.c src/find_all_paths.c
         src/print_graph.c src/parse.c
         libft/ft_str/ft_strsplit.c

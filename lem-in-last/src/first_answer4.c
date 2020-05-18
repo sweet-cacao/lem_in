@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 void		overlay_solve(const t_gr_block *buff, t_gr_block *one_block,
 			t_graph *links, t_graph *links2)

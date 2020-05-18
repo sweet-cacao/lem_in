@@ -1,8 +1,8 @@
-#ifndef LEM_IN_LEM_IN_H
-#define LEM_IN_LEM_IN_H
+#ifndef LEM_IN_LEMIN_H
+#define LEM_IN_LEMIN_H
 # define INT32_MAX 2147483647
-#include "../libft/includes/ft_printf.h"
-#include <stdio.h>
+# include "../libft/includes/ft_printf.h"
+# include <stdio.h>
 
 typedef struct              s_links
 {

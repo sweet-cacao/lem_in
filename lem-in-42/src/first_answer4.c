@@ -6,11 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:27:46 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/17 16:38:49 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/18 20:34:28 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 void		overlay_solve(const t_gr_block *buff, t_gr_block *one_block,
 			t_graph *links, t_graph *links2)
@@ -40,7 +40,7 @@ void		overlay_solve(const t_gr_block *buff, t_gr_block *one_block,
 	}
 }
 
-int			make_path_back(t_gr_block *buff, int len, t_gr_block one_block)
+int			make_path_back(t_gr_block *buff, t_gr_block one_block)
 {
 	buff[one_block.num].count++;
 	while (one_block.parent)
@@ -58,13 +58,14 @@ int			make_path_back(t_gr_block *buff, int len, t_gr_block one_block)
 		return (0);
 }
 
-int			make_path_back_minus(t_gr_block *buff, int len,
+int			make_path_back_minus(t_gr_block *buff,
 			t_gr_block one_block)
 {
 	t_graph *links;
 	t_graph *links2;
 
 	links = one_block.links;
+	links2 = NULL;
 	while (one_block.parent && one_block.start != 1)
 	{
 		links = one_block.links;
@@ -85,7 +86,7 @@ int			make_path_back_minus(t_gr_block *buff, int len,
 		return (0);
 }
 
-int			check_duplicate_room(t_graph *graph, char *name, int code_gr)
+int			check_duplicate_room(t_graph *graph, int code_gr)
 {
 	while (graph)
 	{
@@ -99,7 +100,6 @@ int			check_duplicate_room(t_graph *graph, char *name, int code_gr)
 void		reconstruct_initial(t_gr_block *buff, int len)
 {
 	int		i;
-	t_graph *links;
 
 	i = 0;
 	while (i < len)

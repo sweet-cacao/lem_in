@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 t_graph		*make_first(t_gr_block *buff, t_gr_block one_block)
 {

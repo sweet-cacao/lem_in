@@ -6,11 +6,11 @@
 /*   By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/13 17:27:46 by gstarvin          #+#    #+#             */
-/*   Updated: 2020/05/17 16:38:49 by sweet-cacao      ###   ########.fr       */
+/*   Updated: 2020/05/18 20:51:18 by sweet-cacao      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 int		count_links(t_graph *graph)
 {
@@ -38,7 +38,7 @@ int		count_solutions(t_otv *graph)
 	return (i);
 }
 
-int		count_max_paths(t_gr_block *buff, int len)
+int		count_max_paths(t_gr_block *buff)
 {
 	int max_n_end_paths;
 	int max_n_start_paths;
@@ -46,7 +46,7 @@ int		count_max_paths(t_gr_block *buff, int len)
 
 	max_n_end_paths = INT32_MAX;
 	max_n_start_paths =
-	count_links(return_t_gr_block(buff, len, get_start(buff, len)).links);
+	count_links(buff[0].links);
 	if (max_n_end_paths > max_n_start_paths)
 	{
 		max_n_paths = max_n_start_paths;

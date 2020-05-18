@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 void		check_simmilar(t_otv **otv, t_graph *graph, t_graph *walk)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem-in.h"
+#include "lemin.h"
 
 int		check_all_links(int buff_code, int link_code,
 		int all_links[1000][2], int change)
