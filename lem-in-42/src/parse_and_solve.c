@@ -106,6 +106,5 @@ void		parse_and_solve(int len, t_pointlist **mapa, int ants, char *str)
 		map = map->next;
 	}
 	start_point(buff, test, len, 1);
-	del_pointlist(mapa);
 	part_solve(len, ants, buff, str);
 }

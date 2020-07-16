@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #ifndef LEM_IN_LEMIN_H
-#define LEM_IN_LEMIN_H
+# define LEM_IN_LEMIN_H
 # define INT32_MAX 2147483647
 # include "../libft/includes/ft_printf.h"
 
@@ -23,7 +23,8 @@ typedef struct				s_links
 
 typedef struct				s_pointlist
 {
-	int						ants;
+	long int				ants;
+	int						nums;
 	int						level;
 	char					*start_end;
 	char					*name_point;
@@ -31,6 +32,16 @@ typedef struct				s_pointlist
 	t_links					*links_list;
 	struct s_pointlist		*next;
 }							t_pointlist;
+
+typedef struct				s_params
+{
+	int						error_flag;
+	t_pointlist				*start;
+	t_pointlist				*point_info;
+	t_pointlist				*plus_part;
+	int						ant_number;
+	int						check_point;
+}							t_params;
 
 typedef struct				s_lemin
 {
@@ -110,6 +121,38 @@ typedef struct				s_num
 	int						change;
 }							t_num;
 
+int							dotka_help(char *str, char *markers, int n, int k);
+int							gnl_minus(char *str, char *markers, int n, int k);
+char						*delspace_h(char *str);
+t_params					*short_part_1(t_params *params, char **split,
+							char **str);
+t_params					*short_part_2(t_params *params, char **split,
+							char **str);
+t_params					*help_func(t_params *params, char **split);
+t_params					*help_norm(t_params *params, char **str,
+							char **split, char *markers);
+int							search_same_room_name(t_params *params);
+int							search_same_coord(t_params *params);
+int							len_double_star_char(char **str);
+int							is_it_numbers_on_str(char *str, int a);
+t_pointlist					*search_list(t_pointlist *point_info,
+							char *search_name);
+void						mas_struct_print(t_pointlist *structs);
+void						printf_double_star_char(char **links);
+t_pointlist					*list_creation();
+t_links						*plus_on_double_star_char(t_links *links_list,
+							char *new_elem);
+t_pointlist					*put_nums(t_pointlist *point_info);
+t_pointlist					*search_list_(t_pointlist *point_info, char c);
+char						*create_markers_line();
+t_params					*last_part(t_params *params, char **split,
+							char *str);
+t_params					*second_part(t_params *params, char **split,
+							char *str);
+t_params					*first_part(t_params *params, char **split,
+							char *str);
+int							ants(char *str, char *markers);
+t_pointlist					*sort_list(t_pointlist *point_info);
 char						*get_end(t_gr_block *buff, int len);
 char						*get_start(t_gr_block *buff, int len);
 int							return_level(t_gr_block *buff,
@@ -144,7 +187,7 @@ void						print_graph(t_gr_block *buff, int len);
 void						print_solutions(t_otv *otv);
 void						print_links(char *text, t_graph *graph);
 
-t_pointlist					*parse_map();
+t_params					*parse_map();
 
 void						bel_ford3(t_gr_block *buff, int len, int *otriz);
 int							return_j(t_gr_block *buff, int len, t_graph *links);

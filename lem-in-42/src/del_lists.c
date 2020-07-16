@@ -12,15 +12,44 @@
 
 #include "lemin.h"
 
+int		dotka_help(char *str, char *markers, int n, int k)
+{
+	char	*new;
+
+	new = ft_itoa(ft_atoi(str));
+	if (n == 0 && (ft_strstr(markers, str) != NULL || !(str) ||
+			ft_strcmp(new, str) != 0 || str[0] == '\0' || !(k > 0)))
+	{
+		ft_printf("[2]ERROR\n");
+		if (*str)
+			free(str);
+		ft_strdel(&new);
+		exit(-1);
+		return (1);
+	}
+	free(new);
+	return (0);
+}
+
 void	del_pointlist(t_pointlist **pointlist)
 {
 	t_pointlist *next;
+	t_links		*next_link;
 
-	if (!pointlist || !(*pointlist))
+	if (!pointlist)
 		return ;
 	while (*pointlist)
 	{
 		next = (*pointlist)->next;
+		while ((*pointlist)->links_list)
+		{
+			next_link = (*pointlist)->links_list->next;
+			free((*pointlist)->links_list->link);
+			free((*pointlist)->links_list);
+			(*pointlist)->links_list = NULL;
+			(*pointlist)->links_list = next_link;
+		}
+		free((*pointlist)->name_point);
 		free(*pointlist);
 		(*pointlist) = NULL;
 		(*pointlist) = next;

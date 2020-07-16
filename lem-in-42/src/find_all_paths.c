@@ -63,7 +63,7 @@ void		exit_no_way(t_otv **first, int len, t_gr_block *buff, int ants)
 {
 	if (!(first) || (*first) == NULL)
 	{
-		ft_printf("NO WAY\n");
+		ft_printf("[2]ERROR\n");
 		del_buff_links(len, buff);
 	}
 	else

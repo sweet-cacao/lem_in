@@ -6,7 +6,7 @@
 #    By: gstarvin <gstarvin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/20 17:25:08 by gstarvin          #+#    #+#              #
-#    Updated: 2020/05/18 21:53:34 by sweet-cacao      ###   ########.fr        #
+#    Updated: 2020/07/06 21:16:01 by gfreddie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,11 @@ SRC			= belman_ford2.c \
 			graph_functions.c \
 			main.c \
 			parse_and_solve.c \
+			search_same.c \
 			parse.c \
+			one.c \
+			two.c \
+			three.c \
 			print_ants.c \
 			print_graph.c \
 			return_find.c \
@@ -55,11 +59,11 @@ all: $(NAME)
 
 $(NAME): $(LEM_IN_OBJ)
 	$(MAKE) -C $(LIBFT)/
-	gcc $(WFL) $^ $(LIBFT)/libftprintf.a $(IFL) -o $(NAME)
+	gcc -g $(WFL) $^ $(LIBFT)/libftprintf.a $(IFL) -o $(NAME)
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c $(HEADERS)
 	mkdir -p ./objects
-	gcc $(WFL) -c $< -o $@ -I $(HEADERS_DIRECTORY)
+	gcc -g $(WFL) -c $< -o $@ -I $(HEADERS_DIRECTORY)
 
 clean:
 	$(MAKE) -C $(LIBFT) clean
